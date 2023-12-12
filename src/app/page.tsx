@@ -1,113 +1,235 @@
-import Image from 'next/image'
+import { TzButton, TzHeading, TzToggle, TzPicture } from "topaz-react";
+
+import { Code } from "@features/code";
+import { Form } from "@features/form";
+import { Section } from "@features/section";
+import { SocialMedia } from "@features/social-media";
+import { Terminal } from "@features/terminal";
+import { Heading } from "@features/heading";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+    <div>
+      <header className="h-screen">
+        <TzToggle />
+        <Heading level="h1" title="Antônio Zanotti" />
+        <Terminal />
+        <SocialMedia />
+        <button type="button"></button>
+      </header>
+      <main>
+        <Section title="About">
+          <TzPicture />
+          <p>
+            Senior Full Stack Developer with more than 15 years of experience.
+            Looking for long-term opportunities to work as Frontend Developer.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p>
+            Comfortable with Vue or React, Next.js or Vite, Storybook,
+            UnoCSS+Tailwind CSS, TypeScript, GraphQL… I’m open mind to study and
+            adapt me to your Tech Stack.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
+          <p>
+            Besides work, I love my husband, we’ve been living together for 7
+            years. I also like to study sociology, do exercises at home, take a
+            track, go to the beach, hangout with friends, watercolour...
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <Code />
+        </Section>
+        <Section title="Projects">
+          <article>
+            <Heading level="h3" title="Topaz" />
+            <TzPicture />
+            <p>
+              UI component library for Vue or React projects. Features:
+              components, color customization, dark and light theme, responsive.
+              Topaz is a MIT licensed project. This website was built with Topaz
+              for React.
+            </p>
+            <p>Inspired In:</p>
+            <ul>
+              <li>
+                <a href="" title="" target="_blank">
+                  Spectrum
+                </a>
+                , Adobe’s design system
+              </li>
+              <li>
+                <a href="" title="" target="_blank">
+                  Vitamin
+                </a>
+                , Decathlon’s design system
+              </li>
+              <li>
+                <a href="" title="" target="_blank">
+                  Vuetify
+                </a>
+                , Vue Component Framework
+              </li>
+            </ul>
+            <article>
+              <Heading level="h4" title="Topaz for Vue" />
+              <TzPicture />
+              <p>
+                Technologies: Vue, UnoCSS, heroicons, TypeScript, Vite, Git,
+                npm, storybook...
+              </p>
+              <ul>
+                <li>
+                  <a
+                    href="https://topaz-vue.netlify.app/"
+                    title=""
+                    target="_blank"
+                  >
+                    Storybook Documentation
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/antoniozanotti/topaz-vue"
+                    title=""
+                    target="_blank"
+                  >
+                    Github Repository
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.npmjs.com/package/topaz-vue"
+                    title=""
+                    target="_blank"
+                  >
+                    NPM Package
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <Heading level="h4" title="Topaz for React" />
+              <TzPicture />
+              <p>
+                Technologies: React, tailwindcss, heroicons, TypeScript, tsdx,
+                Git, npm, storybook...
+              </p>
+              <ul>
+                <li>
+                  <a
+                    href="https://topaz-react.netlify.app/"
+                    title=""
+                    target="_blank"
+                  >
+                    Storybook Documentation
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/antoniozanotti/topaz-react"
+                    title=""
+                    target="_blank"
+                  >
+                    Github Repository
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.npmjs.com/package/topaz-react"
+                    title=""
+                    target="_blank"
+                  >
+                    NPM Package
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </article>
+          <article>
+            <Heading level="h3" title="MAD Design Group Ecommerces" />
+            <p>
+              For 8 years, I participated in the web development team of MAD
+              Design Group, working as a Full Stack Magento Developer.
+            </p>
+            <p>
+              In July 2015, when I was hired, I had the challenge of creating a
+              centralized and scalable base for all MAD’s ecommerces. At that
+              time, each brand and location had its own code, which made
+              maintenance and improvement impractical. This project was built in
+              gradual development cycles, until all brands and locations were
+              incorporated into the same code. Currently the project has 30
+              ecommerces, 5 brands in 6 locations. Below are some of them:
+            </p>
+            <ul>
+              <li>
+                <a href="https://ecosmartfire.com/" title="" target="_blank">
+                  EcoSmart Fire (United States)
+                </a>
+              </li>
+              <li>
+                <a href="https://blindedesign.ca/" title="" target="_blank">
+                  Blinde Design (Canada)
+                </a>
+              </li>
+              <li>
+                <a href="https://e-nrg.com.au/" title="" target="_blank">
+                  e-NRG Bioethanol (Australia)
+                </a>
+              </li>
+              <li>
+                <a href="https://heatscopeheaters.eu/" title="" target="_blank">
+                  HEATSCOPE® Heaters (Europe)
+                </a>
+              </li>
+              <li>
+                <a href="https://mad-gl.com/" title="" target="_blank">
+                  MAD Design Group (Internacional)
+                </a>
+              </li>
+            </ul>
+            <p>
+              The user experience in ecommerces have always been a relevant
+              factor, and therefore, numerous modules have been developed to
+              meet customization needs.
+            </p>
+            <p>
+              Some internal processes were automated, such as exporting orders
+              and leads to Netsuite (ERP).
+            </p>
+            <p>
+              In addition to ecommerces for end customers, online stores with
+              restricted access for B2B were developed, with specific features
+              that I do not list here for ethical reasons.
+            </p>
+            <p>
+              In 2018 and 2019, I participated in the migration from Magento 1
+              to Magento 2. Due to the high customization and small team, it
+              took 1 year to do so, adding up the planning and execution time of
+              the project. As if the complexity of code refactoring and data
+              migration wasn’t enough, in the same period, the layout of
+              ecommerces was also changed.
+            </p>
+            <p>
+              Other less complex tasks were also developed, such as monitoring,
+              preventing and inhibiting attacks. Updating PHP and Magento
+              versions, SEO optimization…
+            </p>
+            <p>
+              In 2023, we began a migration project to a Jamstack architecture,
+              which use Vue. I developed the initial set-up of the project so
+              that everyone could develop collaboratively.
+            </p>
+          </article>
+        </Section>
+      </main>
+      <footer>
+        <Section title="Let's work together">
+          <Form />
+          <SocialMedia />
+          <TzPicture />
+          <p>
+            Made with <span></span> by Antônio Zanotti
           </p>
-        </a>
-      </div>
-    </main>
-  )
+          <button type="button"></button>
+        </Section>
+      </footer>
+    </div>
+  );
 }
