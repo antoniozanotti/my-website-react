@@ -4,12 +4,13 @@ import { Heading } from "@features/heading";
 
 export interface SectionProps {
   title: string;
+  className?: string;
   children?: ReactNode;
 }
 
-export const Section = ({ title, children }: SectionProps) => {
+export const Section = ({ title, children, className="" }: SectionProps) => {
   return (
-    <section>
+    <section className={className}>
       <Heading level="h2" title={title} />
       {children}
     </section>
