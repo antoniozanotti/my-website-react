@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactNode } from "react";
 import { TzHeading, TzHeadingProps } from "topaz-react";
 
 export interface HeadingProps {
@@ -9,21 +8,24 @@ export interface HeadingProps {
 }
 
 export const Heading = ({ level, title, className = '' }: HeadingProps) => {
-  let size: any = "large";
-  let variant: any = "accent";
+  let size:any = ""
+  let variant: any = "";
   let headingClasses = className + " drop-shadow";
   switch (level) {
+    case "h1":
+      size = "x_large";
+      variant = "accent";
+      break;
     case "h2":
       variant = "accent-1";
-      //headingClasses += " pt-40 pb-20"
       break;
     case "h3":
       size = "medium";
       variant = "accent-2";
       break;
-    case "h4":
+    default:
       size = "small";
-      variant = "primary-2";
+      variant = "secondary";
       break;
   }
   return (

@@ -1,5 +1,5 @@
 "use client";
-import { TzButton, TzGrid, TzIcon, TzToggleTheme, TzPicture } from "topaz-react";
+import { TzButton, TzIcon, TzToggleTheme, TzPicture } from "topaz-react";
 
 import { Code } from "@features/code";
 import { Form } from "@features/form";
@@ -15,27 +15,27 @@ import AntonioZanotti2Img from '@images/antonio_zanotti_2.jpg';
 
 export default function Home() {
   return (
-    <TzGrid isRootWrapper>
-      <header className="min-h-screen grid grid-rows-4">
-        <div className="flex justify-self-end">
+    <>
+      <header className="">
+        <div className="">
           <TzToggleTheme />
         </div>
-        <div className="row-span-2">
+        <div className="">
           <Heading level="h1" title="Antônio Zanotti" className="" />
-          <Terminal className="mt-16" />
-          <SocialMedia className="mt-32" />
+          <Terminal className="" />
+          <SocialMedia className="" />
         </div>
-        <div className="flex justify-center items-center">
+        <div className="">
           <TzButton iconName="ArrowDownIcon" variant="secondary" className="animate-bounce" />
         </div>
       </header>
-      <main className="pt-40">
+      <main className="">
         <Section title="# About">
-          <TzGrid columns={10} className="pt-20 pb-40">
-            <div className="lg:order-last lg:col-start-7 lg:col-span-4">
+          
+            <div className="">
               <img src={AntonioZanottiImg.src} alt="Antônio Zanotti" className="rounded-full" />
             </div>
-            <div className="lg:col-start-2 lg:col-span-4 grid grid-flow-row auto-rows-max gap-7">
+            <div className="">
               <p>
                 Senior Full Stack Developer with more than 15 years of
                 experience. Looking for long-term opportunities to work as
@@ -54,16 +54,16 @@ export default function Home() {
               </p>
               <Code />
             </div>
-          </TzGrid>
+          
         </Section>
-        <Section title="# Projects" className="pt-40">
-          <article className="pt-20">
+        <Section title="# Projects" className="">
+          <article className="">
             <Heading level="h3" title="## Topaz" />
-            <TzGrid columns={10} className="pt-16 pb-14">
-              <div className="flex justify-self-end">
+            
+              <div className="">
                 <TopazBrandSvg />
               </div>
-              <div className="lg:col-span-4">
+              <div className="">
                 <p>
                   UI component library for Vue or React projects. Features:
                   components, color customization, dark and light theme, responsive.
@@ -71,7 +71,7 @@ export default function Home() {
                   for React.
                 </p>
               </div>
-              <div className="lg:col-start-7 lg:col-span-4">
+              <div className="">
                 <p>Inspired In:</p>
                 <ul>
                   <li>
@@ -94,15 +94,14 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-            </TzGrid>
-            <TzGrid columns={10}>
-              <article className="lg:col-start-2 lg:col-span-4">
+            
+              <article className="">
                 <Heading level="h4" title="### Topaz for Vue" />
-                <TzGrid columns={5} className="pt-12 pb-32">
-                  <div className="flex justify-self-end">
+                
+                  <div className="">
                     <VueBrandSvg />
                   </div>
-                  <div className="lg:col-span-4">
+                  <div className="">
                     <p>
                       Technologies: Vue, UnoCSS, heroicons, TypeScript, Vite, Git,
                       npm, storybook...
@@ -137,15 +136,15 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
-                </TzGrid>
+                
               </article>
-              <article  className="lg:col-start-7 lg:col-span-4">
+              <article  className="">
                 <Heading level="h4" title="### Topaz for React" />
-                <TzGrid columns={4} className="pt-12 pb-32">
-                  <div className="flex justify-self-end">
+                
+                  <div className="">
                   <ReactBrandSvg />
                   </div>
-                  <div className="lg:col-span-3">
+                  <div className="">
                     <p>
                       Technologies: React, tailwindcss, heroicons, TypeScript, tsdx,
                       Git, npm, storybook...
@@ -180,14 +179,14 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
-                </TzGrid>
+                
               </article>
-            </TzGrid>
+            
           </article>
           <article>
             <Heading level="h3" title="## MAD Design Group Ecommerces" />
-            <TzGrid columns={10} className="pt-16">
-              <div className="lg:col-start-2 lg:col-span-4 grid grid-flow-row auto-rows-max gap-7">
+            
+              <div className="">
                 <p>
                   For 8 years, I participated in the web development team of MAD
                   Design Group, working as a Full Stack Magento Developer.
@@ -238,7 +237,7 @@ export default function Home() {
                   and leads to Netsuite (ERP).
                 </p>
               </div>
-              <div className="lg:col-start-7 lg:col-span-4 grid grid-flow-row auto-rows-max gap-7">
+              <div className="">
                 <p>
                   In addition to ecommerces for end customers, online stores with
                   restricted access for B2B were developed, with specific features
@@ -263,31 +262,31 @@ export default function Home() {
                   that everyone could develop collaboratively.
                 </p>
               </div>
-            </TzGrid>
+            
           </article>
         </Section>
       </main>
       <footer>
-        <Section title="# Let's work together" className="pt-40">
-          <TzGrid columns={10} className="pt-20 pb-40">
-            <div className="lg:col-start-2 lg:col-span-4">
+        <Section title="# Let's work together" className="">
+          
+            <div className="">
               <Form />
             </div>
-            <div className="lg:col-start-7 lg:col-span-4 lg:pt-8">
+            <div className="">
               <SocialMedia />
-              <img src={AntonioZanotti2Img.src} alt="Antônio Zanotti" className="mt-14 rounded" />
+              <img src={AntonioZanotti2Img.src} alt="Antônio Zanotti" className="rounded" />
             </div>
-          </TzGrid>
-          <TzGrid columns={10}>
-            <p className="lg:col-start-2 lg:col-span-8 text-center">
+          
+          
+            <p className="text-center">
               Made with <TzIcon iconName="HeartIcon" variant="secondary" className="inline" /> by Antônio Zanotti
             </p>
-            <div className="flex justify-self-end">
+            <div className="">
               <TzButton iconName="ArrowUpIcon" variant="secondary" className="animate-bounce" />
             </div>
-          </TzGrid>
+          
         </Section>
       </footer>
-    </TzGrid>
+    </>
   );
 }

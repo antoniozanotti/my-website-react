@@ -8,34 +8,34 @@ export const Form = ({}: FormProps) => {
   return (
     <form
       id="form_lets_work_together"
-      className="grid grid-flow-row auto-rows-max gap-5"
+      className=""
     >
-      <label className="grid grid-flow-row auto-rows-max gap-2 text-primary-2 dark:text-dark-primary-2">
-        <span className="pl-5">Name</span>
+      <label className="text-primary-2 dark:text-dark-primary-2">
+        <span className="">Name</span>
         <input
           type="text"
           name="inp_name"
           id="form_lets_work_together__inp_name"
-          className="px-5 py-3 rounded text-primary dark:text-dark-primary bg-secondary-2 dark:bg-dark-secondary"
+          className="rounded text-primary dark:text-dark-primary bg-secondary-2 dark:bg-dark-secondary"
         />
       </label>
-      <label className="grid grid-flow-row auto-rows-max gap-2 text-primary-2 dark:text-dark-primary-2">
-        <span className="pl-5">Email</span>
+      <label className="text-primary-2 dark:text-dark-primary-2">
+        <span className="">Email</span>
         <input
           type="text"
           name="inp_email"
-          className="px-5 py-3 rounded text-primary dark:text-dark-primary bg-secondary-2 dark:bg-dark-secondary"
+          className="rounded text-primary dark:text-dark-primary bg-secondary-2 dark:bg-dark-secondary"
         />
       </label>
-      <label className="grid grid-flow-row auto-rows-max gap-2 text-primary-2 dark:text-dark-primary-2">
-        <span className="pl-5">Message</span>
+      <label className="text-primary-2 dark:text-dark-primary-2">
+        <span className="">Message</span>
         <textarea
           name="tex_message"
-          className="px-5 py-3 rounded text-primary dark:text-dark-primary bg-secondary-2 dark:bg-dark-secondary"
+          className="rounded text-primary dark:text-dark-primary bg-secondary-2 dark:bg-dark-secondary"
           rows={7}
         ></textarea>
       </label>
-      <div className="flex justify-self-end">
+      <div className="">
         <TzButton
           iconName="ArrowRightIcon"
           variant="accent"
