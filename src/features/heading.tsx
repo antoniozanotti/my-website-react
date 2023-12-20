@@ -18,14 +18,17 @@ export const Heading = ({ level, title, className = '' }: HeadingProps) => {
       break;
     case "h2":
       variant = "accent-1";
+      headingClasses += " mt-[144px]";
       break;
     case "h3":
       size = "medium";
       variant = "accent-2";
+      headingClasses += " mt-[48px]";
       break;
     default:
       size = "small";
       variant = "secondary";
+      headingClasses += " mt-[36px]";
       break;
   }
   return (

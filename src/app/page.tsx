@@ -15,8 +15,8 @@ import AntonioZanotti2Img from '@images/antonio_zanotti_2.jpg';
 
 export default function Home() {
   return (
-    <>
-      <header className="">
+    <div className="p-4 sm:p-8 lg:px-0 ly:px-16 lg:w-[896px] xl:w-[1152px] lg:mx-auto">
+      <header className="h-screen">
         <div className="">
           <TzToggleTheme />
         </div>
@@ -287,6 +287,6 @@ export default function Home() {
           
         </Section>
       </footer>
-    </>
+    </div>
   );
 }

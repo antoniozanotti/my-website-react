@@ -15,10 +15,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  let backgroud = 'bg-dark-2 dark:bg-dark-dark-2';
+  let text = 'text-primary dark:text-dark-primary text-c1 sm:text-c2 lg:text-c4';
   return (
     <html lang="en" className="dark">
       <body
-        className={`${roboto.className} bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c1 sm:text-c2 lg:text-c4`}
+        className={`${roboto.className} ${backgroud} ${text}`}
       >
         {children}
       </body>
