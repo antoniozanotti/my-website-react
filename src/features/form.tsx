@@ -38,10 +38,10 @@ export const Form = ({}: FormProps) => {
       <div className="">
         <TzButton
           iconName="ArrowRightIcon"
+          isIconAfterLabel
           variant="accent"
           label="Submit"
           className=""
-          size="large"
         />
       </div>
     </form>

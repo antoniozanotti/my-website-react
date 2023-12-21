@@ -5,14 +5,18 @@ import { Heading } from "@features/heading";
 
 export const Header = () => {
   return (
-    <header className="h-screen">
-      <TzToggleTheme />
+    <header className="h-screen flex flex-col justify-between">
+      <div className="pt-4 sm:pt-8 lg:pt-16 flex justify-end">
+        <TzToggleTheme />
+      </div>
       <div className="">
         <Heading level="h1" title="Antônio Zanotti" className="" />
-        <Terminal className="" />
-        <SocialMedia className="" />
+        <Terminal className="mt-[38px]" />
       </div>
-      <TzButton iconName="ArrowDownIcon" variant="secondary" className="animate-bounce" />
+      <SocialMedia className="" />
+      <div className="pb-4 sm:pb-8 lg:pb-16 flex place-content-center">
+        <TzButton iconName="ArrowDownIcon" variant="secondary" className="" />
+      </div>
     </header>
   );
 };

@@ -16,7 +16,7 @@ import AntonioZanotti2Img from '@images/antonio_zanotti_2.jpg';
 
 export default function Home() {
   return (
-    <div className="p-4 sm:p-8 lg:px-0 ly:px-16 lg:w-[896px] xl:w-[1152px] lg:mx-auto">
+    <div className="pb-4 sm:pb-8 lg:pb-16 px-4 sm:px-8 lg:px-0 lg:px-16 lg:w-[896px] xl:w-[1152px] lg:mx-auto">
       <Header />
       <main className="">
         <Section title="# About">
