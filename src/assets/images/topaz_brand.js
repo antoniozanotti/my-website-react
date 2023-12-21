@@ -1,6 +1,8 @@
+import {styles} from "@features/styles";
+
 export default function Icon() {
   return (
-    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+    <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" className={styles.iconSize}>
       <title>Topaz Brand</title>
       <path d="M26.9997 1.38013L35.5022 15.6468H18.4971L26.9997 1.38013Z" fill="#0891B2" />
       <path d="M27.0006 54.001L18.4095 16.568L35.5918 16.568L27.0006 54.001Z" fill="#22D3EE" />

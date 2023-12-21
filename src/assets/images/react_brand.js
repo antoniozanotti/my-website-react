@@ -1,6 +1,8 @@
+import {styles} from "@features/styles";
+
 export default function Icon() {
   return (
-    <svg width="53" height="47" viewBox="0 0 53 47" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+    <svg viewBox="0 0 53 47" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" className={styles.iconSize}>
       <title>React Brand</title>
       <g clip-path="url(#clip0_44_66)">
         <path d="M26.4993 28.2083C29.1082 28.2083 31.2232 26.1003 31.2232 23.4999C31.2232 20.8995 29.1082 18.7915 26.4993 18.7915C23.8904 18.7915 21.7754 20.8995 21.7754 23.4999C21.7754 26.1003 23.8904 28.2083 26.4993 28.2083Z" fill="#61DAFB"/>

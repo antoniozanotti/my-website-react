@@ -1,6 +1,7 @@
 "use client";
 import { TzButton, TzIcon, TzToggleTheme, TzPicture } from "topaz-react";
 
+import { Header } from "@features/header";
 import { Code } from "@features/code";
 import { Form } from "@features/form";
 import { Section } from "@features/section";
@@ -16,19 +17,7 @@ import AntonioZanotti2Img from '@images/antonio_zanotti_2.jpg';
 export default function Home() {
   return (
     <div className="p-4 sm:p-8 lg:px-0 ly:px-16 lg:w-[896px] xl:w-[1152px] lg:mx-auto">
-      <header className="h-screen">
-        <div className="">
-          <TzToggleTheme />
-        </div>
-        <div className="">
-          <Heading level="h1" title="Antônio Zanotti" className="" />
-          <Terminal className="" />
-          <SocialMedia className="" />
-        </div>
-        <div className="">
-          <TzButton iconName="ArrowDownIcon" variant="secondary" className="animate-bounce" />
-        </div>
-      </header>
+      <Header />
       <main className="">
         <Section title="# About">
           
@@ -279,7 +268,7 @@ export default function Home() {
           
           
             <p className="text-center">
-              Made with <TzIcon iconName="HeartIcon" variant="secondary" className="inline" /> by Antônio Zanotti
+              Made with <TzIcon iconName="HeartIcon" variant="negative" className="inline" /> by Antônio Zanotti
             </p>
             <div className="">
               <TzButton iconName="ArrowUpIcon" variant="secondary" className="animate-bounce" />

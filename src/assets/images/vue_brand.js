@@ -1,3 +1,5 @@
+import {styles} from "@features/styles";
+
 export default function Icon() {
   return (
     <svg width="54" height="47" viewBox="0 0 54 47" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">

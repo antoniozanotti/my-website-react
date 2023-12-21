@@ -10,14 +10,15 @@ export interface SocialMediaProps {
 export const SocialMedia = ({
   className = ''
 }: SocialMediaProps) => {
-  let socialMediaClasses = className + "";
+  let socialMediaClasses = className + " flex place-items-center gap-[30px]";
+  let aClasses = "hover:underline flex place-items-center gap-[15px]";
   return (
     <div className={socialMediaClasses}>
       <a
         href="https://www.linkedin.com/in/antoniozanotti/"
         title="Linked In"
         target="_blank"
-        className='hover:underline text-primary dark:text-dark-primary'
+        className={aClasses}
       >
         <LinkdedinBrandSvg />
         Linked In
@@ -26,7 +27,7 @@ export const SocialMedia = ({
         href="https://github.com/antoniozanotti"
         title="GitHub"
         target="_blank"
-        className='hover:underline text-primary dark:text-dark-primary'
+        className={aClasses}
       >
         <GithubBrandSvg />
         GitHub
