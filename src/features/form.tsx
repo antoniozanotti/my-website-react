@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactNode } from "react";
-import { TzButton } from "topaz-react";
+import { TzButton, TzInput, TzTextarea } from "topaz-react";
 
 export interface FormProps {}
 
@@ -11,29 +11,25 @@ export const Form = ({}: FormProps) => {
       className="flex flex-col space-y-4"
     >
       <label className="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1">
-        <span className="ml-2">Name</span>
-        <input
+        <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Name</span>
+        <TzInput
           type="text"
-          name="inp_name"
-          id="form_lets_work_together__inp_name"
-          className="rounded text-primary dark:text-dark-primary bg-secondary-2 dark:bg-dark-secondary"
+          className=""
         />
       </label>
       <label className="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1">
-        <span className="ml-2">Email</span>
-        <input
-          type="text"
-          name="inp_email"
-          className="rounded text-primary dark:text-dark-primary bg-secondary-2 dark:bg-dark-secondary"
+        <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Email</span>
+        <TzInput
+          type="email"
+          className=""
         />
       </label>
       <label className="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1">
-        <span className="ml-2">Message</span>
-        <textarea
-          name="tex_message"
-          className="rounded text-primary dark:text-dark-primary bg-secondary-2 dark:bg-dark-secondary"
+        <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Message</span>
+        <TzTextarea
           rows={7}
-        ></textarea>
+          className=""
+        />
       </label>
       <div className="flex place-content-end">
         <TzButton
