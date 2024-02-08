@@ -14,7 +14,6 @@ export const Code = ({
   const colorString = "text-primary-2 dark:text-dark-primary-2";
   return (
     <code>
-      <pre>
         <span className={colorConst}>const</span> <span className={colorIdentifier}>birthday</span> = <span className={colorConst}>new</span> <span className={colorObject}>Date</span>(<span className={colorString}>"1990-04-18"</span>);<br />
 
         <span className={colorConst}>const</span> <span className={colorIdentifier}>location</span> = <span className={colorString}>"Florianópolis, Brazil"</span>;<br />
@@ -26,7 +25,6 @@ export const Code = ({
         <span className={colorConst}>const</span> <span className={colorIdentifier}>secondDegree</span> = <span className={colorString}>"Bachelor in Sociology"</span>;<br />
 
         <span className={colorConst}>const</span> <span className={colorIdentifier}>values</span> = [<span className={colorString}>"ethic"</span>, <span className={colorString}>"love"</span>, <span className={colorString}>"freedom"</span>];
-      </pre>
     </code>
   );
 };

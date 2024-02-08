@@ -1,6 +1,7 @@
 "use client";
 import { TzButton, TzIcon, TzToggleTheme, TzPicture } from "topaz-react";
 
+import {styles} from "@features/styles";
 import { Header } from "@features/header";
 import { Code } from "@features/code";
 import { Form } from "@features/form";
@@ -14,51 +15,54 @@ import VueBrandSvg from '@images/vue_brand';
 import AntonioZanottiImg from '@images/antonio_zanotti.jpg';
 import AntonioZanotti2Img from '@images/antonio_zanotti_2.jpg';
 
+
 export default function Home() {
   return (
     <div className="pb-4 sm:pb-8 lg:pb-16 px-4 sm:px-8 lg:px-0 lg:px-16 lg:w-[896px] xl:w-[1152px] lg:mx-auto">
       <Header />
       <main className="">
         <Section title="# About">
-          
-            <div className="">
-              <img src={AntonioZanottiImg.src} alt="Antônio Zanotti" className="rounded-full" />
+            <div className={styles.gridCols}>
+              <div className="mb-4 sm:order-last">
+                <img src={AntonioZanottiImg.src} alt="Antônio Zanotti" className="rounded sm:rounded-full" />
+              </div>
+              <div className="flex flex-col space-y-4">
+                <p>
+                  Senior Full Stack Developer with more than 15 years of
+                  experience. Looking for long-term opportunities to work as
+                  Frontend Developer.
+                </p>
+                <p>
+                  Comfortable with Vue or React, Next.js or Vite, Storybook,
+                  UnoCSS+Tailwind CSS, TypeScript, GraphQL… I’m open mind to study
+                  and adapt me to your Tech Stack.
+                </p>
+                <p>
+                  Besides work, I love my husband, we’ve been living together for
+                  7 years. I also like to study sociology, do exercises at home,
+                  take a track, go to the beach, hangout with friends,
+                  watercolour...
+                </p>
+                <Code />
+              </div>
             </div>
-            <div className="">
-              <p>
-                Senior Full Stack Developer with more than 15 years of
-                experience. Looking for long-term opportunities to work as
-                Frontend Developer.
-              </p>
-              <p>
-                Comfortable with Vue or React, Next.js or Vite, Storybook,
-                UnoCSS+Tailwind CSS, TypeScript, GraphQL… I’m open mind to study
-                and adapt me to your Tech Stack.
-              </p>
-              <p>
-                Besides work, I love my husband, we’ve been living together for
-                7 years. I also like to study sociology, do exercises at home,
-                take a track, go to the beach, hangout with friends,
-                watercolour...
-              </p>
-              <Code />
-            </div>
-          
         </Section>
         <Section title="# Projects" className="">
           <article className="">
             <Heading level="h3" title="## Topaz" />
-            
-              <div className="">
-                <TopazBrandSvg />
-              </div>
-              <div className="">
-                <p>
-                  UI component library for Vue or React projects. Features:
-                  components, color customization, dark and light theme, responsive.
-                  Topaz is a MIT licensed project. This website was built with Topaz
-                  for React.
-                </p>
+            <div className={`${styles.gridCols}`}>
+              <div className={`${styles.flexCols}`}>
+                <div className="grow-0">
+                  <TopazBrandSvg />
+                </div>
+                <div className="grow">
+                  <p>
+                    UI component library for Vue or React projects. Features:
+                    components, color customization, dark and light theme, responsive.
+                    Topaz is a MIT licensed project. This website was built with Topaz
+                    for React.
+                  </p>
+                </div>
               </div>
               <div className="">
                 <p>Inspired In:</p>
@@ -83,11 +87,12 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-            
+            </div>
+            <div className={styles.gridCols}>
               <article className="">
                 <Heading level="h4" title="### Topaz for Vue" />
-                
-                  <div className="">
+                <div className={`${styles.flexCols} mt-4`}>
+                  <div className="grow-0">
                     <VueBrandSvg />
                   </div>
                   <div className="">
@@ -125,13 +130,13 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
-                
+                </div>
               </article>
               <article  className="">
                 <Heading level="h4" title="### Topaz for React" />
-                
-                  <div className="">
-                  <ReactBrandSvg />
+                <div className={`${styles.flexCols} mt-4`}>
+                  <div className="grow-0">
+                    <ReactBrandSvg />
                   </div>
                   <div className="">
                     <p>
@@ -168,14 +173,14 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
-                
+                </div>
               </article>
-            
+            </div>
           </article>
           <article>
             <Heading level="h3" title="## MAD Design Group Ecommerces" />
-            
-              <div className="">
+            <div className={`${styles.gridCols} mt-4`}>
+              <div className="flex flex-col space-y-4">
                 <p>
                   For 8 years, I participated in the web development team of MAD
                   Design Group, working as a Full Stack Magento Developer.
@@ -226,7 +231,7 @@ export default function Home() {
                   and leads to Netsuite (ERP).
                 </p>
               </div>
-              <div className="">
+              <div className="flex flex-col space-y-4">
                 <p>
                   In addition to ecommerces for end customers, online stores with
                   restricted access for B2B were developed, with specific features
@@ -251,29 +256,27 @@ export default function Home() {
                   that everyone could develop collaboratively.
                 </p>
               </div>
-            
+            </div>
           </article>
         </Section>
       </main>
       <footer>
         <Section title="# Let's work together" className="">
-          
-            <div className="">
+          <div className="lg:grid lg:grid-cols-2 sm:gap-x-8 lg:gap-x-16 mt-4">
+            <div className="pb-12">
               <Form />
             </div>
             <div className="">
-              <SocialMedia />
+              <SocialMedia className="pb-4" />
               <img src={AntonioZanotti2Img.src} alt="Antônio Zanotti" className="rounded" />
             </div>
-          
-          
+            <div className="pt-12  pb-4 flex place-content-center">
+              <TzButton iconName="ArrowUpIcon" variant="secondary" className="" />
+            </div>
             <p className="text-center">
               Made with <TzIcon iconName="HeartIcon" variant="negative" className="inline" /> by Antônio Zanotti
             </p>
-            <div className="">
-              <TzButton iconName="ArrowUpIcon" variant="secondary" className="animate-bounce" />
-            </div>
-          
+          </div>
         </Section>
       </footer>
     </div>
