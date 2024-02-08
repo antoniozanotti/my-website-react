@@ -51,7 +51,7 @@ export default function Home() {
           <article className="">
             <Heading level="h3" title="## Topaz" />
             <div className={`${styles.gridCols}`}>
-              <div className={`${styles.flexCols}`}>
+              <div className={`${styles.flexCols} mt-4`}>
                 <div className="grow-0">
                   <TopazBrandSvg />
                 </div>
@@ -64,7 +64,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="">
+              <div className="mt-4 pl-[46px] sm:pl-[0px]">
                 <p>Inspired In:</p>
                 <ul>
                   <li>
@@ -266,17 +266,17 @@ export default function Home() {
             <div className="pb-12">
               <Form />
             </div>
-            <div className="">
+            <div className="lg:mt-[27px]">
               <SocialMedia className="pb-4" />
               <img src={AntonioZanotti2Img.src} alt="Antônio Zanotti" className="rounded" />
             </div>
-            <div className="pt-12  pb-4 flex place-content-center">
-              <TzButton iconName="ArrowUpIcon" variant="secondary" className="" />
-            </div>
-            <p className="text-center">
-              Made with <TzIcon iconName="HeartIcon" variant="negative" className="inline" /> by Antônio Zanotti
-            </p>
           </div>
+          <div className="pt-12 pb-4 flex place-content-center lg:place-content-end">
+            <TzButton iconName="ArrowUpIcon" variant="secondary" className="" />
+          </div>
+          <p className="text-center lg:mt-[-50px]">
+            Made with <TzIcon iconName="HeartIcon" variant="negative" className="inline" /> by Antônio Zanotti
+          </p>
         </Section>
       </footer>
     </div>
