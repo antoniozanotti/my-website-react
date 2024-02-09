@@ -14,6 +14,7 @@ export const Form = ({}: FormProps) => {
         <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Name</span>
         <TzInput
           type="text"
+          variant="secondary"
           className=""
         />
       </label>
@@ -21,6 +22,7 @@ export const Form = ({}: FormProps) => {
         <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Email</span>
         <TzInput
           type="email"
+          variant="secondary"
           className=""
         />
       </label>
@@ -28,6 +30,7 @@ export const Form = ({}: FormProps) => {
         <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Message</span>
         <TzTextarea
           rows={7}
+          variant="secondary"
           className=""
         />
       </label>
