@@ -68,21 +68,21 @@ export default function Home() {
               </div>
               <div className="mt-4 pl-[46px] sm:pl-[0px]">
                 <p>Inspired In:</p>
-                <ul>
+                <ul className={`${styles.listStyle} mt-4`}>
                   <li>
-                    <a href="" title="" target="_blank">
+                    <a href="https://spectrum.adobe.com/" title="" target="_blank" className={styles.aHover}>
                       Spectrum
                     </a>
                     , Adobe’s design system
                   </li>
                   <li>
-                    <a href="" title="" target="_blank">
+                    <a href="https://github.com/Decathlon/vitamin-web" title="" target="_blank" className={styles.aHover}>
                       Vitamin
                     </a>
                     , Decathlon’s design system
                   </li>
                   <li>
-                    <a href="" title="" target="_blank">
+                    <a href="https://github.com/vuetifyjs/vuetify" title="" target="_blank" className={styles.aHover}>
                       Vuetify
                     </a>
                     , Vue Component Framework
@@ -102,12 +102,13 @@ export default function Home() {
                       Technologies: Vue, UnoCSS, heroicons, TypeScript, Vite,
                       Git, npm, storybook...
                     </p>
-                    <ul>
+                    <ul className={`${styles.listStyle} mt-4`}>
                       <li>
                         <a
                           href="https://topaz-vue.netlify.app/"
                           title=""
                           target="_blank"
+                          className={styles.aHover}
                         >
                           Storybook Documentation
                         </a>
@@ -117,6 +118,7 @@ export default function Home() {
                           href="https://github.com/antoniozanotti/topaz-vue"
                           title=""
                           target="_blank"
+                          className={styles.aHover}
                         >
                           Github Repository
                         </a>
@@ -126,6 +128,7 @@ export default function Home() {
                           href="https://www.npmjs.com/package/topaz-vue"
                           title=""
                           target="_blank"
+                          className={styles.aHover}
                         >
                           NPM Package
                         </a>
@@ -145,12 +148,13 @@ export default function Home() {
                       Technologies: React, tailwindcss, heroicons, TypeScript,
                       tsdx, Git, npm, storybook...
                     </p>
-                    <ul>
+                    <ul className={`${styles.listStyle} mt-4`}>
                       <li>
                         <a
                           href="https://topaz-react.netlify.app/"
                           title=""
                           target="_blank"
+                          className={styles.aHover}
                         >
                           Storybook Documentation
                         </a>
@@ -160,6 +164,7 @@ export default function Home() {
                           href="https://github.com/antoniozanotti/topaz-react"
                           title=""
                           target="_blank"
+                          className={styles.aHover}
                         >
                           Github Repository
                         </a>
@@ -169,6 +174,7 @@ export default function Home() {
                           href="https://www.npmjs.com/package/topaz-react"
                           title=""
                           target="_blank"
+                          className={styles.aHover}
                         >
                           NPM Package
                         </a>
@@ -197,23 +203,24 @@ export default function Home() {
                   Currently the project has 30 ecommerces, 5 brands in 6
                   locations. Below are some of them:
                 </p>
-                <ul>
+                <ul className={`${styles.listStyle} pl-4`}>
                   <li>
                     <a
                       href="https://ecosmartfire.com/"
                       title=""
                       target="_blank"
+                      className={styles.aHover}
                     >
                       EcoSmart Fire (United States)
                     </a>
                   </li>
                   <li>
-                    <a href="https://blindedesign.ca/" title="" target="_blank">
+                    <a href="https://blindedesign.ca/" title="" target="_blank" className={styles.aHover}>
                       Blinde Design (Canada)
                     </a>
                   </li>
                   <li>
-                    <a href="https://e-nrg.com.au/" title="" target="_blank">
+                    <a href="https://e-nrg.com.au/" title="" target="_blank" className={styles.aHover}>
                       e-NRG Bioethanol (Australia)
                     </a>
                   </li>
@@ -222,12 +229,13 @@ export default function Home() {
                       href="https://heatscopeheaters.eu/"
                       title=""
                       target="_blank"
+                      className={styles.aHover}
                     >
                       HEATSCOPE® Heaters (Europe)
                     </a>
                   </li>
                   <li>
-                    <a href="https://mad-gl.com/" title="" target="_blank">
+                    <a href="https://mad-gl.com/" title="" target="_blank" className={styles.aHover}>
                       MAD Design Group (Internacional)
                     </a>
                   </li>
