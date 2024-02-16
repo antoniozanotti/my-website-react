@@ -15,7 +15,18 @@ export const Header = () => {
       </div>
       <SocialMedia className="" />
       <div className="pb-4 sm:pb-8 lg:pb-16 flex place-content-center">
-        <TzButton iconName="ArrowDownIcon" variant="secondary" className="" />
+        <TzButton
+          iconName="ArrowDownIcon"
+          variant="secondary"
+          className=""
+          onClick={() => {
+            window.scroll({
+              top: window.innerHeight,
+              left: 0,
+              behavior: "smooth",
+            });
+          }}
+        />
       </div>
     </header>
   );
