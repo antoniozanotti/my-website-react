@@ -37,9 +37,21 @@ export const Form = ({}: FormProps) => {
       ref={form}
       onSubmit={handleSubmit}
     >
+      <p className="mt-4">
+        I would like to be part of a team whose people respect each other,
+        listen to each other and who work together to achieve clear goals. I
+        would love to work at a company whose product or service has a positive
+        impact on society. Leave a message, thank you in advance for your
+        attention.
+      </p>
       <label className="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1">
         <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Name</span>
-        <TzInput type="text" variant="secondary" name="fromName" ref={fromName} />
+        <TzInput
+          type="text"
+          variant="secondary"
+          name="fromName"
+          ref={fromName}
+        />
       </label>
       <label className="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1">
         <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Email</span>
@@ -51,8 +63,9 @@ export const Form = ({}: FormProps) => {
       </label>
       {status === "success" && (
         <p>
-          Hi {fromNameValue}, I will respond within 24 hours.<br />Thank you for the
-          message sent.
+          Hi {fromNameValue}, I will respond within 24 hours.
+          <br />
+          Thank you for the message sent.
         </p>
       )}
       {status === "error" && (

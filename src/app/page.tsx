@@ -70,19 +70,34 @@ export default function Home() {
                 <p>Inspired In:</p>
                 <ul className={`${styles.listStyle} mt-4`}>
                   <li>
-                    <a href="https://spectrum.adobe.com/" title="" target="_blank" className={styles.aHover}>
+                    <a
+                      href="https://spectrum.adobe.com/"
+                      title=""
+                      target="_blank"
+                      className={styles.aHover}
+                    >
                       Spectrum
                     </a>
                     , Adobe’s design system
                   </li>
                   <li>
-                    <a href="https://github.com/Decathlon/vitamin-web" title="" target="_blank" className={styles.aHover}>
+                    <a
+                      href="https://github.com/Decathlon/vitamin-web"
+                      title=""
+                      target="_blank"
+                      className={styles.aHover}
+                    >
                       Vitamin
                     </a>
                     , Decathlon’s design system
                   </li>
                   <li>
-                    <a href="https://github.com/vuetifyjs/vuetify" title="" target="_blank" className={styles.aHover}>
+                    <a
+                      href="https://github.com/vuetifyjs/vuetify"
+                      title=""
+                      target="_blank"
+                      className={styles.aHover}
+                    >
                       Vuetify
                     </a>
                     , Vue Component Framework
@@ -215,12 +230,22 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a href="https://blindedesign.ca/" title="" target="_blank" className={styles.aHover}>
+                    <a
+                      href="https://blindedesign.ca/"
+                      title=""
+                      target="_blank"
+                      className={styles.aHover}
+                    >
                       Blinde Design (Canada)
                     </a>
                   </li>
                   <li>
-                    <a href="https://e-nrg.com.au/" title="" target="_blank" className={styles.aHover}>
+                    <a
+                      href="https://e-nrg.com.au/"
+                      title=""
+                      target="_blank"
+                      className={styles.aHover}
+                    >
                       e-NRG Bioethanol (Australia)
                     </a>
                   </li>
@@ -235,7 +260,12 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a href="https://mad-gl.com/" title="" target="_blank" className={styles.aHover}>
+                    <a
+                      href="https://mad-gl.com/"
+                      title=""
+                      target="_blank"
+                      className={styles.aHover}
+                    >
                       MAD Design Group (Internacional)
                     </a>
                   </li>
@@ -281,6 +311,7 @@ export default function Home() {
       </main>
       <footer>
         <Section title="# Let's work together" className="">
+          
           <div className="lg:grid lg:grid-cols-2 sm:gap-x-8 lg:gap-x-16 mt-4">
             <div className="pb-12">
               <Form />
