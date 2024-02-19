@@ -1,6 +1,8 @@
 import Section from "@/components/ui/section";
 import Heading from "@/components/ui/heading";
 import Grid from "@/components/ui/grid";
+import Cols from "@/components/ui/cols";
+import List from "@/components/ui/list";
 import { styles } from "@/components/utils/styles";
 import TopazBrandSvg from "@images/topaz_brand";
 import VueBrandSvg from "@images/topaz_brand";
@@ -12,7 +14,7 @@ export default function Projects() {
       <article>
         <Heading level="h3" title="## Topaz" />
         <Grid>
-          <div className={`${styles.flexCols} mt-4`}>
+          <Cols className="mt-4">
             <div className="grow-0">
               <TopazBrandSvg />
             </div>
@@ -24,10 +26,10 @@ export default function Projects() {
                 built with Topaz for React.
               </p>
             </div>
-          </div>
+          </Cols>
           <div className="mt-4 pl-[46px] sm:pl-[0px]">
             <p>Inspired In:</p>
-            <ul className={`${styles.listStyle} mt-4`}>
+            <List className="mt-4">
               <li>
                 <a
                   href="https://spectrum.adobe.com/"
@@ -61,13 +63,13 @@ export default function Projects() {
                 </a>
                 , Vue Component Framework
               </li>
-            </ul>
+            </List>
           </div>
         </Grid>
         <Grid>
           <article>
             <Heading level="h4" title="### Topaz for Vue" />
-            <div className={`${styles.flexCols} mt-4`}>
+            <Cols className="mt-4">
               <div className="grow-0">
                 <VueBrandSvg />
               </div>
@@ -76,7 +78,7 @@ export default function Projects() {
                   Technologies: Vue, UnoCSS, heroicons, TypeScript, Vite, Git,
                   npm, storybook...
                 </p>
-                <ul className={`${styles.listStyle} mt-4`}>
+                <List className="mt-4">
                   <li>
                     <a
                       href="https://topaz-vue.netlify.app/"
@@ -107,13 +109,13 @@ export default function Projects() {
                       NPM Package
                     </a>
                   </li>
-                </ul>
+                </List>
               </div>
-            </div>
+            </Cols>
           </article>
           <article>
             <Heading level="h4" title="### Topaz for React" />
-            <div className={`${styles.flexCols} mt-4`}>
+            <Cols className="mt-4">
               <div className="grow-0">
                 <ReactBrandSvg />
               </div>
@@ -122,7 +124,7 @@ export default function Projects() {
                   Technologies: React, tailwindcss, heroicons, TypeScript, tsdx,
                   Git, npm, storybook...
                 </p>
-                <ul className={`${styles.listStyle} mt-4`}>
+                <List className="mt-4">
                   <li>
                     <a
                       href="https://topaz-react.netlify.app/"
@@ -153,9 +155,9 @@ export default function Projects() {
                       NPM Package
                     </a>
                   </li>
-                </ul>
+                </List>
               </div>
-            </div>
+            </Cols>
           </article>
         </Grid>
       </article>
@@ -176,7 +178,7 @@ export default function Projects() {
               incorporated into the same code. Currently the project has 30
               ecommerces, 5 brands in 6 locations. Below are some of them:
             </p>
-            <ul className={`${styles.listStyle} pl-4`}>
+            <List className="pl-4">
               <li>
                 <a
                   href="https://ecosmartfire.com/"
@@ -227,7 +229,7 @@ export default function Projects() {
                   MAD Design Group (Internacional)
                 </a>
               </li>
-            </ul>
+            </List>
             <p>
               The user experience in ecommerces have always been a relevant
               factor, and therefore, numerous modules have been developed to
