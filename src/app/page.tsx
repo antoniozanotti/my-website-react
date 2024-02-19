@@ -1,13 +1,13 @@
 "use client";
 import { TzButton, TzIcon, TzToggleTheme, TzPicture } from "topaz-react";
 
-import { styles } from "@features/styles";
-import Header from "@features/header";
-import Code from "@features/code";
-import Form from "@features/form";
-import Section from "@features/section";
-import SocialMedia from "@features/social-media";
-import Heading from "@features/heading";
+import { styles } from "@components/styles";
+import Header from "@components/header";
+import Code from "@components/code";
+import Form from "@components/form";
+import Section from "@components/section";
+import SocialMedia from "@components/social-media";
+import Heading from "@components/heading";
 import TopazBrandSvg from "@images/topaz_brand";
 import ReactBrandSvg from "@images/react_brand";
 import VueBrandSvg from "@images/vue_brand";
