@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="pb-4 sm:pb-8 lg:pb-16 px-4 sm:px-8 lg:px-0 lg:px-16 lg:w-[896px] xl:w-[1152px] lg:mx-auto">
       <Header />
-      <main className="">
+      <main>
         <Section title="# About">
           <div className={styles.gridCols}>
             <div className="mb-4 sm:order-last">
@@ -49,8 +49,8 @@ export default function Home() {
             </div>
           </div>
         </Section>
-        <Section title="# Projects" className="">
-          <article className="">
+        <Section title="# Projects">
+          <article>
             <Heading level="h3" title="## Topaz" />
             <div className={`${styles.gridCols}`}>
               <div className={`${styles.flexCols} mt-4`}>
@@ -106,13 +106,13 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.gridCols}>
-              <article className="">
+              <article>
                 <Heading level="h4" title="### Topaz for Vue" />
                 <div className={`${styles.flexCols} mt-4`}>
                   <div className="grow-0">
                     <VueBrandSvg />
                   </div>
-                  <div className="">
+                  <div>
                     <p>
                       Technologies: Vue, UnoCSS, heroicons, TypeScript, Vite,
                       Git, npm, storybook...
@@ -152,13 +152,13 @@ export default function Home() {
                   </div>
                 </div>
               </article>
-              <article className="">
+              <article>
                 <Heading level="h4" title="### Topaz for React" />
                 <div className={`${styles.flexCols} mt-4`}>
                   <div className="grow-0">
                     <ReactBrandSvg />
                   </div>
-                  <div className="">
+                  <div>
                     <p>
                       Technologies: React, tailwindcss, heroicons, TypeScript,
                       tsdx, Git, npm, storybook...
@@ -310,7 +310,7 @@ export default function Home() {
         </Section>
       </main>
       <footer>
-        <Section title="# Let's work together" className="">
+        <Section title="# Let's work together">
           
           <div className="lg:grid lg:grid-cols-2 sm:gap-x-8 lg:gap-x-16 mt-4">
             <div className="pb-12">
@@ -329,7 +329,6 @@ export default function Home() {
             <TzButton
               iconName="ArrowUpIcon"
               variant="secondary"
-              className=""
               onClick={() => {
                 window.scroll({
                   top: 0,

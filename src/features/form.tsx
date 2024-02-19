@@ -77,7 +77,6 @@ export const Form = ({}: FormProps) => {
           isIconAfterLabel
           variant="accent"
           label="Submit"
-          className=""
         />
       </div>
     </form>

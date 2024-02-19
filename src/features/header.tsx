@@ -9,16 +9,15 @@ export const Header = () => {
       <div className="pt-4 sm:pt-8 lg:pt-16 flex justify-end">
         <TzToggleTheme />
       </div>
-      <div className="">
-        <Heading level="h1" title="Antônio Zanotti" className="" />
+      <div>
+        <Heading level="h1" title="Antônio Zanotti" />
         <Terminal className="mt-[38px]" />
       </div>
-      <SocialMedia className="" />
+      <SocialMedia />
       <div className="pb-4 sm:pb-8 lg:pb-16 flex place-content-center">
         <TzButton
           iconName="ArrowDownIcon"
           variant="secondary"
-          className=""
           onClick={() => {
             window.scroll({
               top: window.innerHeight,
