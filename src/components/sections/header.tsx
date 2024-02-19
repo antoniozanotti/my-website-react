@@ -1,7 +1,7 @@
 import { TzButton, TzToggleTheme } from "topaz-react";
-import SocialMedia from "@components/social-media";
-import Terminal from "@components/terminal";
-import Heading from "@components/heading";
+import SocialMedia from "@/components/blocks/social-media";
+import Terminal from "@/components/blocks/terminal";
+import Heading from "@/components/ui/heading";
 
 export default function Header() {
   return (

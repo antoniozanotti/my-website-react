@@ -1,4 +1,4 @@
-import {styles} from "@components/styles";
+import {styles} from "@/components/utils/styles";
 
 export default function Icon() {
   return (

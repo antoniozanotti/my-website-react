@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactNode } from "react";
-import Heading from "@components/heading";
+import Heading from "@/components/ui/heading";
 
 export interface SectionProps {
   title: string;

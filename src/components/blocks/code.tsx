@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Code() {
   const colorConst = "text-accent-2 dark:text-dark-accent-2";
   const colorIdentifier = "text-accent-1 dark:text-dark-accent-1";

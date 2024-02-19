@@ -23,7 +23,6 @@
       "@/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@images/*": ["src/assets/images/*"],
-      "@components/*": ["src/components/*"],
       "topaz-react": ["/node_modules/topaz-react/src/components/*"]
     }
   },
