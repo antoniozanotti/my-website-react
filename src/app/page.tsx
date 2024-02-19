@@ -2,12 +2,12 @@
 import { TzButton, TzIcon, TzToggleTheme, TzPicture } from "topaz-react";
 
 import { styles } from "@features/styles";
-import { Header } from "@features/header";
-import { Code } from "@features/code";
-import { Form } from "@features/form";
-import { Section } from "@features/section";
-import { SocialMedia } from "@features/social-media";
-import { Heading } from "@features/heading";
+import Header from "@features/header";
+import Code from "@features/code";
+import Form from "@features/form";
+import Section from "@features/section";
+import SocialMedia from "@features/social-media";
+import Heading from "@features/heading";
 import TopazBrandSvg from "@images/topaz_brand";
 import ReactBrandSvg from "@images/react_brand";
 import VueBrandSvg from "@images/vue_brand";

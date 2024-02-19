@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactNode } from "react";
-import { Heading } from "@features/heading";
+import Heading from "@features/heading";
 
 export interface SectionProps {
   title: string;
@@ -8,11 +8,15 @@ export interface SectionProps {
   children?: ReactNode;
 }
 
-export const Section = ({ title, children, className="" }: SectionProps) => {
+export default function Section({
+  title,
+  children,
+  className = "",
+}: SectionProps) {
   return (
     <section className={className}>
       <Heading level="h2" title={title} />
       {children}
     </section>
   );
-};
+}

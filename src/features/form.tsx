@@ -2,9 +2,7 @@ import React, { useRef, useState } from "react";
 import { TzButton, TzInput, TzTextarea } from "topaz-react";
 import emailjs from "@emailjs/browser";
 
-export interface FormProps {}
-
-export const Form = ({}: FormProps) => {
+export default function Form() {
   const form = useRef<HTMLFormElement>(null);
   const fromName = useRef<HTMLInputElement>(null);
   const [fromNameValue, setFromNameValue] = useState("");
@@ -81,4 +79,4 @@ export const Form = ({}: FormProps) => {
       </div>
     </form>
   );
-};
+}

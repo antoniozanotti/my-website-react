@@ -1,9 +1,9 @@
 import { TzButton, TzToggleTheme } from "topaz-react";
-import { SocialMedia } from "@features/social-media";
-import { Terminal } from "@features/terminal";
-import { Heading } from "@features/heading";
+import SocialMedia from "@features/social-media";
+import Terminal from "@features/terminal";
+import Heading from "@features/heading";
 
-export const Header = () => {
+export default function Header() {
   return (
     <header className="h-screen flex flex-col justify-between">
       <div className="pt-4 sm:pt-8 lg:pt-16 flex justify-end">
@@ -29,4 +29,4 @@ export const Header = () => {
       </div>
     </header>
   );
-};
+}

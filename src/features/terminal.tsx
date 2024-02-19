@@ -4,7 +4,7 @@ export interface TerminalProps {
   className?: string;
 }
 
-export const Terminal = ({ className = "" }: TerminalProps) => {
+export default function Terminal({ className = "" }: TerminalProps) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const lines = [
     "I'm a Frontend Developer",
@@ -69,57 +69,7 @@ export const Terminal = ({ className = "" }: TerminalProps) => {
     }, 100);
     return () => clearInterval(interval);
   }, [title, classVisibilityCursor]);
-
-  /*const [line, setLine] = useState(lines[0]);
-  const [lineIndex, setLineIndex] = useState(0);
-  const [title, setTitle] = useState("");
-  const [task, setTask] = useState("write");
-  const [timePause, setTimePause] = useState(0);
-  const [classVisibilityCursor, setClassVisibilityCursor] = useState("");
-
-  useEffect(() => {
-    const delayPause = 20;
-    const interval = setInterval(() => {
-      if (task == "pause-so-erase" || task == "pause-so-write") {
-        if (![0, 1, 2, 8, 9, 10, 16, 17, 18].includes(timePause)) {
-          setClassVisibilityCursor("");
-        } else {
-          setClassVisibilityCursor("invisible");
-        }
-        if (timePause < delayPause) {
-          setTimePause(timePause + 1);
-        } else {
-          setClassVisibilityCursor("");
-          setTimePause(0);
-          if (task == "pause-so-erase") {
-            setTask("erase");
-          } else {
-            if (lineIndex == lines.length - 1) {
-              setLineIndex(0);
-            } else {
-              setLineIndex(lineIndex + 1);
-            }
-            setLine(lines[lineIndex]);
-            setTask("write");
-          }
-        }
-      } else if (task == "write") {
-        if (title.length == line.length) {
-          setTask("pause-so-erase");
-        } else {
-          setTitle(line.substring(0, title.length + 1));
-        }
-      } else {
-        if (title.length == 0) {
-          setTask("pause-so-write");
-        } else {
-          setTitle(line.substring(0, title.length - 1));
-        }
-      }
-    }, 100);
-
-    return () => clearInterval(interval);
-  }, [line, lineIndex, lines, title, task, timePause, classVisibilityCursor]);*/
+  
   return (
     <p
       className={`text-c2 sm:text-c3 lg:text-c5 flex items-center leading-3 lg:leading-5 ${className}`}
@@ -130,4 +80,4 @@ export const Terminal = ({ className = "" }: TerminalProps) => {
       ></span>
     </p>
   );
-};
+}

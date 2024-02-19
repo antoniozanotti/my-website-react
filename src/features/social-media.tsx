@@ -1,15 +1,12 @@
-import React from 'react';
-import { ReactNode } from 'react';
-import LinkdedinBrandSvg from '@images/linked_in_brand';
-import GithubBrandSvg from '@images/github_brand';
+import React from "react";
+import LinkdedinBrandSvg from "@images/linked_in_brand";
+import GithubBrandSvg from "@images/github_brand";
 
 export interface SocialMediaProps {
   className?: string;
 }
 
-export const SocialMedia = ({
-  className = ''
-}: SocialMediaProps) => {
+export default function SocialMedia({ className = "" }: SocialMediaProps) {
   let socialMediaClasses = className + " flex place-items-center gap-[30px]";
   let aClasses = "hover:underline flex place-items-center gap-[15px]";
   return (
@@ -34,4 +31,4 @@ export const SocialMedia = ({
       </a>
     </div>
   );
-};
+}
