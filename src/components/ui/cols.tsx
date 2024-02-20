@@ -1,17 +1,13 @@
 import { ReactNode } from "react";
 
-export interface ColsProps {
-  className?: string;
+export interface ColsProps extends React.ComponentProps<"div"> {
   children?: ReactNode;
 }
 
-export default function Cols({
-  children,
-  className = ""
-}: ColsProps) {
-  return (
-    <div className={`flex gap-x-4 ${className}`}>
-      {children}
-    </div>
-  );
+export default function Cols({ children, ...props }: ColsProps) {
+  let divClasses = "flex gap-x-4";
+  props.className = props.className
+    ? divClasses + " " + props.className
+    : divClasses;
+  return <div {...props}>{children}</div>;
 }

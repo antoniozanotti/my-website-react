@@ -1,15 +1,17 @@
+import React from "react";
 import LinkdedinBrandSvg from "@images/linked_in_brand";
 import GithubBrandSvg from "@images/github_brand";
 
-export interface SocialMediaProps {
-  className?: string;
-}
+export interface SocialMediaProps extends React.ComponentProps<"div"> {}
 
-export default function SocialMedia({ className = "" }: SocialMediaProps) {
-  let socialMediaClasses = className + " flex place-items-center gap-[30px]";
+export default function SocialMedia({ ...props }: SocialMediaProps) {
+  let divClasses = "flex place-items-center gap-[30px]";
+  props.className = props.className
+    ? divClasses + " " + props.className
+    : divClasses;
   let aClasses = "hover:underline flex place-items-center gap-[15px]";
   return (
-    <div className={socialMediaClasses}>
+    <div {...props}>
       <a
         href="https://www.linkedin.com/in/antoniozanotti/"
         title="Linked In"

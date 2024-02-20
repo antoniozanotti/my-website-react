@@ -2,19 +2,18 @@ import React from "react";
 import { ReactNode } from "react";
 import Heading from "@/components/ui/heading";
 
-export interface SectionProps {
+export interface SectionProps extends React.ComponentProps<"section"> {
   title: string;
-  className?: string;
   children?: ReactNode;
 }
 
 export default function Section({
   title,
   children,
-  className = "",
+  ...props
 }: SectionProps) {
   return (
-    <section className={className}>
+    <section {...props}>
       <Heading level="h2" title={title} />
       {children}
     </section>
