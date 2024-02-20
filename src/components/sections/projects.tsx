@@ -5,8 +5,8 @@ import Cols from "@/components/ui/cols";
 import List from "@/components/ui/list";
 import { styles } from "@/components/utils/styles";
 import TopazBrandSvg from "@images/topaz_brand";
-import VueBrandSvg from "@images/topaz_brand";
-import ReactBrandSvg from "@images/topaz_brand";
+import VueBrandSvg from "@images/vue_brand";
+import ReactBrandSvg from "@images/react_brand";
 
 export default function Projects() {
   return (
