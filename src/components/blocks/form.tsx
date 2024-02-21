@@ -48,16 +48,17 @@ export default function Form() {
           type="text"
           variant="secondary"
           name="fromName"
+          required
           ref={fromName}
         />
       </label>
       <label className="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1">
         <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Email</span>
-        <TzInput type="email" variant="secondary" name="fromEmail" />
+        <TzInput type="email" variant="secondary" name="fromEmail" required />
       </label>
       <label className="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1">
         <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Message</span>
-        <TzTextarea rows={7} variant="secondary" name="message" />
+        <TzTextarea rows={7} variant="secondary" name="message" required />
       </label>
       {status === "success" && (
         <p>
