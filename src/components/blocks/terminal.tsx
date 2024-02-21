@@ -6,15 +6,9 @@ export interface TerminalProps extends React.ComponentProps<"p"> {}
 export default function Terminal({ ...props }: TerminalProps) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const lines = [
-    "I'm a Frontend Developer",
-    "I'm a Full Stack Developer",
-    "Are you still here? Scroll the page, my friend!",
-    "I'm a Software Engineer",
-    "I'm a Programmer",
-    "Why are there so many positions?",
-    "I'm a Web Developer",
-    "I'm a Jamstack Developer",
-    "I'm a… Does it matter?",
+    "Hello, I'm a Mid-level Frontend Developer",
+    "I was a Full Stack Developer",
+    "Are you still here? Scroll the page, my friend!"
   ];
   let line = useRef(lines[0]);
   let lineIndex = useRef(0);
@@ -24,13 +18,13 @@ export default function Terminal({ ...props }: TerminalProps) {
   const [classVisibilityCursor, setClassVisibilityCursor] = useState("");
 
   useEffect(() => {
-    const delayPause = 20;
+    const delayPause = 14;
     const interval = setInterval(() => {
       if (
         task.current == "pause-so-erase" ||
         task.current == "pause-so-write"
       ) {
-        if (![0, 1, 2, 8, 9, 10, 16, 17, 18].includes(timePause.current)) {
+        if (![0,1,2,3,4,10,11,12,13,14].includes(timePause.current)) {
           setClassVisibilityCursor("");
         } else {
           setClassVisibilityCursor("invisible");
@@ -65,7 +59,7 @@ export default function Terminal({ ...props }: TerminalProps) {
           setTitle(line.current.substring(0, title.length - 1));
         }
       }
-    }, 100);
+    }, 60);
     return () => clearInterval(interval);
   }, [title, classVisibilityCursor]);
 
