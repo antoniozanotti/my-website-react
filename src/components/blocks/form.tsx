@@ -37,9 +37,7 @@ export default function Form() {
     >
       <p className="mt-4">
         I would like to be part of a team whose people respect each other,
-        listen to each other and who work together to achieve clear goals. I
-        would love to work at a company whose product or service has a positive
-        impact on society. Leave a message, thank you in advance for your
+        listen to each other and who work together to achieve clear goals. Leave a message, thank you in advance for your
         attention.
       </p>
       <label className="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1">

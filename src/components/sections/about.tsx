@@ -25,9 +25,12 @@ export default function About() {
             adapt me to your Tech Stack.
           </p>
           <p>
+            I'm friendly coworker, easy going, observant, curious and I like to help and listen. My place is between backend developers and designers.
+          </p>
+          <p>
             Besides work, I love my husband, we’ve been living together for 7
             years. I also like to study sociology, do exercises at home, take a
-            track, go to the beach, hangout with friends, watercolour...
+            track, go to the beach, hangout with friends, watercolour, arduino...
           </p>
           <Code />
         </div>
