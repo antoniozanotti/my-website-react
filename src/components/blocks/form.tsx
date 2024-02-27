@@ -14,7 +14,7 @@ export default function Form() {
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     setStatus("submitting");
-    const recaptchaValue = recaptchaRef.current.getValue();
+    const recaptchaValue = recaptchaRef.current?.getValue();
     this.props.onSubmit(recaptchaValue);
 
     setFromNameValue(fromName.current?.value ?? "");
