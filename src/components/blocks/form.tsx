@@ -7,16 +7,20 @@ export default function Form() {
   const form = useRef<HTMLFormElement>(null);
   const fromName = useRef<HTMLInputElement>(null);
   const [fromNameValue, setFromNameValue] = useState("");
+  const [passedRecaptcha, setPassedRecaptcha] = useState(false);
   const [status, setStatus] = useState("typing");
-  //const recaptchaRef = React.createRef();
   const recaptchaRef = useRef<ReCAPTCHA>(null);
+
+  const onChangeRecaptcha = () => {
+    setPassedRecaptcha(true);
+  };
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
+    if(!passedRecaptcha){
+      return false;
+    }
     setStatus("submitting");
-    //const recaptchaValue = recaptchaRef.current?.getValue();
-    //recaptchaRef.current.v.props.onSubmit(recaptchaValue);
-
     setFromNameValue(fromName.current?.value ?? "");
     emailjs
       .sendForm("service_7vfby3r", "template_a9dy2ok", form.current ?? "", {
@@ -66,6 +70,7 @@ export default function Form() {
       <ReCAPTCHA
         ref={recaptchaRef}
         sitekey="6LdXUoIpAAAAABMIeNv1tu2fa_ssuP8qYGKkLGBU"
+        onChange={onChangeRecaptcha}
       />
       {status === "success" && (
         <p>
