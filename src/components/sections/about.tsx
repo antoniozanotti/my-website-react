@@ -1,18 +1,22 @@
 import Section from "@/components/ui/section";
 import Grid from "@/components/ui/grid";
 import Code from "@/components/blocks/code";
-import AntonioZanottiImg from "@images/antonio_zanotti.jpg"
+import ImgProfileXl from "@images/antonio-zanotti-profile-xl.jpg"
+import ImgProfileLg from "@images/antonio-zanotti-profile-lg.jpg"
+import ImgProfileSm from "@images/antonio-zanotti-profile-sm.jpg"
+import ImgProfileDefault from "@images/antonio-zanotti-profile-default.jpg"
 
 export default function About() {
   return (
     <Section title="# About">
       <Grid>
-        <div className="mb-4 sm:order-last">
-          <img
-            src={AntonioZanottiImg.src}
-            alt="Antônio Zanotti"
-            className="rounded sm:rounded-full"
-          />
+        <div className="mb-4 sm:order-last text-center">
+          <picture className="rounded sm:rounded-full sm:aspect-square inline-block overflow-hidden">
+            <source media="(min-width: 1280px)" srcset={ImgProfileXl.src} />
+            <source media="(min-width: 1024px)" srcset={ImgProfileLg.src} />
+            <source media="(min-width: 640px)" srcset={ImgProfileSm.src} />
+            <img src={ImgProfileDefault.src} alt="Antônio Zanotti's profile photo" />
+          </picture>
         </div>
         <div className="flex flex-col space-y-4">
           <p>

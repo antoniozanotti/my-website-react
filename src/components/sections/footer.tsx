@@ -2,7 +2,11 @@ import { TzButton, TzIcon } from "topaz-react";
 import Section from "@/components/ui/section";
 import Form from "@/components/blocks/form";
 import SocialMedia from "@/components/blocks/social-media";
-import AntonioZanotti2Img from "@images/antonio_zanotti_2.jpg"
+import ImgLookingUpXl from "@images/antonio-zanotti-looking-up-xl.jpg"
+import ImgLookingUpLg from "@images/antonio-zanotti-looking-up-lg.jpg"
+import ImgLookingUpMd from "@images/antonio-zanotti-looking-up-md.jpg"
+import ImgLookingUpSm from "@images/antonio-zanotti-looking-up-sm.jpg"
+import ImgLookingUpDefault from "@images/antonio-zanotti-looking-up-default.jpg"
 
 export default function Footer() {
   return (
@@ -14,11 +18,13 @@ export default function Footer() {
           </div>
           <div className="lg:mt-[27px]">
             <SocialMedia className="pb-4" />
-            <img
-              src={AntonioZanotti2Img.src}
-              alt="Antônio Zanotti"
-              className="rounded"
-            />
+            <picture className="rounded block overflow-hidden">
+              <source media="(min-width: 1280px)" srcset={ImgLookingUpXl.src} />
+              <source media="(min-width: 1024px)" srcset={ImgLookingUpLg.src} />
+              <source media="(min-width: 768px)" srcset={ImgLookingUpMd.src} />
+              <source media="(min-width: 640px)" srcset={ImgLookingUpSm.src} />
+              <img src={ImgLookingUpDefault.src} alt="Antônio Zanotti looking up" />
+            </picture>
           </div>
         </div>
         <div className="pt-12 pb-4 flex place-content-center lg:place-content-end">
