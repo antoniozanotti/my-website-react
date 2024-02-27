@@ -12,9 +12,9 @@ export default function About() {
       <Grid>
         <div className="mb-4 sm:order-last text-center">
           <picture className="rounded sm:rounded-full sm:aspect-square inline-block overflow-hidden">
-            <source media="(min-width: 1280px)" srcset={ImgProfileXl.src} />
-            <source media="(min-width: 1024px)" srcset={ImgProfileLg.src} />
-            <source media="(min-width: 640px)" srcset={ImgProfileSm.src} />
+            <source media="(min-width: 1280px)" srcSet={ImgProfileXl.src} />
+            <source media="(min-width: 1024px)" srcSet={ImgProfileLg.src} />
+            <source media="(min-width: 640px)" srcSet={ImgProfileSm.src} />
             <img src={ImgProfileDefault.src} alt="Antônio Zanotti's profile photo" />
           </picture>
         </div>
@@ -29,7 +29,7 @@ export default function About() {
             adapt me to your Tech Stack.
           </p>
           <p>
-            I'm friendly coworker, easy going, observant, curious and I like to help and listen. My place is between backend developers and designers.
+            I’m friendly coworker, easy going, observant, curious and I like to help and listen. My place is between backend developers and designers.
           </p>
           <p>
             Besides work, I love my husband, we’ve been living together for 7

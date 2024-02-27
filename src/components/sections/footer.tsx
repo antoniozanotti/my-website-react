@@ -19,10 +19,10 @@ export default function Footer() {
           <div className="lg:mt-[27px]">
             <SocialMedia className="pb-4" />
             <picture className="rounded block overflow-hidden">
-              <source media="(min-width: 1280px)" srcset={ImgLookingUpXl.src} />
-              <source media="(min-width: 1024px)" srcset={ImgLookingUpLg.src} />
-              <source media="(min-width: 768px)" srcset={ImgLookingUpMd.src} />
-              <source media="(min-width: 640px)" srcset={ImgLookingUpSm.src} />
+              <source media="(min-width: 1280px)" srcSet={ImgLookingUpXl.src} />
+              <source media="(min-width: 1024px)" srcSet={ImgLookingUpLg.src} />
+              <source media="(min-width: 768px)" srcSet={ImgLookingUpMd.src} />
+              <source media="(min-width: 640px)" srcSet={ImgLookingUpSm.src} />
               <img src={ImgLookingUpDefault.src} alt="Antônio Zanotti looking up" />
             </picture>
           </div>
