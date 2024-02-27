@@ -19,9 +19,6 @@ export default function RootLayout({
   let text = 'text-primary dark:text-dark-primary text-c1 sm:text-c2 lg:text-c4';
   return (
     <html lang="en" className="dark">
-      <head>
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-      </head>
       <body
         className={`${roboto.className} ${backgroud} ${text}`}
       >

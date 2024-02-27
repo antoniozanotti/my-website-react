@@ -1,24 +1,29 @@
 import React, { useRef, useState } from "react";
 import { TzButton, TzInput, TzTextarea } from "topaz-react";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Form() {
   const form = useRef<HTMLFormElement>(null);
   const fromName = useRef<HTMLInputElement>(null);
   const [fromNameValue, setFromNameValue] = useState("");
   const [status, setStatus] = useState("typing");
+  //const recaptchaRef = React.createRef();
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     setStatus("submitting");
+    const recaptchaValue = recaptchaRef.current.getValue();
+    this.props.onSubmit(recaptchaValue);
 
+    setFromNameValue(fromName.current?.value ?? "");
     emailjs
       .sendForm("service_7vfby3r", "template_a9dy2ok", form.current ?? "", {
         publicKey: "VLh3o8U_wS41PEp8F",
       })
       .then(
         () => {
-          setFromNameValue(fromName.current?.value ?? "");
           setStatus("success");
           form.current?.reset();
         },
@@ -58,7 +63,10 @@ export default function Form() {
         <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Message</span>
         <TzTextarea rows={7} variant="secondary" name="message" required />
       </label>
-      <div className="g-recaptcha" data-sitekey="6LdXUoIpAAAAABMIeNv1tu2fa_ssuP8qYGKkLGBU"></div>
+      <ReCAPTCHA
+        ref={recaptchaRef}
+        sitekey="6LdXUoIpAAAAABMIeNv1tu2fa_ssuP8qYGKkLGBU"
+      />
       {status === "success" && (
         <p>
           Hi {fromNameValue}, I will respond within 24 hours.
