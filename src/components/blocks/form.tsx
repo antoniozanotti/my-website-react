@@ -58,6 +58,7 @@ export default function Form() {
         <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Message</span>
         <TzTextarea rows={7} variant="secondary" name="message" required />
       </label>
+      <div className="g-recaptcha" data-sitekey="6LdXUoIpAAAAABMIeNv1tu2fa_ssuP8qYGKkLGBU"></div>
       {status === "success" && (
         <p>
           Hi {fromNameValue}, I will respond within 24 hours.
