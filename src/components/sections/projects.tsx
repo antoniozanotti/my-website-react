@@ -27,7 +27,7 @@ export default function Projects() {
               </p>
             </div>
           </Cols>
-          <div className="mt-4 pl-[46px] sm:pl-[0px]">
+          <div className="mt-4 pl-[52px] sm:pl-[0px]">
             <p>Inspired In:</p>
             <List className="mt-4">
               <li>

@@ -4,12 +4,14 @@ import { TzHeading } from "topaz-react";
 export interface HeadingProps {
   level: "h1" | "h2" | "h3" | "h4";
   title: string;
+  anchor?: string;
   className?: string;
 }
 
 export default function Heading({
   level,
   title,
+  anchor = "",
   className = "",
 }: HeadingProps) {
   let size: any = "";
@@ -41,6 +43,7 @@ export default function Heading({
       size={size}
       variant={variant}
       className={headingClasses}
+      id={anchor}
     >
       {title}
     </TzHeading>

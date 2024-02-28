@@ -8,7 +8,7 @@ import ImgProfileDefault from "@images/antonio-zanotti-profile-default.jpg"
 
 export default function About() {
   return (
-    <Section title="# About">
+    <Section title="# About" anchor="about">
       <Grid>
         <div className="mb-4 sm:order-last text-center">
           <picture className="rounded sm:rounded-full sm:aspect-square inline-block overflow-hidden">

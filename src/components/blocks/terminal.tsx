@@ -6,9 +6,10 @@ export interface TerminalProps extends React.ComponentProps<"p"> {}
 export default function Terminal({ ...props }: TerminalProps) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const lines = [
-    "Hello, I'm a Mid-level Frontend Developer",
+    "Hello, I'm a Frontend Developer",
     "I was a Full Stack Developer",
-    "Are you still here? Scroll the page, my friend!"
+    "Are you still here?",
+    "Scroll the page, my friend!"
   ];
   let line = useRef(lines[0]);
   let lineIndex = useRef(0);
@@ -63,7 +64,7 @@ export default function Terminal({ ...props }: TerminalProps) {
     return () => clearInterval(interval);
   }, [title, classVisibilityCursor]);
 
-  let pClasses = "text-c2 sm:text-c3 lg:text-c5 flex items-center leading-3 lg:leading-5";
+  let pClasses = "text-c4 sm:text-c3 lg:text-c5 flex items-center leading-3 lg:leading-5";
   props.className = props.className
     ? pClasses + " " + props.className
     : pClasses;
@@ -72,7 +73,7 @@ export default function Terminal({ ...props }: TerminalProps) {
     <p {...props}>
       {title}
       <span
-        className={`w-1.5 sm:w-2 lg:w-2.5 h-3 sm:h-4 lg:h-5 bg-primary dark:bg-dark-primary inline-block ml-1 ${classVisibilityCursor}`}
+        className={`w-2 lg:w-2.5 h-4 sm:h-4 lg:h-5 bg-primary dark:bg-dark-primary inline-block ml-1 ${classVisibilityCursor}`}
       ></span>
     </p>
   );
