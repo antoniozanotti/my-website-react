@@ -14,17 +14,22 @@ export default function Footer() {
       <Section title="Let's work together">
         <div className="lg:grid lg:grid-cols-2 sm:gap-x-8 lg:gap-x-16 mt-4">
           <div className="pb-12">
-            <Form />
-          </div>
-          <div className="lg:mt-[27px]">
-            <SocialMedia className="pb-4" />
-            <picture className="rounded block overflow-hidden">
+            <p>
+              I would like to be part of a team whose people respect each other,
+              listen to each other and who work together to achieve clear goals. Leave a message, thank you in advance for your
+              attention.
+            </p>
+            <picture className="rounded block overflow-hidden mt-4">
               <source media="(min-width: 1280px)" srcSet={ImgLookingUpXl.src} />
               <source media="(min-width: 1024px)" srcSet={ImgLookingUpLg.src} />
               <source media="(min-width: 768px)" srcSet={ImgLookingUpMd.src} />
               <source media="(min-width: 640px)" srcSet={ImgLookingUpSm.src} />
               <img src={ImgLookingUpDefault.src} alt="Antônio Zanotti looking up" />
             </picture>
+            <SocialMedia className="pt-4" />
+          </div>
+          <div>
+            <Form />
           </div>
         </div>
         <div className="pt-12 pb-4 flex place-content-center lg:place-content-end">
@@ -40,7 +45,7 @@ export default function Footer() {
             }}
           />
         </div>
-        <p className="text-center lg:mt-[-50px]">
+        <p className="text-center lg:text-left lg:mt-[-50px]">
           Made with{" "}
           <TzIcon iconName="HeartIcon" variant="negative" className="inline" />{" "}
           by Antônio Zanotti

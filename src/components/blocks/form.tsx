@@ -44,11 +44,6 @@ export default function Form() {
       ref={form}
       onSubmit={handleSubmit}
     >
-      <p className="mt-4">
-        I would like to be part of a team whose people respect each other,
-        listen to each other and who work together to achieve clear goals. Leave a message, thank you in advance for your
-        attention.
-      </p>
       <label className="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1">
         <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Name</span>
         <TzInput
