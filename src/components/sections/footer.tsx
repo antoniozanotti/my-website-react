@@ -11,7 +11,7 @@ import ImgLookingUpDefault from "@images/antonio-zanotti-looking-up-default.jpg"
 export default function Footer() {
   return (
     <footer>
-      <Section title="# Let's work together">
+      <Section title="Let's work together">
         <div className="lg:grid lg:grid-cols-2 sm:gap-x-8 lg:gap-x-16 mt-4">
           <div className="pb-12">
             <Form />

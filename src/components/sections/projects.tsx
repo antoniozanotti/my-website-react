@@ -10,9 +10,9 @@ import ReactBrandSvg from "@images/react_brand";
 
 export default function Projects() {
   return (
-    <Section title="# Projects">
+    <Section title="Projects">
       <article>
-        <Heading level="h3" title="## Topaz" />
+        <Heading level="h3" title="Topaz" />
         <Grid>
           <Cols className="mt-4">
             <div className="grow-0">
@@ -68,7 +68,7 @@ export default function Projects() {
         </Grid>
         <Grid>
           <article>
-            <Heading level="h4" title="### Topaz for Vue" />
+            <Heading level="h4" title="Topaz for Vue" />
             <Cols className="mt-4">
               <div className="grow-0">
                 <VueBrandSvg />
@@ -114,7 +114,7 @@ export default function Projects() {
             </Cols>
           </article>
           <article>
-            <Heading level="h4" title="### Topaz for React" />
+            <Heading level="h4" title="Topaz for React" />
             <Cols className="mt-4">
               <div className="grow-0">
                 <ReactBrandSvg />
@@ -162,7 +162,7 @@ export default function Projects() {
         </Grid>
       </article>
       <article>
-        <Heading level="h3" title="## MAD Design Group Ecommerces" />
+        <Heading level="h3" title="MAD Design Group Ecommerces" />
         <Grid className="mt-4">
           <div className="flex flex-col space-y-4">
             <p>

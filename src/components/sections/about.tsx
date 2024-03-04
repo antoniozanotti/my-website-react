@@ -4,7 +4,7 @@ import Code from "@/components/blocks/code";
 
 export default function About() {
   return (
-    <Section title="# About" anchor="about">
+    <Section title="About" anchor="about">
       <Grid>
         <div className="flex flex-col space-y-4">
           <p>
