@@ -68,7 +68,7 @@ export default function Projects() {
         </Grid>
         <Grid>
           <article>
-            <Heading level="h4" title="Topaz for Vue" />
+            <Heading level="h4" title="Vue" />
             <Cols className="mt-4">
               <div className="grow-0">
                 <VueBrandSvg />
@@ -114,7 +114,7 @@ export default function Projects() {
             </Cols>
           </article>
           <article>
-            <Heading level="h4" title="Topaz for React" />
+            <Heading level="h4" title="React" />
             <Cols className="mt-4">
               <div className="grow-0">
                 <ReactBrandSvg />
