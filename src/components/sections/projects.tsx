@@ -12,21 +12,21 @@ export default function Projects() {
   return (
     <Section title="Projects">
       <article>
-        <Heading level="h3" title="Topaz" />
+        <Cols>
+          <div className="grow-0 self-end pb-2">
+            <TopazBrandSvg />
+          </div>
+          <div className="grow">
+            <Heading level="h3" title="Topaz" />
+          </div>
+        </Cols>
         <Grid>
-          <Cols className="mt-4">
-            <div className="grow-0">
-              <TopazBrandSvg />
-            </div>
-            <div className="grow">
-              <p>
-                UI component library for Vue or React projects. Features:
-                components, color customization, dark and light theme,
-                responsive. Topaz is a MIT licensed project. This website was
-                built with Topaz for React.
-              </p>
-            </div>
-          </Cols>
+          <p className="mt-4">
+            UI component library for Vue or React projects. Features:
+            components, color customization, dark and light theme,
+            responsive. Topaz is a MIT licensed project. This website was
+            built with Topaz for React.
+          </p>
           <div className="mt-4 pl-[52px] sm:pl-[0px]">
             <p>Inspired In:</p>
             <List className="mt-4">
@@ -68,96 +68,96 @@ export default function Projects() {
         </Grid>
         <Grid>
           <article>
-            <Heading level="h4" title="Vue" />
-            <Cols className="mt-4">
-              <div className="grow-0">
+            <Cols>
+              <div className="grow-0 self-end">
                 <VueBrandSvg />
               </div>
-              <div>
-                <p>
-                  Technologies: Vue, UnoCSS, heroicons, TypeScript, Vite, Git,
-                  npm, storybook...
-                </p>
-                <List className="mt-4">
-                  <li>
-                    <a
-                      href="https://topaz-vue.netlify.app/"
-                      title=""
-                      target="_blank"
-                      className={styles.aHover}
-                    >
-                      Storybook Documentation
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/antoniozanotti/topaz-vue"
-                      title=""
-                      target="_blank"
-                      className={styles.aHover}
-                    >
-                      Github Repository
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.npmjs.com/package/topaz-vue"
-                      title=""
-                      target="_blank"
-                      className={styles.aHover}
-                    >
-                      NPM Package
-                    </a>
-                  </li>
-                </List>
+              <div className="grow">
+                <Heading level="h4" title="Vue" />
               </div>
             </Cols>
+            <p className="mt-4">
+              Technologies: Vue, UnoCSS, heroicons, TypeScript, Vite, Git,
+              npm, storybook...
+            </p>
+            <List className="mt-4">
+              <li>
+                <a
+                  href="https://topaz-vue.netlify.app/"
+                  title=""
+                  target="_blank"
+                  className={styles.aHover}
+                >
+                  Storybook Documentation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/antoniozanotti/topaz-vue"
+                  title=""
+                  target="_blank"
+                  className={styles.aHover}
+                >
+                  Github Repository
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.npmjs.com/package/topaz-vue"
+                  title=""
+                  target="_blank"
+                  className={styles.aHover}
+                >
+                  NPM Package
+                </a>
+              </li>
+            </List>
           </article>
           <article>
-            <Heading level="h4" title="React" />
-            <Cols className="mt-4">
-              <div className="grow-0">
+            <Cols>
+              <div className="grow-0 self-end">
                 <ReactBrandSvg />
               </div>
-              <div>
-                <p>
-                  Technologies: React, tailwindcss, heroicons, TypeScript, tsdx,
-                  Git, npm, storybook...
-                </p>
-                <List className="mt-4">
-                  <li>
-                    <a
-                      href="https://topaz-react.netlify.app/"
-                      title=""
-                      target="_blank"
-                      className={styles.aHover}
-                    >
-                      Storybook Documentation
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/antoniozanotti/topaz-react"
-                      title=""
-                      target="_blank"
-                      className={styles.aHover}
-                    >
-                      Github Repository
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.npmjs.com/package/topaz-react"
-                      title=""
-                      target="_blank"
-                      className={styles.aHover}
-                    >
-                      NPM Package
-                    </a>
-                  </li>
-                </List>
+              <div className="grow">
+                <Heading level="h4" title="React" />
               </div>
             </Cols>
+            <p className="mt-4">
+              Technologies: React, tailwindcss, heroicons, TypeScript, tsdx,
+              Git, npm, storybook...
+            </p>
+            <List className="mt-4">
+              <li>
+                <a
+                  href="https://topaz-react.netlify.app/"
+                  title=""
+                  target="_blank"
+                  className={styles.aHover}
+                >
+                  Storybook Documentation
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/antoniozanotti/topaz-react"
+                  title=""
+                  target="_blank"
+                  className={styles.aHover}
+                >
+                  Github Repository
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.npmjs.com/package/topaz-react"
+                  title=""
+                  target="_blank"
+                  className={styles.aHover}
+                >
+                  NPM Package
+                </a>
+              </li>
+            </List>
           </article>
         </Grid>
       </article>
