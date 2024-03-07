@@ -78,7 +78,7 @@ export default function Projects() {
             </Cols>
             <p className="mt-4">
               Technologies: Vue, UnoCSS, heroicons, TypeScript, Vite, Git,
-              npm, storybook...
+              npm, storybook, Vitest...
             </p>
             <List className="mt-4">
               <li>
@@ -124,7 +124,7 @@ export default function Projects() {
             </Cols>
             <p className="mt-4">
               Technologies: React, tailwindcss, heroicons, TypeScript, tsdx,
-              Git, npm, storybook...
+              Git, npm, storybook, Jest...
             </p>
             <List className="mt-4">
               <li>

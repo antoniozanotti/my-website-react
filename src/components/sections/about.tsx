@@ -13,7 +13,7 @@ export default function About() {
           </p>
           <p>
             Comfortable with Vue or React, Next.js or Vite, Storybook,
-            UnoCSS+Tailwind CSS, TypeScript, GraphQL… I’m open mind to study and
+            UnoCSS+Tailwind CSS, TypeScript, GraphQL, Vitest, Jest… I’m open mind to study and
             adapt me to your Tech Stack.
           </p>
           <p>
