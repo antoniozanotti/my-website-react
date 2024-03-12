@@ -5,9 +5,9 @@ import "@assets/styles.css";
 const roboto = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Antônio Zanotti: Senior Frontend Developer",
+  title: "Antônio Zanotti: Frontend Developer",
   description:
-    "Senior Full Stack Developer with more than 15 years of experience. Looking for long-term opportunities to work as Frontend Developer.",
+    "Full Stack Developer with more than 15 years of experience. Looking for long-term opportunities to work as Frontend Developer.",
 };
 
 export default function RootLayout({

@@ -8,7 +8,7 @@ export default function About() {
       <Grid>
         <div className="flex flex-col space-y-4">
           <p>
-            Senior Full Stack Developer with more than 15 years of experience.
+            Full Stack Developer with more than 15 years of experience.
             Looking for long-term opportunities to work as Frontend Developer.
           </p>
           <p>
