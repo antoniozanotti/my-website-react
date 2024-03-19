@@ -1,4 +1,3 @@
-import React from "react";
 import { TzHeading } from "topaz-react";
 
 export interface HeadingProps {
@@ -24,17 +23,17 @@ export default function Heading({
       break;
     case "h2":
       variant = "accent-1";
-      headingClasses += " mt-[144px]";
+      headingClasses += " mt-[164px]";
       break;
     case "h3":
       size = "medium";
       variant = "accent-2";
-      headingClasses += " mt-[48px]";
+      headingClasses += " mt-[68px]";
       break;
     default:
       size = "small";
       variant = "secondary";
-      headingClasses += " mt-[36px]";
+      headingClasses += " mt-[56px]";
       break;
   }
   return (

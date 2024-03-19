@@ -1,4 +1,3 @@
-import React from "react";
 import LinkdedinBrandSvg from "@images/linked_in_brand";
 import GithubBrandSvg from "@images/github_brand";
 

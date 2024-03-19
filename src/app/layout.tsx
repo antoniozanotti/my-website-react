@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "@assets/styles.css";
+import React from "react";
 
 const roboto = Roboto_Mono({ subsets: ["latin"] });
 
@@ -15,13 +16,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  let backgroud = 'bg-dark-2 dark:bg-dark-dark-2';
-  let text = 'text-primary dark:text-dark-primary text-c3 lg:text-c4';
+  let backgroud = "bg-dark-2 dark:bg-dark-dark-2";
+  let text = "text-primary dark:text-dark-primary text-c3 lg:text-c4";
+
   return (
     <html lang="en" className="dark">
-      <body
-        className={`${roboto.className} ${backgroud} ${text}`}
-      >
+      <body className={`${roboto.className} ${backgroud} ${text}`}>
         {children}
       </body>
     </html>
