@@ -1,41 +1,42 @@
-import { useEffect, useState } from "react";
+"use client";
+import { useState } from "react";
 import Section from "@/components/ui/section";
-import positions from "@/data/positions";
-import Position from "../blocks/position";
+import projects from "@/data/projects";
+import Project from "./project";
 import { TzButton } from "topaz-react";
 import type { VersionType } from "@/const/version";
 import versionType from "@/const/version";
 
-export default function Projects() {
+export default function Index() {
   const [version, setVersion] = useState<VersionType>(versionType.SHORT);
+
   return (
-    <Section title="Experience">
+    <Section title="Projects">
       <article>
-        {positions.map(
-          (position, index) =>
+        {projects.map(
+          (project, index) =>
             ((version == versionType.SHORT &&
-              position.version == versionType.SHORT) ||
+              project.version == versionType.SHORT) ||
               version == versionType.FULL) && (
-              <Position
+              <Project
                 key={index}
-                title={position.title}
-                companyName={position.companyName}
-                location={position.location}
-                period={position.period}
-                achievements={position.achievements}
-                links={position.links}
-                skills={position.skills}
+                title={project.title}
+                companyName={project.companyName}
+                period={project.period}
+                achievements={project.achievements}
+                links={project.links}
+                skills={project.skills}
                 version={version}
               />
             )
         )}
         {version == versionType.SHORT && (
-          <aside className="flex gap-2 mt-[48px]">
+          <aside className="flex gap-2 mt-[48px] hidden">
             <TzButton
               iconName="ChevronDoubleDownIcon"
               isIconAfterLabel
               variant="accent"
-              label="See full employment history"
+              label="See full projects list"
               onClick={() => setVersion(versionType.FULL)}
             />
           </aside>

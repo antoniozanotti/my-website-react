@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import Heading from "@/components/ui/heading";
 import Grid from "@/components/ui/grid";
@@ -16,7 +17,6 @@ interface Link {
 export interface PositionProps extends React.ComponentProps<"div"> {
   title: string;
   companyName: string;
-  location: string;
   period: string;
   achievements: string[];
   links?: Link[];
@@ -27,7 +27,6 @@ export interface PositionProps extends React.ComponentProps<"div"> {
 export default function Position({
   title,
   companyName,
-  location,
   period,
   achievements,
   links,
@@ -40,13 +39,12 @@ export default function Position({
   );
 
   return (
-    <div {...props}>
+    <div  {...props}>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <Heading level="h3" title={title} />
-        <Grid cols={3} className="mt-4 space-y-4">
+        <Grid cols={3} className="mt-4">
           <div className="grid grid-flow-row auto-rows-max">
             <span>{companyName}</span>
-            <span className="italic text-c2 lg:text-c3">{location}</span>
             <span className="font-bold py-4">{period}</span>
             {skills && (
               <div className="flex flex-wrap gap-2">

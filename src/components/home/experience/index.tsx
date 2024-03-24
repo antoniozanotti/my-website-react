@@ -1,41 +1,42 @@
+"use client";
 import { useState } from "react";
 import Section from "@/components/ui/section";
-import projects from "@/data/projects";
-import Project from "../blocks/project";
+import positions from "@/data/positions";
+import Position from "./position";
 import { TzButton } from "topaz-react";
 import type { VersionType } from "@/const/version";
 import versionType from "@/const/version";
 
-export default function Projects() {
+export default function Index() {
   const [version, setVersion] = useState<VersionType>(versionType.SHORT);
-
   return (
-    <Section title="Projects">
+    <Section title="Experience">
       <article>
-        {projects.map(
-          (project, index) =>
+        {positions.map(
+          (position, index) =>
             ((version == versionType.SHORT &&
-              project.version == versionType.SHORT) ||
+              position.version == versionType.SHORT) ||
               version == versionType.FULL) && (
-              <Project
+              <Position
                 key={index}
-                title={project.title}
-                companyName={project.companyName}
-                period={project.period}
-                achievements={project.achievements}
-                links={project.links}
-                skills={project.skills}
+                title={position.title}
+                companyName={position.companyName}
+                location={position.location}
+                period={position.period}
+                achievements={position.achievements}
+                links={position.links}
+                skills={position.skills}
                 version={version}
               />
             )
         )}
         {version == versionType.SHORT && (
-          <aside className="flex gap-2 mt-[48px] hidden">
+          <aside className="flex gap-2 mt-[48px]">
             <TzButton
               iconName="ChevronDoubleDownIcon"
               isIconAfterLabel
               variant="accent"
-              label="See full projects list"
+              label="See full employment history"
               onClick={() => setVersion(versionType.FULL)}
             />
           </aside>

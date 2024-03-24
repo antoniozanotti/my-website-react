@@ -1,9 +1,8 @@
-"use client";
-import Header from "@/components/sections/header";
-import About from "@/components/sections/about";
-import Experience from "@/components/sections/experience";
-import Projects from "@/components/sections/projects";
-import Footer from "@/components/sections/footer";
+import Header from "@/components/home/header";
+import About from "@/components/home/about";
+import Experience from "@/components/home/experience";
+import Projects from "@/components/home/projects";
+import Footer from "@/components/home/footer";
 
 export default function Home() {
   return (

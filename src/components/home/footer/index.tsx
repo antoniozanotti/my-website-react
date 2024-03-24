@@ -1,14 +1,15 @@
+"use client";
 import { TzButton, TzIcon } from "topaz-react";
 import Section from "@/components/ui/section";
-import Form from "@/components/blocks/form";
-import SocialMedia from "@/components/blocks/social-media";
+import Form from "./form";
+import SocialMedia from "@/components/common/social-media";
 import ImgLookingUpXl from "@images/antonio-zanotti-looking-up-xl.jpg"
 import ImgLookingUpLg from "@images/antonio-zanotti-looking-up-lg.jpg"
 import ImgLookingUpMd from "@images/antonio-zanotti-looking-up-md.jpg"
 import ImgLookingUpSm from "@images/antonio-zanotti-looking-up-sm.jpg"
 import ImgLookingUpDefault from "@images/antonio-zanotti-looking-up-default.jpg"
 
-export default function Footer() {
+export default function Index() {
   return (
     <footer>
       <Section title="Let's work together">

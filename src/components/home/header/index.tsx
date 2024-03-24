@@ -1,9 +1,10 @@
+"use client";
 import { TzButton, TzToggleTheme } from "topaz-react";
-import SocialMedia from "@/components/blocks/social-media";
-import Terminal from "@/components/blocks/terminal";
+import SocialMedia from "@/components/common/social-media";
+import Terminal from "./terminal";
 import Heading from "@/components/ui/heading";
 
-export default function Header() {
+export default function Index() {
   return (
     <header className="h-[100vh]">
       <div className="h-[100svh] flex flex-col justify-between">

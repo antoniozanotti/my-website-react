@@ -1,8 +1,8 @@
 import Section from "@/components/ui/section";
 import Grid from "@/components/ui/grid";
-import Code from "@/components/blocks/code";
+import Code from "./code";
 
-export default function About() {
+export default function Index() {
   return (
     <Section title="About" anchor="about">
       <Grid>
