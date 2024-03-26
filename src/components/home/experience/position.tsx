@@ -22,7 +22,6 @@ export interface PositionProps extends React.ComponentProps<"div"> {
   achievements: string[];
   links?: Link[];
   skills?: string[];
-  version: VersionType;
 }
 
 export default function Position({
@@ -33,7 +32,6 @@ export default function Position({
   achievements,
   links,
   skills,
-  version,
   ...props
 }: PositionProps) {
   const [versionAchievements, setVersionAchievements] = useState<VersionType>(
