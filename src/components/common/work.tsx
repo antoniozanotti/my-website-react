@@ -3,35 +3,31 @@ import { useState } from "react";
 import Heading from "@/components/ui/heading";
 import Grid from "@/components/ui/grid";
 import List from "@/components/ui/list";
-import { TzLabel } from "topaz-react";
+import { TzTag } from "topaz-react";
 import { styles } from "@/components/utils/styles";
 import type { VersionType } from "@/const/version";
 import versionType from "@/const/version";
 import { motion } from "framer-motion";
-
-interface Link {
-  link: string;
-  label: string;
-}
+import { Link } from "@/components/common/link";
 
 export interface PositionProps extends React.ComponentProps<"div"> {
   title: string;
-  companyName: string;
+  company: string;
+  location?: string;
   period: string;
   achievements: string[];
   links?: Link[];
   skills?: string[];
-  version: VersionType;
 }
 
 export default function Position({
   title,
-  companyName,
+  company,
+  location,
   period,
   achievements,
   links,
   skills,
-  version,
   ...props
 }: PositionProps) {
   const [versionAchievements, setVersionAchievements] = useState<VersionType>(
@@ -39,17 +35,20 @@ export default function Position({
   );
 
   return (
-    <div  {...props}>
+    <div {...props}>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <Heading level="h3" title={title} />
-        <Grid cols={3} className="mt-4">
+        <Grid cols={3} className="mt-4 space-y-4">
           <div className="grid grid-flow-row auto-rows-max">
-            <span>{companyName}</span>
+            <span>{company}</span>
+            {location && (
+              <span className="italic text-c2 lg:text-c3">{location}</span>
+            )}
             <span className="font-bold py-4">{period}</span>
             {skills && (
               <div className="flex flex-wrap gap-2">
                 {skills?.map((skill, index) => (
-                  <TzLabel key={index} label={skill} variant="secondary" />
+                  <TzTag key={index} label={skill} variant="secondary" />
                 ))}
               </div>
             )}

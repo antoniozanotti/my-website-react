@@ -1,35 +1,41 @@
 "use client";
 import { useState } from "react";
-import Position from "./position";
+import Work from "./work";
 import { TzButton } from "topaz-react";
 import type { VersionType } from "@/const/version";
 import versionType from "@/const/version";
 
-export default function PositionsList({ positions }: { positions: any }) {
+export default function WorksList({
+  works,
+  labelForMore,
+}: {
+  works: any;
+  labelForMore: string;
+}) {
   const [version, setVersion] = useState<VersionType>(versionType.SHORT);
-  positions.map((position: any, index: number) => {
-    if (index == 7) {
-      console.log(position.achievements.json.content);
-    }
-  });
+  const qtyItemsShortVersion = works.filter((work: any) => {
+    return work.visibleInShortVersion;
+  }).length;
+  const showButtonForMore =
+    works.length > qtyItemsShortVersion && version == versionType.SHORT;
   return (
     <article>
-      {positions.map(
-        (position: any, index: number) =>
-          ((version == versionType.SHORT && position.visibleInShortVersion) ||
+      {works.map(
+        (work: any, index: number) =>
+          ((version == versionType.SHORT && work.visibleInShortVersion) ||
             version == versionType.FULL) && (
-            <Position
+            <Work
               key={index}
-              title={position.title}
-              companyName={position.company}
-              location={position.location}
-              period={position.period}
-              achievements={position.achievements.json.content
+              title={work.title}
+              company={work.company}
+              location={work.location}
+              period={work.period}
+              achievements={work.achievements.json.content
                 .filter((a: any) => a.content[0].value != "")
                 .map((achievement: any) => {
                   return achievement.content[0].value;
                 })}
-              links={position.links?.json.content
+              links={work.links?.json.content
                 .filter((link: any) => link.nodeType == "unordered-list")[0]
                 .content.map((link: any) => {
                   return {
@@ -41,21 +47,19 @@ export default function PositionsList({ positions }: { positions: any }) {
                     )[0].content[0].value,
                   };
                 })}
-              skills={position.skillsCollection.items.map(
-                (item: any) => {
-                  return item.title;
-                }
-              )}
+              skills={work.skillsCollection.items.map((item: any) => {
+                return item.title;
+              })}
             />
           )
       )}
-      {version == versionType.SHORT && (
+      {showButtonForMore && (
         <aside className="flex gap-2 mt-[48px]">
           <TzButton
             iconName="ChevronDoubleDownIcon"
             isIconAfterLabel
             variant="accent"
-            label="See full employment history"
+            label={labelForMore}
             onClick={() => setVersion(versionType.FULL)}
           />
         </aside>
