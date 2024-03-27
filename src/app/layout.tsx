@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
 import "@assets/styles.css";
 import React from "react";
-
-const roboto = Roboto_Mono({ subsets: ["latin"] });
+import StoreProvider from "./StoreProvider";
+import ThemeWrapper from "@/components/theme-wrapper";
 
 export const metadata: Metadata = {
   title: "Antônio Zanotti: Frontend Developer",
@@ -16,13 +15,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  let backgroud = "bg-dark-2 dark:bg-dark-dark-2";
-  let text = "text-primary dark:text-dark-primary text-c3 lg:text-c4";
-
   return (
-    <html lang="en" className="dark">
-      <body className={`${roboto.className} ${backgroud} ${text}`}>
-        {children}
+    <html lang="en">
+      <body>
+        <StoreProvider>
+          <ThemeWrapper>{children}</ThemeWrapper>
+        </StoreProvider>
       </body>
     </html>
   );

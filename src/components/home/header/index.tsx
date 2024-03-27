@@ -1,5 +1,6 @@
 "use client";
-import { TzButton, TzToggleTheme } from "topaz-react";
+import { TzButton } from "topaz-react";
+import { ToggleTheme } from "./toggle-theme";
 import SocialMedia from "@/components/common/social-media";
 import Terminal from "./terminal";
 import Heading from "@/components/ui/heading";
@@ -9,7 +10,7 @@ export default function Index() {
     <header className="h-[100vh]">
       <div className="h-[100svh] flex flex-col justify-between">
         <div className="pt-4 sm:pt-8 lg:pt-16 flex justify-end">
-          <TzToggleTheme />
+          <ToggleTheme />
         </div>
         <div>
           <Heading level="h1" title="Antônio Zanotti" />
