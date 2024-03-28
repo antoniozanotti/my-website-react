@@ -83,7 +83,7 @@ export default function Position({
             {links && (
               <List className="pl-4">
                 {links?.map((link, index) => (
-                  <li key={index}>
+                  <li key={index} className="h-12">
                     <a
                       href={link.link}
                       title={link.label}
