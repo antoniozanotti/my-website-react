@@ -9,7 +9,7 @@ export default function Index() {
         <div className="flex flex-col space-y-4 mt-4">
           <p>
             Front-end developer with +15 years of experience using technology to
-            develop solutions. Looking for long-term opportunity to work as
+            develop solutions. Searching for long-term opportunity to work as
             Frontend Developer.
           </p>
           <p>
@@ -18,8 +18,7 @@ export default function Index() {
             Jest… I’m open mind to study and adapt me to your Tech Stack.
           </p>
           <p>
-            I am a friendly, observant, curious co-worker who likes to listen
-            and help everyone on the team.
+          I am a friendly, observant, inquisitive and curious coworker who likes to listen and help everyone on the team. Promoting a positive social impact through technology is my personal goal.
           </p>
           <p>
             Besides work, I love my husband, we’ve been living together for 7
