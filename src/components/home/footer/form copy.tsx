@@ -8,22 +8,20 @@ export default function Form() {
   const form = useRef<HTMLFormElement>(null);
   const fromName = useRef<HTMLInputElement>(null);
   const [fromNameValue, setFromNameValue] = useState("");
+  //const [passedRecaptcha, setPassedRecaptcha] = useState(false);
+  const [recaptchaValue, setRecaptchaValue] = useState("");
   const [status, setStatus] = useState("typing");
   const recaptchaRef = useRef<ReCAPTCHA>(null);
-  const [recaptchaValue, setRecaptchaValue] = useState("");
+  //const recaptchaRef = React.createRef();
 
-  const onChangeRecaptcha = () => {
-    const token = recaptchaRef.current?.getValue() ?? "";
-    setRecaptchaValue(token);
+  const onChangeRecaptcha = (value: string) => {
+    
   };
 
-  const handleSubmit = (e: React.SyntheticEvent) => {
+  const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
-    recaptchaRef.current?.execute();
-    recaptchaRef.current?.reset();
-    if(recaptchaValue==""){
-      return false;
-    }
+    const token = await recaptchaRef?.current?.executeAsync() ?? "";
+    setRecaptchaValue(token);
     setStatus("submitting");
     setFromNameValue(fromName.current?.value ?? "");
     emailjs
@@ -72,7 +70,6 @@ export default function Form() {
         ref={recaptchaRef}
         sitekey={recaptchaKey}
         size="invisible"
-        onChange={onChangeRecaptcha}
       />
       {status === "success" && (
         <p>
