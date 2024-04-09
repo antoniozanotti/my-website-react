@@ -34,6 +34,8 @@ export default function Position({
     versionType.SHORT
   );
 
+  const limit = 3;
+
   return (
     <div {...props}>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -57,7 +59,8 @@ export default function Position({
             <div className="space-y-4">
               {achievements.map(
                 (achievement, index) =>
-                  (versionAchievements == versionType.FULL || index < 2) && (
+                  (versionAchievements == versionType.FULL ||
+                    index < limit) && (
                     <motion.p
                       key={index}
                       initial={{ opacity: 0 }}
@@ -65,8 +68,8 @@ export default function Position({
                     >
                       {achievement}{" "}
                       {versionAchievements == versionType.SHORT &&
-                        index == 1 &&
-                        achievements.length > 2 && (
+                        index == limit - 1 &&
+                        achievements.length > limit && (
                           <span
                             className={styles.aHover}
                             onClick={() =>

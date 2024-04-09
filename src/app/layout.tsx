@@ -7,7 +7,7 @@ import ThemeWrapper from "@/components/theme-wrapper";
 export const metadata: Metadata = {
   title: "Antônio Zanotti: Frontend Developer",
   description:
-    "Full Stack Developer with more than 15 years of experience. Looking for long-term opportunities to work as Frontend Developer.",
+    "Front-end developer with +15 years of experience, using technology to develop solutions. Searching for long-term opportunity to work as Frontend Developer.",
 };
 
 export default function RootLayout({
