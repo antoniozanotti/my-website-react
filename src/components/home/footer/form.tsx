@@ -27,6 +27,7 @@ export default function Form() {
         () => {
           setStatus("success");
           form.current?.reset();
+          recaptchaRef.current?.reset()
         },
         (error) => {
           setStatus("error");
