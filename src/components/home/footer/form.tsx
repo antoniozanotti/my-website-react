@@ -20,7 +20,6 @@ export default function Form() {
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     recaptchaRef.current?.execute();
-    recaptchaRef.current?.reset();
     if (recaptchaValue == "") {
       return false;
     }
