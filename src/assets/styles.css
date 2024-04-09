@@ -11,3 +11,5 @@
   background: white;
   color: black;
 }
+
+.grecaptcha-badge { visibility: hidden; }
