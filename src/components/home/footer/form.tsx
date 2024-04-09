@@ -66,6 +66,7 @@ export default function Form() {
       <ReCAPTCHA
         ref={recaptchaRef}
         sitekey="6LdXUoIpAAAAABMIeNv1tu2fa_ssuP8qYGKkLGBU"
+        size="invisible"
         onChange={onChangeRecaptcha}
       />
       {status === "success" && (
