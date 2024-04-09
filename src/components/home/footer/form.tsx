@@ -38,6 +38,8 @@ export default function Form() {
       );
   };
 
+  const recaptchaKey = process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA ?? "";
+
   return (
     <form
       id="form_lets_work_together"
@@ -65,7 +67,7 @@ export default function Form() {
       </label>
       <ReCAPTCHA
         ref={recaptchaRef}
-        sitekey="6LdXUoIpAAAAABMIeNv1tu2fa_ssuP8qYGKkLGBU"
+        sitekey={recaptchaKey}
         size="invisible"
         onChange={onChangeRecaptcha}
       />
