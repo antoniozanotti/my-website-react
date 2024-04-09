@@ -10,17 +10,11 @@ export default function Form() {
   const [fromNameValue, setFromNameValue] = useState("");
   const [status, setStatus] = useState("typing");
   const recaptchaRef = useRef<ReCAPTCHA>(null);
-  const [recaptchaValue, setRecaptchaValue] = useState("");
 
-  const onChangeRecaptcha = (token: string | null) => {
-    //const token = recaptchaRef.current?.getValue() ?? "";
-    setRecaptchaValue(token ?? "");
-  };
-
-  const handleSubmit = (e: React.SyntheticEvent) => {
+  const handleSubmit = async(e: React.SyntheticEvent) => {
     e.preventDefault();
-    recaptchaRef.current?.execute();
-    if (recaptchaValue == "") {
+    const token = await recaptchaRef.current?.executeAsync() ?? "";
+    if (token == "") {
       return false;
     }
     setStatus("submitting");
@@ -71,7 +65,6 @@ export default function Form() {
         ref={recaptchaRef}
         sitekey={recaptchaKey}
         size="invisible"
-        onChange={onChangeRecaptcha}
       />
       {status === "success" && (
         <p>
@@ -91,7 +84,6 @@ export default function Form() {
           label="Submit"
         />
       </div>
-      <input type="hidden" name="g-recaptcha-response" value={recaptchaValue} />
     </form>
   );
 }
