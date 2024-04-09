@@ -12,16 +12,16 @@ export default function Form() {
   const recaptchaRef = useRef<ReCAPTCHA>(null);
   const [recaptchaValue, setRecaptchaValue] = useState("");
 
-  const onChangeRecaptcha = () => {
-    const token = recaptchaRef.current?.getValue() ?? "";
-    setRecaptchaValue(token);
+  const onChangeRecaptcha = (token: string | null) => {
+    //const token = recaptchaRef.current?.getValue() ?? "";
+    setRecaptchaValue(token ?? "");
   };
 
   const handleSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
     recaptchaRef.current?.execute();
     recaptchaRef.current?.reset();
-    if(recaptchaValue==""){
+    if (recaptchaValue == "") {
       return false;
     }
     setStatus("submitting");
