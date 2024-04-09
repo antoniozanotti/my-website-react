@@ -8,19 +8,20 @@ export default function Form() {
   const form = useRef<HTMLFormElement>(null);
   const fromName = useRef<HTMLInputElement>(null);
   const [fromNameValue, setFromNameValue] = useState("");
-  const [passedRecaptcha, setPassedRecaptcha] = useState(false);
+  //const [passedRecaptcha, setPassedRecaptcha] = useState(false);
+  const [recaptchaValue, setRecaptchaValue] = useState("");
   const [status, setStatus] = useState("typing");
   const recaptchaRef = useRef<ReCAPTCHA>(null);
+  //const recaptchaRef = React.createRef();
 
-  const onChangeRecaptcha = () => {
-    setPassedRecaptcha(true);
+  const onChangeRecaptcha = (value: string) => {
+    
   };
 
-  const handleSubmit = (e: React.SyntheticEvent) => {
+  const handleSubmit = async (e: React.SyntheticEvent) => {
+    const token = await recaptchaRef?.current?.executeAsync() ?? "";
+    setRecaptchaValue(token);
     e.preventDefault();
-    if(!passedRecaptcha){
-      return false;
-    }
     setStatus("submitting");
     setFromNameValue(fromName.current?.value ?? "");
     emailjs
@@ -69,7 +70,6 @@ export default function Form() {
         ref={recaptchaRef}
         sitekey={recaptchaKey}
         size="invisible"
-        onChange={onChangeRecaptcha}
       />
       {status === "success" && (
         <p>
@@ -89,6 +89,7 @@ export default function Form() {
           label="Submit"
         />
       </div>
+      <input type="hidden" name="g-recaptcha-response" value={recaptchaValue} />
     </form>
   );
 }
