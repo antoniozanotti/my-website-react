@@ -57,12 +57,12 @@ const HOME_QUERY = gql`
 export default async function Home() {
   const { data } = await getClient().query({ query: HOME_QUERY });
   return (
-    <div className="pb-4 sm:pb-8 lg:pb-16 px-4 sm:px-8 lg:px-0 lg:px-16 lg:w-[896px] xl:w-[1152px] lg:mx-auto">
+    <div className="pb-4 sm:pb-8 lg:pb-16 px-4 sm:px-8 lg:px-16 lg:w-[896px] xl:w-[1152px] lg:mx-auto">
       <Header />
       <main>
         <About />
-        <Experience positions={data.pageCollection.items[0].positionsCollection.items} />
         <Projects projects={data.pageCollection.items[0].projectsCollection.items} />
+        <Experience positions={data.pageCollection.items[0].positionsCollection.items} />
       </main>
       <Footer />
     </div>
