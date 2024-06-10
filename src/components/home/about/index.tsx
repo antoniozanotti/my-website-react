@@ -8,13 +8,11 @@ export default function Index() {
       <Grid>
         <div className="flex flex-col space-y-4 mt-4">
           <p>
-            Front-end developer with +15 years of experience, using technology
-            to develop solutions. I was born in Gramado, a small, touristic city
-            in the countryside of south of Brazil. Today I live in Florianópolis
-            city. I started my journey when I was 16 years old in 2006. I have
-            18 years of experience in different types of projects: multinational
-            ecommerce platform, social recipe network, real estate websites,
-            hotel network…
+            I was born in Gramado, a small tourist city in the south of Brazil,
+            today I live in the city of Florianópolis. I started my journey when
+            I was 16 years old, in 2006. I have 18 years of experience in
+            different types of projects: multinational ecommerce platform,
+            social recipe network, real estate websites, hotel network…
           </p>
 
           <p>
@@ -28,13 +26,12 @@ export default function Index() {
           </p>
 
           <p>
-            Most of the time, I worked as a Full Stack PHP developer, from 2023
-            I started specializing in frontend, as it is the area of ​​software
-            development that I enjoy most. I’m not a ready-made professional,
-            and I never will be, because I’ll always want to learn something
-            more. I don’t feel comfortable in a leadership position today, but
-            it’s something I’m thinking about for the future. Technology has
-            never been a barrier for me, in fact I adapt very well and quickly.
+            For most of my career, I worked as a Full Stack PHP developer. From
+            2023 onwards, I returned to the frontend, as it is the area of
+            software development that I most identify with. I’m not a ready
+            professional, and I never will be, because I’ll always be learning
+            something more. I don’t feel comfortable in a leadership position
+            today, but it’s something I want to develop.
           </p>
 
           <p>
