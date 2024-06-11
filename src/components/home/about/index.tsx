@@ -10,7 +10,7 @@ export default function Index() {
           <p>
             I was born in Gramado, a small tourist city in the south of Brazil,
             today I live in the city of Florianópolis. I started my journey when
-            I was 16 years old, in 2006. I have 18 years of experience in
+            I was 16 years old, in 2006. I have 17 years of experience in
             different types of projects: multinational ecommerce platform,
             social recipe network, real estate websites, hotel network…
           </p>
