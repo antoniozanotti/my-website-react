@@ -16,7 +16,7 @@ export default function Index() {
           </p>
 
           <p>
-            I have experience with Vue, React, Next.js, Vite, TypeScript,
+            I have experience with Vue, React, Next.js, Vite, Node.js, TypeScript,
             TanStack Query, Axios, Storybook, UnoCSS + Tailwind CSS, Redux,
             Pinia, GraphQL, Vitest, Jest, Playwright, which are the most used
             technologies currently for frontend. I also have experience with
