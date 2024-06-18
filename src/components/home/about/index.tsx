@@ -9,7 +9,7 @@ export default function Index() {
         <div className="flex flex-col space-y-4 mt-4">
           <p>
             I was born in Gramado, a small tourist city in the south of Brazil,
-            today I live in the city of Florianópolis. I started my journey when
+            today I live in Florianópolis city. I started my journey when
             I was 16 years old, in 2006. I have 17 years of experience in
             different types of projects: multinational ecommerce platform,
             social recipe network, real estate websites, hotel network…
