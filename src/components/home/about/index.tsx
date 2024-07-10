@@ -35,7 +35,7 @@ export default function Index() {
           </p>
 
           <p>
-            Besides work, I love my husband, we’ve been living together for 7
+            Besides work, I love my husband, we’ve been living together for 8
             years. I also like to study sociology, do exercises at home, take a
             track, go to the beach, hangout with friends, watercolour,
             arduino...
