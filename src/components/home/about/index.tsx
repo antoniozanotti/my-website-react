@@ -9,20 +9,21 @@ export default function Index() {
         <div className="flex flex-col space-y-4 mt-4">
           <p>
             I was born in Gramado, a small tourist city in the south of Brazil,
-            today I live in Florianópolis city. I started my journey when
-            I was 16 years old, in 2006. I have 17 years of experience in
-            different types of projects: multinational ecommerce platform,
-            social recipe network, real estate websites, hotel network…
+            today I live in Florianópolis city. I started my journey when I was
+            16 years old, in 2006. I have 17 years of work experience developing
+            scalable and highly complex web systems such as: multinational
+            ecommerce platform, social recipe network, real estate websites,
+            hotel network…
           </p>
 
           <p>
-            I have experience with Vue, React, Next.js, Vite, Node.js, TypeScript,
-            TanStack Query, Axios, Storybook, UnoCSS + Tailwind CSS, Redux,
-            Pinia, GraphQL, Vitest, Jest, Playwright, which are the most used
-            technologies currently for frontend. I also have experience with
-            PHP, Magento, CakePHP, Zend Framework, Data Modeling, SQL, MySQL,
-            PostgreSQL, PL/pgSQL. I’m very experienced with Figma, HTML, CSS and
-            JavaScript.
+            I have experience with Vue, React, Next.js, Vite, Node.js,
+            TypeScript, TanStack Query, Axios, Storybook, UnoCSS + Tailwind CSS,
+            Redux, Pinia, GraphQL, Vitest, Jest, Playwright, which are the most
+            used technologies currently for frontend. I also have experience
+            with PHP, Magento, CakePHP, Zend Framework, Data Modeling, SQL,
+            MySQL, PostgreSQL, PL/pgSQL. I’m very experienced with Figma, HTML,
+            CSS and JavaScript.
           </p>
 
           <p>
