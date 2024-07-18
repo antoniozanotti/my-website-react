@@ -1,4 +1,4 @@
-Built with React.js, Next.js, Tailwind CSS and Topaz for React.
+Built with React.js, Next.js, GraphQL, Tailwind CSS and Topaz for React.
 
 ## Available scripts
 ```bash
