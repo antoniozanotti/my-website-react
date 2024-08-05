@@ -1,5 +1,6 @@
 import LinkdedinBrandSvg from "@images/linked_in_brand";
 import GithubBrandSvg from "@images/github_brand";
+import {useTranslations} from 'next-intl';
 
 export interface SocialMediaProps extends React.ComponentProps<"div"> {}
 
@@ -9,10 +10,11 @@ export default function SocialMedia({ ...props }: SocialMediaProps) {
     ? divClasses + " " + props.className
     : divClasses;
   let aClasses = "hover:underline flex place-items-center gap-[15px]";
+  const t = useTranslations('SocialMedia');
   return (
     <div {...props}>
       <a
-        href="https://www.linkedin.com/in/antoniozanotti/"
+        href={t('LinkedInLink')}
         title="Linked In"
         target="_blank"
         className={aClasses}
