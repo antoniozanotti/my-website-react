@@ -5,6 +5,7 @@ import Projects from "@/components/home/projects";
 import Footer from "@/components/home/footer";
 import { gql } from "@apollo/client";
 import { getClient } from "@/lib/client";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 const HOME_QUERY = gql`
   query Query($locale: String!) {
@@ -62,6 +63,7 @@ export default async function Home({
 }: {
   params: { locale: string };
 }) {
+  unstable_setRequestLocale(locale);
   const { data } = await getClient().query({
     query: HOME_QUERY,
     variables: {
