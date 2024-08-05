@@ -9,7 +9,7 @@ export const domains: DomainsConfig<typeof locales> = [
     locales: ['en']
   },
   {
-    domain: 'antoniozanotti.com.br',
+    domain: 'antoniozanotti.com',
     defaultLocale: 'pt',
     locales: ['pt']
   }
