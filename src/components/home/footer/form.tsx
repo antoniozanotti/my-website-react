@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import { TzButton, TzInput, TzTextarea } from "topaz-react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
+import {useTranslations} from 'next-intl';
 
 export default function Form() {
   const form = useRef<HTMLFormElement>(null);
@@ -10,6 +11,7 @@ export default function Form() {
   const [fromNameValue, setFromNameValue] = useState("");
   const [status, setStatus] = useState("typing");
   const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const t = useTranslations('Footer.form');
 
   const handleSubmit = async(e: React.SyntheticEvent) => {
     e.preventDefault();
@@ -45,7 +47,7 @@ export default function Form() {
       onSubmit={handleSubmit}
     >
       <label className="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1">
-        <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Name</span>
+        <span className="px-[10px] sm:px-[14px] lg:px-[20px]">{t('name')}</span>
         <TzInput
           type="text"
           variant="secondary"
@@ -59,7 +61,7 @@ export default function Form() {
         <TzInput type="email" variant="secondary" name="fromEmail" required />
       </label>
       <label className="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1">
-        <span className="px-[10px] sm:px-[14px] lg:px-[20px]">Message</span>
+        <span className="px-[10px] sm:px-[14px] lg:px-[20px]">{t('message')}</span>
         <TzTextarea rows={7} variant="secondary" name="message" required />
       </label>
       <ReCAPTCHA
@@ -69,20 +71,18 @@ export default function Form() {
       />
       {status === "success" && (
         <p>
-          Hi {fromNameValue}, I will respond within 24 hours.
-          <br />
-          Thank you for the message sent.
+          {t('success', {fromNameValue: fromNameValue})}
         </p>
       )}
       {status === "error" && (
-        <p>Hi {fromNameValue}, something went wrong. Please try later..</p>
+        <p>{t('error', {fromNameValue: fromNameValue})}</p>
       )}
       <div className="flex place-content-end">
         <TzButton
           iconName="ArrowRightIcon"
           isIconAfterLabel
           variant="accent"
-          label="Submit"
+          label={t('submit')}
         />
       </div>
     </form>

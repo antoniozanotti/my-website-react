@@ -1,13 +1,14 @@
+import {useTranslations} from 'next-intl';
 import Section from "@/components/ui/section";
 import WorksList from "@/components/common/work-list";
 
 export default function Index({ projects }: { projects: any }) {
-  
+  const t = useTranslations('Projects');
   return (
-    <Section title="Projects">
+    <Section title={t('title')}>
       <WorksList
         works={projects}
-        labelForMore={"See full projects list"}
+        labelForMore={t('labelForMore')}
       />
     </Section>
   );

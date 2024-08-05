@@ -1,15 +1,17 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import {useTranslations} from 'next-intl';
 
 export interface TerminalProps extends React.ComponentProps<"p"> {}
 
 export default function Terminal({ ...props }: TerminalProps) {
+  const t = useTranslations('Header.terminal');
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const lines = [
-    "Hello, I'm a Frontend Developer",
-    "I was a Full Stack Developer",
-    "Are you still here?",
-    "Scroll the page, my friend!"
+    t('line1'),
+    t('line2'),
+    t('line3'),
+    t('line4')
   ];
   let line = useRef(lines[0]);
   let lineIndex = useRef(0);

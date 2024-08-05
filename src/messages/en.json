@@ -1,0 +1,62 @@
+{
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, pt {🇧🇷 Português} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Metadata": {
+    "title": "Antônio Zanotti: Frontend Developer",
+    "description": "Front-end developer with +15 years of experience, using technology to develop solutions."
+  },
+  "Brazil": "Brazil",
+  "About": {
+    "title": "About",
+    "pronouns": {
+      "he": "he",
+      "him": "him"
+    },
+    "degree": "Internet Systems Technologist (FEEVALE, 2010)",
+    "values": {
+      "ethic": "ethic",
+      "love": "love",
+      "freedom": "freedom"
+    },
+    "varBirthday": "birthday",
+    "varLocation": "location",
+    "varPronouns": "pronouns",
+    "varDegree": "degree",
+    "varValues": "values"
+  },
+  "Work": {
+    "labelForMore": "See more..."
+  },
+  "Experience": {
+    "title": "Experience",
+    "labelForMore": "See full employment history"
+  },
+  "Projects": {
+    "title": "Projects",
+    "labelForMore": "See full projects list"
+  },
+  "Footer": {
+    "title": "Let's work together",
+    "intro": "I would like to be part of a team whose people respect each other, listen to each other and who work together to achieve clear goals. Leave a message, thank you in advance or your attention.",
+    "imgAlt": "Antônio Zanotti looking up",
+    "made": "Made with",
+    "by": "by",
+    "form": {
+      "name": "Name",
+      "message": "Message",
+      "success": "Hi {fromNameValue}, I will respond within 24 hours.<br />Thank you for the message sent.",
+      "error": "Hi {fromNameValue}, something went wrong. Please try later.",
+      "submit": "Submit"
+    }
+  },
+  "Header": {
+    "terminal": {
+      "line1": "Hello, I'm a Frontend Developer",
+      "line2": "I was a Full Stack Developer",
+      "line3": "Are you still here?",
+      "line4": "Scroll the page my friend!"
+    }
+  }
+}

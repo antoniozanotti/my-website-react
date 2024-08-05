@@ -1,4 +1,5 @@
 "use client";
+import {useTranslations} from 'next-intl';
 import { useState } from "react";
 import Heading from "@/components/ui/heading";
 import Grid from "@/components/ui/grid";
@@ -35,6 +36,7 @@ export default function Position({
   );
 
   const limit = 3;
+  const t = useTranslations('Work');
 
   return (
     <div {...props}>
@@ -76,7 +78,7 @@ export default function Position({
                               setVersionAchievements(versionType.FULL)
                             }
                           >
-                            See more...
+                            {t('labelForMore')}
                           </span>
                         )}
                     </motion.p>

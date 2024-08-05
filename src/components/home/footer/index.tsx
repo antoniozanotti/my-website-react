@@ -1,4 +1,5 @@
 "use client";
+import {useTranslations} from 'next-intl';
 import { TzButton, TzIcon } from "topaz-react";
 import Section from "@/components/ui/section";
 import Form from "./form";
@@ -10,22 +11,21 @@ import ImgLookingUpSm from "@images/antonio-zanotti-looking-up-sm.jpg"
 import ImgLookingUpDefault from "@images/antonio-zanotti-looking-up-default.jpg"
 
 export default function Index() {
+  const t = useTranslations('Footer');
   return (
     <footer>
-      <Section title="Let's work together">
+      <Section title={t('title')}>
         <div className="lg:grid lg:grid-cols-2 sm:gap-x-8 lg:gap-x-16 mt-4">
           <div className="pb-12">
             <p>
-              I would like to be part of a team whose people respect each other,
-              listen to each other and who work together to achieve clear goals. Leave a message, thank you in advance for your
-              attention.
+              {t('intro')}
             </p>
             <picture className="rounded block overflow-hidden mt-4">
               <source media="(min-width: 1280px)" srcSet={ImgLookingUpXl.src} />
               <source media="(min-width: 1024px)" srcSet={ImgLookingUpLg.src} />
               <source media="(min-width: 768px)" srcSet={ImgLookingUpMd.src} />
               <source media="(min-width: 640px)" srcSet={ImgLookingUpSm.src} />
-              <img src={ImgLookingUpDefault.src} alt="Antônio Zanotti looking up" />
+              <img src={ImgLookingUpDefault.src} alt={t('imgAlt')} />
             </picture>
             <SocialMedia className="pt-4" />
           </div>
@@ -47,9 +47,9 @@ export default function Index() {
           />
         </div>
         <p className="text-center lg:text-left lg:mt-[-50px]">
-          Made with{" "}
+          {t('made')}{" "}
           <TzIcon iconName="HeartIcon" variant="negative" className="inline" />{" "}
-          by Antônio Zanotti
+          {t('by')} Antônio Zanotti
         </p>
       </Section>
     </footer>

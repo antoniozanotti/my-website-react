@@ -1,6 +1,5 @@
 'use client';
-import React, { useState } from 'react';
-import { TzIcon } from 'topaz-react';
+import React from 'react';
 import { useAppSelector, useAppDispatch, useAppStore } from '@/lib/hooks';
 import { toggleTheme } from '@/lib/features/themeSlice';
 import { TzToggleTheme } from "topaz-react";

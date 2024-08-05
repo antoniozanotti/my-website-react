@@ -1,0 +1,62 @@
+{
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, pt {🇧🇷 Português} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Metadata": {
+    "title": "Antônio Zanotti: Desenvolvedor Frontend",
+    "description": "Desenvolvedor Frontend com +15 anos de experiência, usando tecnologia para desenvolver soluções."
+  },
+  "Brazil": "Brasil",
+  "About": {
+    "title": "Sobre",
+    "pronouns": {
+      "he": "ele",
+      "him": "dele"
+    },
+    "degree": "Tecnólogo em Sistemas para Internet (FEEVALE, 2010)",
+    "values": {
+      "ethic": "ética",
+      "love": "amor",
+      "freedom": "liberdade"
+    },
+    "varBirthday": "aniversario",
+    "varLocation": "localizacao",
+    "varPronouns": "pronomes",
+    "varDegree": "formacao",
+    "varValues": "valores"
+  },
+  "Work": {
+    "labelForMore": "Veja mais..."
+  },
+  "Experience": {
+    "title": "Experiência",
+    "labelForMore": "Veja o histórico completo de trabalho"
+  },
+  "Projects": {
+    "title": "Projetos",
+    "labelForMore": "Veja lista completa de projetos"
+  },
+  "Footer": {
+    "title": "Vamos trabalhar juntos",
+    "intro": "Gostaria de fazer parte de uma equipe cujas pessoas se respeitam, se ouvem e trabalham juntas para atingir objetivos claros. Deixe uma mensagem, agradeço desde já sua atenção.",
+    "imgAlt": "Antônio Zanotti olhando para cima",
+    "made": "Feito com",
+    "by": "by",
+    "form": {
+      "name": "Nome",
+      "message": "Mensagem",
+      "success": "Oi {fromNameValue}, Eu vou responder em até 24 horas.<br />Obrigado pela mensagem enviada.",
+      "error": "Oi {fromNameValue}, algum coisa errada aconteceu. Por favor tente novamente mais tarde.",
+      "submit": "Enviar"
+    }
+  },
+  "Header": {
+    "terminal": {
+      "line1": "Olá, Eu sou um Desenvolvedor Frontend",
+      "line2": "Eu era um Desenvolvedor Full Stack",
+      "line3": "Ainda está aqui?",
+      "line4": "Role a página meu amigo!"
+    }
+  }
+}

@@ -4,13 +4,15 @@ import { ToggleTheme } from "./toggle-theme";
 import SocialMedia from "@/components/common/social-media";
 import Terminal from "./terminal";
 import Heading from "@/components/ui/heading";
+import { LocaleSwitcher } from "./locale-switcher";
 
 export default function Index() {
   return (
     <header className="h-[100vh]">
       <div className="h-[100svh] flex flex-col justify-between">
-        <div className="pt-4 sm:pt-8 lg:pt-16 flex justify-end">
+        <div className="pt-4 sm:pt-8 lg:pt-16 flex justify-end space-x-4">
           <ToggleTheme />
+          <LocaleSwitcher />
         </div>
         <div>
           <Heading level="h1" title="Antônio Zanotti" />

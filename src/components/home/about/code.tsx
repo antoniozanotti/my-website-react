@@ -1,4 +1,8 @@
+import { useTranslations } from "next-intl";
+
 export default function Code() {
+  const tAbout = useTranslations('About');
+  const t = useTranslations('');
   const colorConst = "text-accent-2 dark:text-dark-accent-2";
   const colorIdentifier = "text-accent-1 dark:text-dark-accent-1";
   const colorObject = "text-accent dark:text-dark-accent";
@@ -6,33 +10,30 @@ export default function Code() {
   return (
     <code>
       <span className={colorConst}>const</span>{" "}
-      <span className={colorIdentifier}>birthday</span> ={" "}
+      <span className={colorIdentifier}>{tAbout('varBirthday')}</span> ={" "}
       <span className={colorConst}>new</span>{" "}
       <span className={colorObject}>Date</span>(
       <span className={colorString}>{"\"1990-04-18\""}</span>);
       <br />
       <span className={colorConst}>const</span>{" "}
-      <span className={colorIdentifier}>location</span> ={" "}
-      <span className={colorString}>{"\"Florianópolis, Brazil\""}</span>;<br />
+      <span className={colorIdentifier}>{tAbout('varLocation')}</span> ={" "}
+      <span className={colorString}>{"\"Florianópolis, "+t("Brazil")+"\""}</span>;<br />
       <span className={colorConst}>const</span>{" "}
-      <span className={colorIdentifier}>pronouns</span> = [
-      <span className={colorString}>{"\"he\""}</span>,{" "}
-      <span className={colorString}>{"\"him\""}</span>];
+      <span className={colorIdentifier}>{tAbout('varPronouns')}</span> = [
+      <span className={colorString}>{"\""+tAbout("pronouns.he")+"\""}</span>,{" "}
+      <span className={colorString}>{"\""+tAbout("pronouns.him")+"\""}</span>];
       <br />
       <span className={colorConst}>const</span>{" "}
-      <span className={colorIdentifier}>degree</span> ={" "}
+      <span className={colorIdentifier}>{tAbout('varDegree')}</span> ={" "}
       <span className={colorString}>
-        {"\"Internet Systems Technologist (FEEVALE, 2011)\""}
+        {"\""+tAbout("degree")+"\""}
       </span>
       ;<br />
       <span className={colorConst}>const</span>{" "}
-      <span className={colorIdentifier}>secondDegree</span> ={" "}
-      <span className={colorString}>{"\"Bachelor in Sociology\""}</span>;<br />
-      <span className={colorConst}>const</span>{" "}
-      <span className={colorIdentifier}>values</span> = [
-      <span className={colorString}>{"\"ethic\""}</span>,{" "}
-      <span className={colorString}>{"\"love\""}</span>,{" "}
-      <span className={colorString}>{"\"freedom\""}</span>];
+      <span className={colorIdentifier}>{tAbout('varValues')}</span> = [
+      <span className={colorString}>{"\""+tAbout("values.ethic")+"\""}</span>,{" "}
+      <span className={colorString}>{"\""+tAbout("values.love")+"\""}</span>,{" "}
+      <span className={colorString}>{"\""+tAbout("values.freedom")+"\""}</span>];
     </code>
   );
 }
