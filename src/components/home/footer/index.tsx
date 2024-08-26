@@ -35,6 +35,7 @@ export default function Index() {
         </div>
         <div className="pt-12 pb-4 flex place-content-center lg:place-content-end">
           <TzButton
+            aria-label="Go to Top Page"
             iconName="ArrowUpIcon"
             variant="secondary"
             onClick={() => {

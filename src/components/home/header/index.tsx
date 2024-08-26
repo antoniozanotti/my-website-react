@@ -21,7 +21,7 @@ export default function Index() {
         <SocialMedia />
         <div className="pb-4 sm:pb-8 lg:pb-16 flex place-content-center">
           <TzButton
-            role="presentation"
+            aria-label="Go to About Section"
             iconName="ArrowDownIcon"
             variant="secondary"
             onClick={() => {

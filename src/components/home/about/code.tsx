@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 export default function Code() {
   const tAbout = useTranslations('About');
   const t = useTranslations('');
-  const colorConst = "text-accent-2 dark:text-dark-accent-2";
+  const colorConst = "text-accent-1 dark:text-dark-accent-1";
   const colorIdentifier = "text-accent-1 dark:text-dark-accent-1";
   const colorObject = "text-accent dark:text-dark-accent";
   const colorString = "text-primary-2 dark:text-dark-primary-2";
