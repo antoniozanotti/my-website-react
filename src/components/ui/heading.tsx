@@ -18,10 +18,11 @@ export default function Heading({
   let headingClasses = className + " drop-shadow";
   switch (level) {
     case "h1":
-      size = "x_large";
+      size = "large";
       variant = "accent";
       break;
     case "h2":
+      size = "large";
       variant = "accent-1";
       headingClasses += " mt-[164px]";
       break;
