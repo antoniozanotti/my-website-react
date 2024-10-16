@@ -1,6 +1,6 @@
-import {styles} from "@/components/utils/styles";
+import { styles } from "@/consts/styles";
 
-export default function Icon() {
+export function TopazBrand() {
   return (
     <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" className={styles.iconSize}>
       <title>Topaz Brand</title>

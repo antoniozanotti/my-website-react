@@ -1,0 +1,1 @@
+export type ColsType = 2 | 3;

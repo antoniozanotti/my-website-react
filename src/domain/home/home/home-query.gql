@@ -1,0 +1,48 @@
+query HomeQuery($locale: String!) {
+  pageCollection(limit: 1, where: { title: "Home" }, locale: $locale) {
+    items {
+      about {
+        json
+      }
+      positionsCollection(limit: 20) {
+        items {
+          title
+          company
+          location
+          period
+          visibleInShortVersion
+          achievements {
+            json
+          }
+          links {
+            json
+          }
+          skillsCollection(limit: 40) {
+            items {
+              title
+            }
+          }
+        }
+      }
+      projectsCollection(limit: 20) {
+        items {
+          title
+          company
+          period
+          visibleInShortVersion
+          achievements {
+            json
+          }
+          links {
+            json
+          }
+          skillsCollection(limit: 40) {
+            items {
+              title
+            }
+          }
+        }
+      }
+    }
+  }
+}
