@@ -17,22 +17,11 @@ export function Article({
   paragraphs,
   links,
   skills,
+  showParagraph,
+  showSeeMore,
+  setIsOpen,
   ...props
 }: ArticleInterface) {
-  const limit = 3;
-  const [isOpen, setIsOpen] = useState(false);
-
-  function showParagraphIfIsOpenOrParagraphIndexLessLimit(
-    paragraphindex: number
-  ) {
-    return isOpen || paragraphindex < limit;
-  }
-
-  function showSeeMoreIfNotOpenAndParagraphIsLastVisible(
-    paragraphindex: number
-  ) {
-    return !isOpen && paragraphindex == limit - 1 && paragraphs.length > limit;
-  }
 
   return (
     <div {...props}>
@@ -48,8 +37,8 @@ export function Article({
           <div className="col-span-2 space-y-4">
             <ArticleParagraphs
               paragraphs={paragraphs}
-              showParagraph={showParagraphIfIsOpenOrParagraphIndexLessLimit}
-              showSeeMore={showSeeMoreIfNotOpenAndParagraphIsLastVisible}
+              showParagraph={showParagraph}
+              showSeeMore={showSeeMore}
               setIsOpen={setIsOpen}
             />
             <ArticleLinks links={links} />
