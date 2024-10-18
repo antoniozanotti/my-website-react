@@ -1,5 +1,4 @@
 import "@assets/styles.css";
-import { NextIntlClientProvider } from "next-intl";
 import { locales } from "@/consts/locales";
 import {
   getTranslations,
@@ -22,11 +21,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={messages}>
-          <Providers>
-            <Theme>{children}</Theme>
-          </Providers>
-        </NextIntlClientProvider>
+        <Providers messages={messages}>
+          <Theme>{children}</Theme>
+        </Providers>
       </body>
     </html>
   );
