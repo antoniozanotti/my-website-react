@@ -14,6 +14,7 @@ export function ArticleContainer({
   skills,
   ...props
 }: ArticleContainerInterface) {
+  company = company ?? "";
   const limit = 3;
   const [isOpen, setIsOpen] = useState(false);
 
