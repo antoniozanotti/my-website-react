@@ -1,4 +1,5 @@
 "use client";
+
 import { useTranslations } from "next-intl";
 import { Section } from "@/domain/ui/section/section";
 import { SocialMedia } from "@/domain/home/social-media/social-media";
@@ -8,6 +9,14 @@ import { Picture } from "./picture/picture";
 
 export function Footer() {
   const t = useTranslations("Footer");
+
+  function useGoToTop() {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
 
   return (
     <footer>
@@ -38,12 +47,4 @@ export function Footer() {
       </Section>
     </footer>
   );
-}
-
-function useGoToTop() {
-  window.scroll({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
 }

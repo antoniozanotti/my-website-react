@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import { Heading } from "@/domain/ui/heading/heading";
 import { Grid } from "@/domain/ui/grid/grid";
 import { motion } from "framer-motion";

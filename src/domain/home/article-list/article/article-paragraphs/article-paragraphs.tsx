@@ -7,7 +7,7 @@ export function ArticleParagraphs({
   paragraphs,
   showParagraph,
   showSeeMore,
-  setIsOpen
+  setIsOpen,
 }: ArticleParagraphsInterface) {
   const t = useTranslations("Article");
 
@@ -23,10 +23,7 @@ export function ArticleParagraphs({
             >
               {paragraph}{" "}
               {showSeeMore(index) && (
-                <span
-                  className={styles.aHover}
-                  onClick={() => setIsOpen(true)}
-                >
+                <span className={styles.aHover} onClick={() => setIsOpen(true)}>
                   {t("labelForMore")}
                 </span>
               )}

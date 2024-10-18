@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { ArticleList } from "./article-list";
 import { ArticleListContainerInterface } from "./article-list-container-interface";

@@ -1,4 +1,5 @@
 "use client";
+
 import { ToggleTheme } from "./toggle-theme/toggle-theme";
 import { LocaleSwitcher } from "./locale-switcher/locale-switcher";
 import { Heading } from "@/domain/ui/heading/heading";
@@ -7,6 +8,15 @@ import { SocialMedia } from "@/domain/home/social-media/social-media";
 import { TzButton } from "topaz-react";
 
 export function Header() {
+
+  function useGoToAboutSection() {
+    window.scroll({
+      top: document.getElementById("about")?.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <header className="h-[100vh]">
       <div className="h-[100svh] flex flex-col justify-between">
@@ -29,13 +39,5 @@ export function Header() {
         </div>
       </div>
     </header>
-  );
-}
-
-function useGoToAboutSection() {
-  window.scroll({
-    top: document.getElementById("about")?.offsetTop,
-    left: 0,
-    behavior: "smooth",
-  });
+  ); 
 }

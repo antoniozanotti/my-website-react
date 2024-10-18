@@ -1,4 +1,5 @@
 "use client";
+
 import { TzButton } from "topaz-react";
 import { ArticleContainer } from "./article/article-container";
 import { ArticleListInterface } from "./article-list-interface";
@@ -11,7 +12,6 @@ export function ArticleList({
   showButtonForMore,
   setIsOpen,
 }: ArticleListInterface) {
-
   return (
     <div>
       {articles.map(
