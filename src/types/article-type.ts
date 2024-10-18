@@ -12,6 +12,7 @@ export type ArticleType = {
     json: {
       nodeType: string;
       content: NodeType[];
+      data?: {}
     };
   };
   links?: {
