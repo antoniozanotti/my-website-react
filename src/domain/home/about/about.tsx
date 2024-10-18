@@ -1,9 +1,10 @@
+import { AboutInterface } from "./about-interface";
 import { useTranslations } from "next-intl";
 import { Section } from "@/domain/ui/section/section";
 import { Grid } from "@/domain/ui/grid/grid";
 import { Code } from "../code/code";
 
-export function About({ paragraphs }: { paragraphs: string[] }) {
+export function About({ paragraphs }: AboutInterface) {
   const t = useTranslations("About");
 
   return (
