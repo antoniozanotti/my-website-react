@@ -1,17 +1,11 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 
 export function Terminal({ ...props }: React.ComponentProps<"p">) {
-  const t = useTranslations('Header.terminal');
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const lines = [
-    t('line1'),
-    t('line2'),
-    t('line3'),
-    t('line4')
-  ];
+  const t = useTranslations("Header.terminal");
+  const lines = [t("line1"), t("line2"), t("line3"), t("line4")];
   let line = useRef(lines[0]);
   let lineIndex = useRef(0);
   let task = useRef("write");
@@ -26,7 +20,7 @@ export function Terminal({ ...props }: React.ComponentProps<"p">) {
         task.current == "pause-so-erase" ||
         task.current == "pause-so-write"
       ) {
-        if (![0,1,2,3,4,10,11,12,13,14].includes(timePause.current)) {
+        if (![0, 1, 2, 3, 4, 10, 11, 12, 13, 14].includes(timePause.current)) {
           setCursorIsVisible(true);
         } else {
           setCursorIsVisible(false);
@@ -63,21 +57,22 @@ export function Terminal({ ...props }: React.ComponentProps<"p">) {
       }
     }, 60);
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [title, cursorIsVisible]);
 
-  const pBaseStyles = "text-c4 sm:text-c3 lg:text-c5 flex items-center leading-3 lg:leading-5";
+  const pBaseStyles =
+    "text-c4 sm:text-c3 lg:text-c5 flex items-center leading-3 lg:leading-5";
   props.className = props.className
     ? `${pBaseStyles} ${props.className}`
     : pBaseStyles;
-  const cursorBaseStyles = "w-2 lg:w-2.5 h-4 sm:h-4 lg:h-5 bg-primary dark:bg-dark-primary inline-block ml-1";
+  const cursorBaseStyles =
+    "w-2 lg:w-2.5 h-4 sm:h-4 lg:h-5 bg-primary dark:bg-dark-primary inline-block ml-1";
   const cursorVisibilityStyles = cursorIsVisible ? "" : "invisible";
-  
+
   return (
     <p {...props}>
       {title}
-      <span
-        className={`${cursorBaseStyles} ${cursorVisibilityStyles}`}
-      ></span>
+      <span className={`${cursorBaseStyles} ${cursorVisibilityStyles}`}></span>
     </p>
   );
 }
