@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import { LinkedInBrand } from "@images/linked_in_brand";
-import { GithubBrand } from "@images/github_brand";
+import { LinkedInBrand } from "@images/linked-in-brand";
+import { GithubBrand } from "@images/github-brand";
 
 export function SocialMedia({ ...props }: React.ComponentProps<"div">) {
   const t = useTranslations("SocialMedia");
