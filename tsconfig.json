@@ -23,7 +23,6 @@
       "@/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@images/*": ["src/assets/images/*"],
-      "topaz-react": ["/node_modules/topaz-react/src/components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
