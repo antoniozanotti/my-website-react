@@ -1,20 +1,30 @@
-import { NodeType } from "@/types/node-type"
+import { NodeType } from "@/types/node-type";
 
 export type ArticleType = {
-  title: string,
-  company: string,
-  location?: string,
-  period: string,
-  visibleInShortVersion: boolean,
+  __typename?: string;
+  title: string;
+  company: string | null;
+  location?: string;
+  period: string;
+  visibleInShortVersion: boolean;
   achievements: {
-    json: NodeType
-  },
+    __typename?: string;
+    json: {
+      nodeType: string;
+      content: NodeType[];
+    };
+  };
   links?: {
-    json: NodeType
-  },
+    json: {
+      nodeType: string;
+      content: NodeType[];
+    };
+  };
   skillsCollection?: {
+    __typename?: string;
     items: {
-      title: string
-    }[]
-  },
-}
+      __typename?: string;
+      title: string;
+    }[];
+  };
+};

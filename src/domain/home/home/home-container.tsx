@@ -1,5 +1,3 @@
-"use client";
-
 import { getLocale } from "next-intl/server";
 import { getClient } from "@/lib/client";
 import { HomeQuery } from "./home-query.gql";
