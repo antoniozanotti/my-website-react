@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test-ct": "playwright test -c playwright-ct.config.ts"
   },
   "dependencies": {
     "@apollo/client": "^3.9.9",
@@ -15,7 +16,7 @@
     "@reduxjs/toolkit": "^2.2.2",
     "graphql": "^16.8.1",
     "graphql-tag": "^2.12.6",
-    "next": "14.0.3",
+    "next": "^14.2.15",
     "next-intl": "^3.17.2",
     "react": "^18",
     "react-dom": "^18",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@heroicons/react": "^2.0.18",
+    "@playwright/experimental-ct-react": "^1.48.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -37,6 +39,7 @@
     "postcss": "^8",
     "react-syntax-highlighter": "^15.5.0",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite-plugin-graphql-loader": "^4.0.4"
   }
 }
