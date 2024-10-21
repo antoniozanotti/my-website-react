@@ -6,7 +6,7 @@ import {
 } from "next-intl/server";
 import { Providers } from "../providers";
 import { Theme } from "@/domain/theme/theme/theme";
-import {routing} from '@/i18n/routing';
+import {routing} from '@/lib/i18n/routing';
 
 export default async function LocaleLayout({
   children,
