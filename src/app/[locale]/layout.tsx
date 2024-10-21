@@ -1,12 +1,12 @@
 import "@assets/styles.css";
-import { locales } from "@/consts/locales";
 import {
   getTranslations,
   getMessages,
   unstable_setRequestLocale,
 } from "next-intl/server";
-import { Providers } from "./providers";
+import { Providers } from "../providers";
 import { Theme } from "@/domain/theme/theme/theme";
+import {routing} from '@/i18n/routing';
 
 export default async function LocaleLayout({
   children,
@@ -21,7 +21,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
-        <Providers messages={messages}>
+        <Providers locale={locale} messages={messages}>
           <Theme>{children}</Theme>
         </Providers>
       </body>
@@ -30,7 +30,7 @@ export default async function LocaleLayout({
 }
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return routing.locales.map((locale) => ({locale}));
 }
 
 export async function generateMetadata({
