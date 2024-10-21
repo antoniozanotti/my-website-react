@@ -1,11 +1,15 @@
-import { test, expect } from '@playwright/experimental-ct-react';
+import { render, screen } from "@/lib/test";
 import { About } from "./about";
-import { AboutMocks } from './about-mocks';
+import { AboutMocks } from "./about-mocks";
 
-test.describe("About", () => {
-  test("should render paragraphs", async ({ mount }) => {
-    const component = await mount(<About paragraphs={AboutMocks.paragraphs} />);
-    await expect(component).toContainText(AboutMocks.paragraphs[0]);
-    await expect(component).toContainText(AboutMocks.paragraphs[1]);
+describe("About", () => {
+  test("should render paragraphs", async () => {
+    render(<About paragraphs={AboutMocks.paragraphs} />);
+
+    const paragraph1 = screen.getByText(AboutMocks.paragraphs[0]);
+    const paragraph2 = screen.getByText(AboutMocks.paragraphs[1]);
+
+    expect(paragraph1).toBeVisible();
+    expect(paragraph2).toBeVisible();
   });
 });

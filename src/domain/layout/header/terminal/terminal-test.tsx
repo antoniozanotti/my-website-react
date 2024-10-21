@@ -1,14 +1,17 @@
-import { test, expect } from '@playwright/experimental-ct-react';
+import { screen, render, firstComponent } from "@/lib/test";
 import { Terminal } from "./terminal";
 
-test.describe("Terminal", () => {
-  test("should render section", async ({ mount }) => {
-    const component = await mount(<Terminal />);
-    await expect(component.locator(":scope:is(p)")).toBeVisible();
+describe("Terminal", () => {
+  test("should render section", async () => {
+    render(<Terminal />);
+    expect(screen.getByRole("paragraph")).toBeVisible();
   });
 
-  test("should accept className", async ({ mount }) => {
-    const component = await mount(<Terminal className='test' />);
-    await expect(component).toHaveClass(/test$/);
+  test("should accept className", async () => {
+    render(<Terminal className='test' />);
+
+    const component = firstComponent(screen);
+
+    expect(component).toHaveClass(/test$/);
   });
 });

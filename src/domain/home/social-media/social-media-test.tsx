@@ -1,25 +1,27 @@
-import { test, expect } from '@playwright/experimental-ct-react';
+import { screen, render, firstComponent, fireEvent } from "@/lib/test";
 import { SocialMedia } from "./social-media";
+import { beforeAll } from "@jest/globals";
 
-test.describe("SocialMedia", () => {
-  test("should render elements", async ({ mount }) => {
-    const component = await mount(<SocialMedia />);
-    await expect(component.locator(":scope:is(div)")).toBeVisible();
-    await expect(component.getByRole("link")).toHaveCount(2);
+describe("SocialMedia", () => {
+  beforeEach(() => {
+    render(<SocialMedia />);
   });
 
-  test("should allow click on links", async ({ mount, context }) => {
-    const component = await mount(<SocialMedia />);
-    
-    const pageLinkedInPromise = context.waitForEvent('page');
-    component.getByTitle("Linked In").click();
-    const newPageLinkedIn = await pageLinkedInPromise;
-    await expect(newPageLinkedIn).toHaveURL("https://www.linkedin.com/in/antoniozanotti/");
+  test("should render elements", async () => {
+    const component = firstComponent(screen);
 
-    const pageGitHubPromise = context.waitForEvent('page');
-    component.getByTitle("GitHub").click();
-    const newPageGitHub = await pageGitHubPromise;
-    await expect(newPageGitHub).toHaveURL("https://github.com/antoniozanotti");
-    
+    expect(component).toBeVisible();
+    expect(screen.getAllByRole("link")).toHaveLength(2);
+  });
+
+  test("should allow click on links", async () => {
+    const linkedIn = screen.getByText("Linked In");
+    const gitHub = screen.getByText("GitHub");
+
+    expect(linkedIn).toHaveAttribute("href", "https://www.linkedin.com/in/antoniozanotti/");
+    expect(linkedIn).toHaveAttribute("target", "_blank");
+
+    expect(gitHub).toHaveAttribute("href", "https://github.com/antoniozanotti");
+    expect(gitHub).toHaveAttribute("target", "_blank");
   });
 });

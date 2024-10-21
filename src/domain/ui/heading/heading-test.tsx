@@ -1,39 +1,53 @@
-import { test, expect } from "@playwright/experimental-ct-react";
+import { screen, render, firstComponent } from "@/lib/test";
 import { Heading } from "./heading";
 
-test.describe("Heading", () => {
-  test("should render default props", async ({ mount }) => {
-    const component = await mount(<Heading title="Test" />);
-    await expect(component.locator(":scope:is(h1)")).toContainText("Test");
+describe("Heading", () => {
+  test("should render default props", async () => {
+    render(<Heading title="Test" />);
+    const component = firstComponent(screen);
+
+    expect(component).toHaveTextContent("Test");
   });
 
-  test("should render h1", async ({ mount }) => {
-    const component = await mount(<Heading title="Test" level="h1" />);
-    await expect(component.locator(":scope:is(h1)")).toContainText("Test");
+  test("should render h1", async () => {
+    render(<Heading title="Test" level="h1" />);
+    const component = screen.getByRole("heading", {level: 1});
+
+    expect(component).toHaveTextContent("Test");
   });
 
-  test("should render h2", async ({ mount }) => {
-    const component = await mount(<Heading title="Test" level="h2" />);
-    await expect(component.locator(":scope:is(h2)")).toContainText("Test");
+  test("should render h2", async () => {
+    render(<Heading title="Test" level="h2" />);
+    const component = screen.getByRole("heading", {level: 2});
+
+    expect(component).toHaveTextContent("Test");
   });
 
-  test("should render h3", async ({ mount }) => {
-    const component = await mount(<Heading title="Test" level="h3" />);
-    await expect(component.locator(":scope:is(h3)")).toContainText("Test");
+  test("should render h3", async () => {
+    render(<Heading title="Test" level="h3" />);
+    const component = screen.getByRole("heading", {level: 3});
+
+    expect(component).toHaveTextContent("Test");
   });
 
-  test("should render h4", async ({ mount }) => {
-    const component = await mount(<Heading title="Test" level="h4" />);
-    await expect(component.locator(":scope:is(h4)")).toContainText("Test");
+  test("should render h4", async () => {
+    render(<Heading title="Test" level="h4" />);
+    const component = screen.getByRole("heading", {level: 4});
+
+    expect(component).toHaveTextContent("Test");
   });
 
-  test("should accept anchor", async ({ mount }) => {
-    const component = await mount(<Heading title="Test" anchor="testid" />);
-    await expect(component.locator(":scope")).toHaveId("testid");
+  test("should accept anchor", async () => {
+    render(<Heading title="Test" anchor="testid" />);
+    const component = firstComponent(screen);
+
+    expect(component).toHaveAttribute("id", "testid");
   });
 
-  test("should accept className", async ({ mount }) => {
-    const component = await mount(<Heading title="Test" className="test" />);
-    await expect(component).toHaveClass(/test$/);
+  test("should accept className", async () => {
+    render(<Heading title="Test" className="test" />);
+    const component = firstComponent(screen);
+
+    expect(component).toHaveClass(/test$/);
   });
 });

@@ -1,9 +1,11 @@
-import { test, expect } from "@playwright/experimental-ct-react";
+import { render } from "@/lib/test";
 import { Header } from "./header";
 
-test.describe("Header", () => {
-  test("should render header", async ({ mount }) => {
-    const component = await mount(<Header />);
-    await expect(component.locator(":scope:is(header)")).toBeVisible();
+describe("Header", () => {
+  test("should render header", async () => {
+    const { container } = render(<Header />);
+    const header = container.querySelector("header");
+
+    expect(header).toBeVisible();
   });
 });

@@ -1,14 +1,15 @@
-import { test, expect } from "@playwright/experimental-ct-react";
+import { screen, render, firstComponent } from "@/lib/test";
 import { ArticleLinks } from "./article-links";
 
-test.describe("ArticleLinks", () => {
-  test("should not render component", async ({ mount }) => {
-    const component = await mount(<ArticleLinks />);
-    await expect(component.locator(":scope:is(ul)")).toHaveCount(0);
+describe("ArticleLinks", () => {
+  test("should not render component", async () => {
+    render(<ArticleLinks />);
+    const component = firstComponent(screen);
+    expect(component).not.toBeInTheDocument();
   });
 
-  test("should render ul, li, a", async ({ mount, context }) => {
-    const component = await mount(
+  test("should render ul, li, a", async () => {
+    render(
       <ArticleLinks
         links={[
           { link: "https://www.google.com/", label: "Google" },
@@ -16,12 +17,16 @@ test.describe("ArticleLinks", () => {
         ]}
       />
     );
-    await expect(component.locator(":scope:is(ul)")).toBeVisible();
-    await expect(component.getByRole("listitem")).toHaveCount(2);
-    await expect(component.getByRole("link")).toHaveCount(2);
-    const pagePromise = context.waitForEvent('page');
-    component.getByRole("link").first().click();
-    const newPage = await pagePromise;
-    await expect(newPage).toHaveURL("https://www.google.com/");
+    
+    const ul = screen.getByRole("list");
+    const lis = screen.getAllByRole("listitem");
+    const links = screen.getAllByRole("link");
+    
+    expect(ul).toBeVisible();
+    expect(lis).toHaveLength(2);
+    expect(links).toHaveLength(2);
+
+    expect(links[0]).toHaveAttribute("href", "https://www.google.com/");
+    expect(links[0]).toHaveAttribute("target", "_blank");
   });
 });

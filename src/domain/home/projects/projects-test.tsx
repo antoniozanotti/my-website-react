@@ -1,10 +1,12 @@
-import { test, expect } from '@playwright/experimental-ct-react';
+import { screen, render } from "@/lib/test";
 import { Projects } from "./projects";
 import { ProjectsMocks } from './projects-mocks';
 
-test.describe("Projects", () => {
-  test("should render section", async ({ mount }) => {
-    const component = await mount(<Projects projects={ProjectsMocks.projects} />);
-    await expect(component.getByText("Projects")).toBeVisible();
+describe("Projects", () => {
+  test("should render section", async () => {
+    render(<Projects projects={ProjectsMocks.projects} />);
+    const title = screen.getByRole("heading", {name: "Projects"});
+    
+    expect(title).toBeVisible();
   });
 });

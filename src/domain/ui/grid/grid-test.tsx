@@ -1,29 +1,39 @@
-import { test, expect } from '@playwright/experimental-ct-react';
+import { screen, render, firstComponent } from "@/lib/test";
 import { Grid } from "./grid";
 
-test.describe("Grid", () => {
-  test("should render div", async ({ mount }) => {
-    const component = await mount(<Grid />);
-    await expect(component.locator(":scope:is(div)")).toHaveCount(1);
+describe("Grid", () => {
+  test("should render div", async () => {
+    render(<Grid />);
+    const component = firstComponent(screen);
+
+    expect(component).toBeVisible();
   });
 
-  test("should accept className", async ({ mount }) => {
-    const component = await mount(<Grid className='test' />);
-    await expect(component).toHaveClass(/test$/);
+  test("should accept className", async () => {
+    render(<Grid className='test' />);
+    const component = firstComponent(screen);
+
+    expect(component).toHaveClass(/test$/);
   });
 
-  test("should render children", async ({ mount }) => {
-    const component = await mount(<Grid>Test</Grid>);
-    await expect(component).toContainText("Test");
+  test("should render children", async () => {
+    render(<Grid>Test</Grid>);
+    const component = firstComponent(screen);
+
+    expect(component).toHaveTextContent("Test");
   });
 
-  test("should render 2 columns", async ({ mount }) => {
-    const component = await mount(<Grid cols={2} />);
-    await expect(component).toHaveClass(/grid-cols-2/);
+  test("should render 2 columns", async () => {
+    render(<Grid cols={2} />);
+    const component = firstComponent(screen);
+
+    expect(component).toHaveClass(/grid-cols-2/);
   });
 
-  test("should render 3 columns", async ({ mount }) => {
-    const component = await mount(<Grid cols={3} />);
-    await expect(component).toHaveClass(/grid-cols-3/);
+  test("should render 3 columns", async () => {
+    render(<Grid cols={3} />);
+    const component = firstComponent(screen);
+
+    expect(component).toHaveClass(/grid-cols-3/);
   });
 });

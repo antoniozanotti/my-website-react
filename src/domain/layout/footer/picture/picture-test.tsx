@@ -1,9 +1,11 @@
-import { test, expect } from '@playwright/experimental-ct-react';
+import { screen, render } from "@/lib/test";
 import { Picture } from "./picture";
 
-test.describe("Picture", () => {
-  test("should render picture", async ({ mount }) => {
-    const component = await mount(<Picture />);
-    await expect(component.locator(":scope:is(picture)")).toBeVisible();
+describe("Picture", () => {
+  test("should render picture", async () => {
+    const { container } = render(<Picture />);
+    const picture = container.querySelector("picture");
+
+    expect(picture).toBeVisible();
   });
 });

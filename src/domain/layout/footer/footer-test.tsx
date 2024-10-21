@@ -1,9 +1,11 @@
-import { test, expect } from '@playwright/experimental-ct-react';
+import { render } from "@/lib/test";
 import { Footer } from "./footer";
 
-test.describe("Footer", () => {
-  test("should render footer", async ({ mount }) => {
-    const component = await mount(<Footer />);
-    await expect(component.locator(":scope:is(footer)")).toBeVisible();
+describe("Footer", () => {
+  test("should render footer", async () => {
+    const {container} = render(<Footer />);
+    const footer = container.querySelector("footer");
+
+    expect(footer).toBeVisible();
   });
 });

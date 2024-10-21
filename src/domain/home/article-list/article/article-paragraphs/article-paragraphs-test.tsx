@@ -1,10 +1,16 @@
-import { test, expect } from "@playwright/experimental-ct-react";
+import {
+  render,
+  firstComponent,
+  screen,
+  fireEvent,
+  getAllByText,
+} from "@/lib/test";
 import { ArticleParagraphsStory } from "./article-paragraphs-story";
 
-test.describe("ArticleParagraphs", () => {
-  test("should render paragraphs and handle callbacks", async ({ mount }) => {
+describe("ArticleParagraphs", () => {
+  test("should render paragraphs and handle callbacks", async () => {
     let isOpen = false;
-    const component = await mount(
+    const { container } = render(
       <ArticleParagraphsStory
         paragraphs={["Paragraph1", "Paragraph2"]}
         setIsOpen={(isOpenParam) => {
@@ -12,11 +18,16 @@ test.describe("ArticleParagraphs", () => {
         }}
       />
     );
-    await expect(component.locator(":scope:is(div)")).toBeVisible();
-    await expect(component.getByRole("paragraph")).toHaveCount(2);
-    await expect(component).toContainText("Paragraph1");
-    await expect(component).toContainText("Paragraph2");
-    await component.getByText("See more").first().click();
+    const component = firstComponent(screen);
+    const paragraphs = screen.getAllByRole("paragraph");
+    const seeMore = getAllByText(container, "See more...")[0];
+
+    fireEvent.click(seeMore);
+
+    expect(component).toBeVisible();
+    expect(paragraphs).toHaveLength(2);
+    expect(component).toHaveTextContent("Paragraph1");
+    expect(component).toHaveTextContent("Paragraph2");
     expect(isOpen).toBeTruthy();
   });
 });

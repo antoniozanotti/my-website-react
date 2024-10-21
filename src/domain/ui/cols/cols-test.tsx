@@ -1,19 +1,25 @@
-import { test, expect } from '@playwright/experimental-ct-react';
+import { screen, render, firstComponent } from "@/lib/test";
 import { Cols } from "./cols";
 
-test.describe("Cols", () => {
-  test("should render div", async ({ mount }) => {
-    const component = await mount(<Cols />);
-    await expect(component.locator(":scope:is(div)")).toHaveCount(1);
+describe("Cols", () => {
+  test("should render div", async () => {
+    render(<Cols />);
+    const component = firstComponent(screen);
+
+    expect(component).toBeVisible();
   });
 
-  test("should accept className", async ({ mount }) => {
-    const component = await mount(<Cols className='test' />);
-    await expect(component).toHaveClass(/test$/);
+  test("should accept className", async () => {
+    render(<Cols className='test' />);
+    const component = firstComponent(screen);
+
+    expect(component).toHaveClass(/test$/);
   });
 
-  test("should render children", async ({ mount }) => {
-    const component = await mount(<Cols>Test</Cols>);
-    await expect(component).toContainText("Test");
+  test("should render children", async () => {
+    render(<Cols>Test</Cols>);
+    const component = firstComponent(screen);
+    
+    expect(component).toHaveTextContent("Test");
   });
 });
