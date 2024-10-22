@@ -3,7 +3,8 @@ import { Code } from "../code";
 
 describe("Code", () => {
   it("should render code", async () => {
-    render(<Code />);
+    const { container } = render(<Code />);
     expect(screen.getByRole("code")).toBeVisible();
+    expect(container).toMatchSnapshot();
   });
 });

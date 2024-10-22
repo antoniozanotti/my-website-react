@@ -7,5 +7,6 @@ describe("Picture", () => {
     const picture = container.querySelector("picture");
 
     expect(picture).toBeVisible();
+    expect(container).toMatchSnapshot();
   });
 });

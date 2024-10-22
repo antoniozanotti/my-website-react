@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleDetails should accept className 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div
+          class="grid grid-flow-row auto-rows-max test"
+        >
+          <span>
+            Company
+          </span>
+          <span
+            class="font-bold py-4"
+          >
+            Period
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ArticleDetails should accept location 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div
+          class="grid grid-flow-row auto-rows-max test"
+        >
+          <span>
+            Company
+          </span>
+          <span
+            class="italic text-c2 lg:text-c3"
+          >
+            Location
+          </span>
+          <span
+            class="font-bold py-4"
+          >
+            Period
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ArticleDetails should accept skills 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div
+          class="grid grid-flow-row auto-rows-max test"
+        >
+          <span>
+            Company
+          </span>
+          <span
+            class="font-bold py-4"
+          >
+            Period
+          </span>
+          <div
+            class="flex flex-wrap gap-2"
+          >
+            <span
+              class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+            >
+              Skill1
+            </span>
+            <span
+              class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+            >
+              Skill2
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ArticleDetails should render default props 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div
+          class="grid grid-flow-row auto-rows-max"
+        >
+          <span>
+            Company
+          </span>
+          <span
+            class="font-bold py-4"
+          >
+            Period
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

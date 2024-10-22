@@ -29,5 +29,6 @@ describe("ArticleParagraphs", () => {
     expect(component).toHaveTextContent("Paragraph1");
     expect(component).toHaveTextContent("Paragraph2");
     expect(isOpen).toBeTruthy();
+    expect(container).toMatchSnapshot();
   });
 });

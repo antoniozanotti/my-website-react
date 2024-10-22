@@ -3,23 +3,26 @@ import { Cols } from "../cols";
 
 describe("Cols", () => {
   it("should render div", async () => {
-    render(<Cols />);
+    const { container } = render(<Cols />);
     const component = firstComponent(screen);
 
     expect(component).toBeVisible();
+    expect(container).toMatchSnapshot();
   });
 
   it("should accept className", async () => {
-    render(<Cols className='test' />);
+    const { container } = render(<Cols className='test' />);
     const component = firstComponent(screen);
 
     expect(component).toHaveClass(/test$/);
+    expect(container).toMatchSnapshot();
   });
 
   it("should render children", async () => {
-    render(<Cols>Test</Cols>);
+    const { container } = render(<Cols>Test</Cols>);
     const component = firstComponent(screen);
     
     expect(component).toHaveTextContent("Test");
+    expect(container).toMatchSnapshot();
   });
 });

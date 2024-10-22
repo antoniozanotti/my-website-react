@@ -7,5 +7,6 @@ describe("Footer", () => {
     const footer = container.querySelector("footer");
 
     expect(footer).toBeVisible();
+    expect(container).toMatchSnapshot();
   });
 });

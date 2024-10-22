@@ -3,37 +3,42 @@ import { Grid } from "../grid";
 
 describe("Grid", () => {
   it("should render div", async () => {
-    render(<Grid />);
+    const { container } = render(<Grid />);
     const component = firstComponent(screen);
 
     expect(component).toBeVisible();
+    expect(container).toMatchSnapshot();
   });
 
   it("should accept className", async () => {
-    render(<Grid className='test' />);
+    const { container } = render(<Grid className='test' />);
     const component = firstComponent(screen);
 
     expect(component).toHaveClass(/test$/);
+    expect(container).toMatchSnapshot();
   });
 
   it("should render children", async () => {
-    render(<Grid>Test</Grid>);
+    const { container } = render(<Grid>Test</Grid>);
     const component = firstComponent(screen);
 
     expect(component).toHaveTextContent("Test");
+    expect(container).toMatchSnapshot();
   });
 
   it("should render 2 columns", async () => {
-    render(<Grid cols={2} />);
+    const { container } = render(<Grid cols={2} />);
     const component = firstComponent(screen);
 
     expect(component).toHaveClass(/grid-cols-2/);
+    expect(container).toMatchSnapshot();
   });
 
   it("should render 3 columns", async () => {
-    render(<Grid cols={3} />);
+    const { container } = render(<Grid cols={3} />);
     const component = firstComponent(screen);
 
     expect(component).toHaveClass(/grid-cols-3/);
+    expect(container).toMatchSnapshot();
   });
 });

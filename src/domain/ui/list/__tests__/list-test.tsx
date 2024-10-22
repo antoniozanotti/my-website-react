@@ -3,23 +3,26 @@ import { List } from "../list";
 
 describe("List", () => {
   it("should render ul", async () => {
-    render(<List />);
+    const { container } = render(<List />);
     const component = screen.getByRole("list");
 
     expect(component).toBeVisible();
+    expect(container).toMatchSnapshot();
   });
 
   it("should accept className", async () => {
-    render(<List className='test' />);
+    const { container } = render(<List className='test' />);
     const component = firstComponent(screen);
 
     expect(component).toHaveClass(/test$/);
+    expect(container).toMatchSnapshot();
   });
 
   it("should render children", async () => {
-    render(<List><li>Test</li></List>);
+    const { container } = render(<List><li>Test</li></List>);
     const component = screen.getByRole("listitem");
 
     expect(component).toBeVisible();
+    expect(container).toMatchSnapshot();
   });
 });

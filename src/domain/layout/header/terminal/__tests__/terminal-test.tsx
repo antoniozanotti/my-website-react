@@ -3,15 +3,16 @@ import { Terminal } from "../terminal";
 
 describe("Terminal", () => {
   it("should render section", async () => {
-    render(<Terminal />);
+    const { container } = render(<Terminal />);
     expect(screen.getByRole("paragraph")).toBeVisible();
+    expect(container).toMatchSnapshot();
   });
 
   it("should accept className", async () => {
-    render(<Terminal className='test' />);
-
+    const { container } = render(<Terminal className='test' />);
     const component = firstComponent(screen);
 
     expect(component).toHaveClass(/test$/);
+    expect(container).toMatchSnapshot();
   });
 });

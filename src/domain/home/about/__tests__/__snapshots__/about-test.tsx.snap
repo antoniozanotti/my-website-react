@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About should render paragraphs 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <section>
+          <h2
+            class="leading-none text-c9 sm:text-c10 lg:text-c11 text-accent-1 dark:text-dark-accent-1 drop-shadow mt-[164px] "
+            id="about"
+          >
+            About
+          </h2>
+          <div
+            class="sm:grid sm:gap-x-8 lg:gap-x-16 sm:grid-cols-2"
+          >
+            <div
+              class="flex flex-col space-y-4 mt-4"
+            >
+              <p>
+                About1
+              </p>
+              <p>
+                About2
+              </p>
+            </div>
+            <div
+              class="mt-4"
+            >
+              <code>
+                <span
+                  class="text-accent-1 dark:text-dark-accent-1"
+                >
+                  const
+                </span>
+                 
+                <span
+                  class="text-accent-1 dark:text-dark-accent-1"
+                >
+                  birthday
+                </span>
+                 =
+                 
+                <span
+                  class="text-accent-1 dark:text-dark-accent-1"
+                >
+                  new
+                </span>
+                 
+                <span
+                  class="text-accent dark:text-dark-accent"
+                >
+                  Date
+                </span>
+                (
+                <span
+                  class="text-primary-2 dark:text-dark-primary-2"
+                >
+                  "1990-04-18"
+                </span>
+                );
+                <br />
+                <span
+                  class="text-accent-1 dark:text-dark-accent-1"
+                >
+                  const
+                </span>
+                 
+                <span
+                  class="text-accent-1 dark:text-dark-accent-1"
+                >
+                  location
+                </span>
+                 =
+                 
+                <span
+                  class="text-primary-2 dark:text-dark-primary-2"
+                >
+                  "Florianópolis, Brazil"
+                </span>
+                ;
+                <br />
+                <span
+                  class="text-accent-1 dark:text-dark-accent-1"
+                >
+                  const
+                </span>
+                 
+                <span
+                  class="text-accent-1 dark:text-dark-accent-1"
+                >
+                  pronouns
+                </span>
+                 = [
+                <span
+                  class="text-primary-2 dark:text-dark-primary-2"
+                >
+                  "he"
+                </span>
+                ,
+                 
+                <span
+                  class="text-primary-2 dark:text-dark-primary-2"
+                >
+                  "him"
+                </span>
+                ];
+                <br />
+                <span
+                  class="text-accent-1 dark:text-dark-accent-1"
+                >
+                  const
+                </span>
+                 
+                <span
+                  class="text-accent-1 dark:text-dark-accent-1"
+                >
+                  degree
+                </span>
+                 =
+                 
+                <span
+                  class="text-primary-2 dark:text-dark-primary-2"
+                >
+                  "Internet Systems Technologist (FEEVALE, 2010)"
+                </span>
+                ;
+                <br />
+                <span
+                  class="text-accent-1 dark:text-dark-accent-1"
+                >
+                  const
+                </span>
+                 
+                <span
+                  class="text-accent-1 dark:text-dark-accent-1"
+                >
+                  values
+                </span>
+                 = [
+                <span
+                  class="text-primary-2 dark:text-dark-primary-2"
+                >
+                  "ethic"
+                </span>
+                ,
+                 
+                <span
+                  class="text-primary-2 dark:text-dark-primary-2"
+                >
+                  "love"
+                </span>
+                ,
+                 
+                <span
+                  class="text-primary-2 dark:text-dark-primary-2"
+                >
+                  "freedom"
+                </span>
+                ];
+              </code>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;

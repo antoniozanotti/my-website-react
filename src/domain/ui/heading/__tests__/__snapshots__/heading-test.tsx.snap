@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading should accept anchor 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <h1
+          class="leading-none text-c9 sm:text-c10 lg:text-c11 text-accent dark:text-dark-accent drop-shadow  "
+          id="testid"
+        >
+          Test
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Heading should accept className 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <h1
+          class="leading-none text-c9 sm:text-c10 lg:text-c11 text-accent dark:text-dark-accent drop-shadow  test"
+          id=""
+        >
+          Test
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Heading should render default props 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <h1
+          class="leading-none text-c9 sm:text-c10 lg:text-c11 text-accent dark:text-dark-accent drop-shadow  "
+          id=""
+        >
+          Test
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Heading should render h1 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <h1
+          class="leading-none text-c9 sm:text-c10 lg:text-c11 text-accent dark:text-dark-accent drop-shadow  "
+          id=""
+        >
+          Test
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Heading should render h2 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <h2
+          class="leading-none text-c9 sm:text-c10 lg:text-c11 text-accent-1 dark:text-dark-accent-1 drop-shadow mt-[164px] "
+          id=""
+        >
+          Test
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Heading should render h3 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <h3
+          class="leading-none text-c7 sm:text-c8 lg:text-c10 text-accent-2 dark:text-dark-accent-2 drop-shadow mt-[68px] "
+          id=""
+        >
+          Test
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Heading should render h4 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <h4
+          class="leading-none text-c5 md:text-c6 lg:text-c7 xl:text-c8 text-secondary dark:text-dark-secondary drop-shadow mt-[56px] "
+          id=""
+        >
+          Test
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+`;

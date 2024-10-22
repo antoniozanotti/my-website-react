@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List should accept className 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <ul
+          class="list-disc list-inside test"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`List should render children 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <ul
+          class="list-disc list-inside"
+        >
+          <li>
+            Test
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`List should render ul 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <ul
+          class="list-disc list-inside"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

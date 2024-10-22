@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Terminal should accept className 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <p
+          class="text-c4 sm:text-c3 lg:text-c5 flex items-center leading-3 lg:leading-5 test"
+        >
+          <span
+            class="w-2 lg:w-2.5 h-4 sm:h-4 lg:h-5 bg-primary dark:bg-dark-primary inline-block ml-1 "
+          />
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Terminal should render section 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <p
+          class="text-c4 sm:text-c3 lg:text-c5 flex items-center leading-3 lg:leading-5"
+        >
+          <span
+            class="w-2 lg:w-2.5 h-4 sm:h-4 lg:h-5 bg-primary dark:bg-dark-primary inline-block ml-1 "
+          />
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

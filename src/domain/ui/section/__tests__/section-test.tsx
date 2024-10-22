@@ -7,20 +7,23 @@ describe("Section", () => {
     const component = container.querySelector("section");
 
     expect(component).toBeVisible();
+    expect(container).toMatchSnapshot();
   });
 
   it("should accept anchor", async () => {
-    render(<Section title="Test Title" anchor="TestId" />);
+    const { container } = render(<Section title="Test Title" anchor="TestId" />);
     const component = await screen.findByRole("heading", { level: 2 });
 
     expect(component).toHaveAttribute("id", "TestId");
+    expect(container).toMatchSnapshot();
   });
 
   it("should accept className", async () => {
-    render(<Section title="Test Title" className="test" />);
+    const { container } = render(<Section title="Test Title" className="test" />);
     const component = firstComponent(screen);
 
     expect(component).toHaveClass(/test$/);
+    expect(container).toMatchSnapshot();
   });
 
   it("should render children", async () => {
@@ -31,5 +34,6 @@ describe("Section", () => {
     );
 
     expect(container).toHaveTextContent("Children");
+    expect(container).toMatchSnapshot();
   });
 });

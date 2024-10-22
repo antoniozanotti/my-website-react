@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Picture should render picture 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <picture
+          class="rounded block overflow-hidden mt-4"
+        >
+          <source
+            media="(min-width: 1280px)"
+            srcset="/img.jpg"
+          />
+          <source
+            media="(min-width: 1024px)"
+            srcset="/img.jpg"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/img.jpg"
+          />
+          <source
+            media="(min-width: 640px)"
+            srcset="/img.jpg"
+          />
+          <img
+            alt="Antônio Zanotti looking up"
+            src="/img.jpg"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</div>
+`;

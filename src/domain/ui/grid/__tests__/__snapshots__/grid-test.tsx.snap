@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid should accept className 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div
+          class="sm:grid sm:gap-x-8 lg:gap-x-16 sm:grid-cols-2 test"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Grid should render 2 columns 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div
+          class="sm:grid sm:gap-x-8 lg:gap-x-16 sm:grid-cols-2"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Grid should render 3 columns 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div
+          class="sm:grid sm:gap-x-8 lg:gap-x-16 sm:grid-cols-3"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Grid should render children 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div
+          class="sm:grid sm:gap-x-8 lg:gap-x-16 sm:grid-cols-2"
+        >
+          Test
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Grid should render div 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div
+          class="sm:grid sm:gap-x-8 lg:gap-x-16 sm:grid-cols-2"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

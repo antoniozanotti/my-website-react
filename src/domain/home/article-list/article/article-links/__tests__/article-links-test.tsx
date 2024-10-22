@@ -3,13 +3,14 @@ import { ArticleLinks } from "../article-links";
 
 describe("ArticleLinks", () => {
   it("should not render component", async () => {
-    render(<ArticleLinks />);
+    const { container } = render(<ArticleLinks />);
     const component = firstComponent(screen);
     expect(component).not.toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 
   it("should render ul, li, a", async () => {
-    render(
+    const { container } = render(
       <ArticleLinks
         links={[
           { link: "https://www.google.com/", label: "Google" },
@@ -28,5 +29,6 @@ describe("ArticleLinks", () => {
 
     expect(links[0]).toHaveAttribute("href", "https://www.google.com/");
     expect(links[0]).toHaveAttribute("target", "_blank");
+    expect(container).toMatchSnapshot();
   });
 });

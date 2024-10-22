@@ -7,5 +7,6 @@ describe("Header", () => {
     const header = container.querySelector("header");
 
     expect(header).toBeVisible();
+    expect(container).toMatchSnapshot();
   });
 });

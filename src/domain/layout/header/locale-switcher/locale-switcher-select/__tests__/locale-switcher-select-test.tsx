@@ -3,7 +3,7 @@ import { LocaleSwitcherSelect } from "../locale-switcher-select";
 
 describe("LocaleSwitcher", () => {
   it("should render component", async () => {
-    render(
+    const { container } = render(
       <LocaleSwitcherSelect defaultValue="en" label="Change Language">
         <option value="en">English</option>
         <option value="pt">Português</option>
@@ -11,5 +11,6 @@ describe("LocaleSwitcher", () => {
     );
     
     expect(screen.getAllByRole("option")).toHaveLength(2);
+    expect(container).toMatchSnapshot();
   });
 });

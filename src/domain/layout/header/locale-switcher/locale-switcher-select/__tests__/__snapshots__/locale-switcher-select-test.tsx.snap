@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocaleSwitcher should render component 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <label
+          class="relative relative flex justify-around "
+        >
+          <p
+            class="sr-only"
+          >
+            Change Language
+          </p>
+          <select
+            class="inline-flex appearance-none bg-secondary dark:bg-dark-secondary w-[153px] lg:w-[173px] h-[38px] lg:h-[48px] rounded-full cursor-pointer py-0 pl-4 pr-6"
+          >
+            <option
+              selected=""
+              value="en"
+            >
+              English
+            </option>
+            <option
+              value="pt"
+            >
+              Português
+            </option>
+          </select>
+          <span
+            class="pointer-events-none absolute right-4 top-[6px] lg:top-[8px]"
+          >
+            ⌄
+          </span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;

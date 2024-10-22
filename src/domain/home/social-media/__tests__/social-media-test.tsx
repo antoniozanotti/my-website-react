@@ -3,8 +3,9 @@ import { SocialMedia } from "../social-media";
 import { beforeAll } from "@jest/globals";
 
 describe("SocialMedia", () => {
+  let container: HTMLElement;
   beforeEach(() => {
-    render(<SocialMedia />);
+    container = render(<SocialMedia />).container;
   });
 
   it("should render elements", async () => {
@@ -12,6 +13,7 @@ describe("SocialMedia", () => {
 
     expect(component).toBeVisible();
     expect(screen.getAllByRole("link")).toHaveLength(2);
+    expect(container).toMatchSnapshot();
   });
 
   it("should allow click on links", async () => {
@@ -23,5 +25,6 @@ describe("SocialMedia", () => {
 
     expect(gitHub).toHaveAttribute("href", "https://github.com/antoniozanotti");
     expect(gitHub).toHaveAttribute("target", "_blank");
+    expect(container).toMatchSnapshot();
   });
 });
