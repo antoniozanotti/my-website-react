@@ -11,6 +11,6 @@ const config: Config = {
   collectCoverage: true,
   coverageDirectory: "coverage",
   testEnvironment: "jsdom",
-  testMatch: ["**/*+(-test).ts?(x)"],
+  testMatch: ["**/__tests__/**/*-test.ts?(x)"],
 };
 export default createJestConfig(config);
