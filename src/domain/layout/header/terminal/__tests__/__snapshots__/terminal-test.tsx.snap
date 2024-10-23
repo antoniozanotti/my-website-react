@@ -38,6 +38,7 @@ exports[`Terminal should render section 1`] = `
         <p
           class="text-c4 sm:text-c3 lg:text-c5 flex items-center leading-3 lg:leading-5"
         >
+          H
           <span
             class="w-2 lg:w-2.5 h-4 sm:h-4 lg:h-5 bg-primary dark:bg-dark-primary inline-block ml-1 "
           />

@@ -16,9 +16,11 @@ export type ArticleType = {
     };
   };
   links?: {
+    __typename?: string;
     json: {
       nodeType: string;
       content: NodeType[];
+      data?: {}
     };
   };
   skillsCollection?: {

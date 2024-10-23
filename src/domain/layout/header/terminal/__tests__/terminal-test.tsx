@@ -1,9 +1,14 @@
-import { screen, render, firstComponent } from "@/lib/test";
+import { screen, render, firstComponent, act } from "@/lib/test";
 import { Terminal } from "../terminal";
+
+const seconds = 1000;
 
 describe("Terminal", () => {
   it("should render section", async () => {
     const { container } = render(<Terminal />);
+    await act(async () => {
+      await new Promise((resolve) => setTimeout(resolve, 4 * seconds));
+    });
     expect(screen.getByRole("paragraph")).toBeVisible();
     expect(container).toMatchSnapshot();
   });

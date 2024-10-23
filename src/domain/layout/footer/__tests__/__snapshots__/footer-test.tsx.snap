@@ -237,6 +237,7 @@ exports[`Footer should render footer 1`] = `
                       name="fromName"
                       required=""
                       type="text"
+                      variant="secondary"
                     />
                   </label>
                   <label
@@ -252,6 +253,7 @@ exports[`Footer should render footer 1`] = `
                       name="fromEmail"
                       required=""
                       type="email"
+                      variant="secondary"
                     />
                   </label>
                   <label
@@ -267,6 +269,7 @@ exports[`Footer should render footer 1`] = `
                       name="message"
                       required=""
                       rows="7"
+                      variant="secondary"
                     />
                   </label>
                   <div />

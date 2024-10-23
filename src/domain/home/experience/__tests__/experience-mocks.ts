@@ -16,6 +16,10 @@ export const ExperienceMocks: ExperienceInterface = {
           content: [
             {
               data: {},
+              nodeType: "paragraph",
+            },
+            {
+              data: {},
               content: [
                 {
                   data: {},
@@ -26,6 +30,57 @@ export const ExperienceMocks: ExperienceInterface = {
                 },
               ],
               nodeType: "paragraph",
+            },
+          ],
+          nodeType: "document",
+        },
+      },
+      links: {
+        __typename: "PositionLinks",
+        json: {
+          data: {},
+          content: [
+            {
+              data: {},
+              content: [
+                {
+                  data: {},
+                  content: [
+                    {
+                      data: {},
+                      content: [
+                        {
+                          data: {},
+                          marks: [],
+                          value: "",
+                          nodeType: "text",
+                        },
+                        {
+                          data: { uri: "https://ecosmartfire.com/" },
+                          content: [
+                            {
+                              data: {},
+                              marks: [],
+                              value: "EcoSmart Fire (United States)",
+                              nodeType: "text",
+                            },
+                          ],
+                          nodeType: "hyperlink",
+                        },
+                        {
+                          data: {},
+                          marks: [],
+                          value: "",
+                          nodeType: "text",
+                        },
+                      ],
+                      nodeType: "paragraph",
+                    },
+                  ],
+                  nodeType: "list-item",
+                },
+              ],
+              nodeType: "unordered-list",
             },
           ],
           nodeType: "document",

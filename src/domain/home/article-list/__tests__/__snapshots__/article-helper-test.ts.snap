@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleHelper should return links 1`] = `
+[
+  {
+    "label": "EcoSmart Fire (United States)",
+    "link": "https://ecosmartfire.com/",
+  },
+]
+`;
+
+exports[`ArticleHelper should return paragraphs 1`] = `
+[
+  "In 2023, I designed the transition to the JAMstack architecture, which will gradually replace the Magento platform by APIs. This migration will result in significant gains in application performance, and will provide greater independence for content managers. For this, I created a system using Vue, Vite, Pinia, Typescript, UNOCSS+Tailwind CSS, Storybook, urql for team collaborative development. I proposed improvements to data modeling in Hygraph (GraphQL Headless CMS), to improve performance and maintain the platform's flexibility.",
+]
+`;
+
+exports[`ArticleHelper should return skills 1`] = `
+[
+  "Front-End Development",
+  "Software Architecture",
+  "React",
+  "Next.js",
+  "Node.js",
+  "TypeScript",
+  "JavaScript",
+  "TanStack Query",
+  "Axios",
+  "Test Automation",
+  "Playwright",
+  "Regex",
+  "Data Modeling",
+  "PostgreSQL",
+  "Prisma",
+  "SQL",
+  "HTML",
+  "Tailwind CSS",
+  "CSS",
+  "NextUI",
+  "SEO",
+  "Software Development",
+  "Documentation",
+  "Faker.js",
+  "Git",
+  "npm",
+]
+`;

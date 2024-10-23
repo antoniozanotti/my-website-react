@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form should render form 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <form
+          class="flex flex-col space-y-4"
+          id="form_lets_work_together"
+        >
+          <label
+            class="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1"
+          >
+            <span
+              class="px-[10px] sm:px-[14px] lg:px-[20px]"
+            >
+              Name
+            </span>
+            <input
+              class="rounded focus:outline focus:outline-offset-2 focus:outline-2 h-[28px] sm:h-[38px] lg:h-[48px] px-[10px] sm:px-[14px] lg:px-[20px]  bg-secondary dark:bg-dark-secondary hover:bg-secondary-1 active:bg-secondary-2 focus:outline-secondary dark:hover:bg-dark-secondary-1 dark:active:bg-dark-secondary-2 dark:focus:outline-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary"
+              name="fromName"
+              required=""
+              type="text"
+              variant="secondary"
+            />
+          </label>
+          <label
+            class="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1"
+          >
+            <span
+              class="px-[10px] sm:px-[14px] lg:px-[20px]"
+            >
+              Email
+            </span>
+            <input
+              class="rounded focus:outline focus:outline-offset-2 focus:outline-2 h-[28px] sm:h-[38px] lg:h-[48px] px-[10px] sm:px-[14px] lg:px-[20px]  bg-secondary dark:bg-dark-secondary hover:bg-secondary-1 active:bg-secondary-2 focus:outline-secondary dark:hover:bg-dark-secondary-1 dark:active:bg-dark-secondary-2 dark:focus:outline-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary"
+              name="fromEmail"
+              required=""
+              type="email"
+              variant="secondary"
+            />
+          </label>
+          <label
+            class="text-primary-2 dark:text-dark-primary-2 flex flex-col space-y-1"
+          >
+            <span
+              class="px-[10px] sm:px-[14px] lg:px-[20px]"
+            >
+              Message
+            </span>
+            <textarea
+              class="rounded focus:outline focus:outline-offset-2 focus:outline-2 h-[177px] px-[10px] sm:px-[14px] lg:px-[20px] py-[7px] sm:py-[10px] lg:py-[12px]  bg-secondary dark:bg-dark-secondary hover:bg-secondary-1 active:bg-secondary-2 focus:outline-secondary dark:hover:bg-dark-secondary-1 dark:active:bg-dark-secondary-2 dark:focus:outline-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary"
+              name="message"
+              required=""
+              rows="7"
+              variant="secondary"
+            />
+          </label>
+          <div />
+          <div
+            class="flex place-content-end"
+          >
+            <button
+              class="rounded-full font-medium flex gap-x-2 justify-center place-items-center focus:outline focus:outline-offset-2 focus:outline-2  bg-accent dark:bg-dark-accent hover:bg-accent-1 active:bg-accent-2 focus:outline-accent dark:hover:bg-dark-accent-1 dark:active:bg-dark-accent-2 dark:focus:outline-dark-accent text-inverse-accent dark:text-inverse-dark-accent h-[38px] lg:h-[48px] min-w-[38px] lg:min-w-[48px] px-[27px] lg:px-[36px] "
+            >
+              <svg
+                aria-hidden="true"
+                class="w-[16px] h-[16px] lg:w-[20px] lg:h-[20px] text-inverse-accent dark:text-inverse-dark-accent order-last"
+                data-slot="icon"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  ArrowRightIcon
+                </title>
+                <path
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>
+                Submit
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

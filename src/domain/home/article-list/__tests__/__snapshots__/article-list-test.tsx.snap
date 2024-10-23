@@ -1,0 +1,758 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList should not render article 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div>
+          <aside
+            class="flex gap-2 mt-[48px]"
+          >
+            <button
+              class="rounded-full font-medium flex gap-x-2 justify-center place-items-center focus:outline focus:outline-offset-2 focus:outline-2  bg-accent dark:bg-dark-accent hover:bg-accent-1 active:bg-accent-2 focus:outline-accent dark:hover:bg-dark-accent-1 dark:active:bg-dark-accent-2 dark:focus:outline-dark-accent text-inverse-accent dark:text-inverse-dark-accent h-[38px] lg:h-[48px] min-w-[38px] lg:min-w-[48px] px-[27px] lg:px-[36px] "
+            >
+              <svg
+                aria-hidden="true"
+                class="w-[16px] h-[16px] lg:w-[20px] lg:h-[20px] text-inverse-accent dark:text-inverse-dark-accent order-last"
+                data-slot="icon"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  ChevronDoubleDownIcon
+                </title>
+                <path
+                  d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>
+                LabelForMore
+              </span>
+            </button>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ArticleList should not render button for more 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div>
+          <div>
+            <div
+              style="opacity: 0;"
+            >
+              <h3
+                class="leading-none text-c7 sm:text-c8 lg:text-c10 text-accent-2 dark:text-dark-accent-2 drop-shadow mt-[68px] "
+                id=""
+              >
+                Full Stack Developer
+              </h3>
+              <div
+                class="sm:grid sm:gap-x-8 lg:gap-x-16 sm:grid-cols-3 mt-4 space-y-4"
+              >
+                <div
+                  class="grid grid-flow-row auto-rows-max"
+                >
+                  <span>
+                    MAD Design Group
+                  </span>
+                  <span
+                    class="italic text-c2 lg:text-c3"
+                  >
+                    Sydney, New South Wales, Australia
+                  </span>
+                  <span
+                    class="font-bold py-4"
+                  >
+                    Jul 2015 - Dec 2023
+                  </span>
+                  <div
+                    class="flex flex-wrap gap-2"
+                  >
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Front-End Development
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Software Architecture
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      React
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Next.js
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Node.js
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      TypeScript
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      JavaScript
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      TanStack Query
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Axios
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Test Automation
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Playwright
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Regex
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Data Modeling
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      PostgreSQL
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Prisma
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      SQL
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      HTML
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Tailwind CSS
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      CSS
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      NextUI
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      SEO
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Software Development
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Documentation
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Faker.js
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Git
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      npm
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="col-span-2 space-y-4"
+                >
+                  <div
+                    class="space-y-4"
+                  >
+                    <p
+                      style="opacity: 0;"
+                    >
+                      In 2023, I designed the transition to the JAMstack architecture, which will gradually replace the Magento platform by APIs. This migration will result in significant gains in application performance, and will provide greater independence for content managers. For this, I created a system using Vue, Vite, Pinia, Typescript, UNOCSS+Tailwind CSS, Storybook, urql for team collaborative development. I proposed improvements to data modeling in Hygraph (GraphQL Headless CMS), to improve performance and maintain the platform's flexibility.
+                       
+                    </p>
+                  </div>
+                  <ul
+                    class="list-disc list-inside pl-4"
+                  >
+                    <li
+                      class="h-12"
+                    >
+                      <a
+                        class="underline text-accent-1 dark:text-dark-accent-1 hover:text-secondary hover:dark:text-dark-secondary"
+                        href="https://ecosmartfire.com/"
+                        target="_blank"
+                        title="EcoSmart Fire (United States)"
+                      >
+                        EcoSmart Fire (United States)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ArticleList should render article, button for more 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div>
+          <div>
+            <div
+              style="opacity: 0;"
+            >
+              <h3
+                class="leading-none text-c7 sm:text-c8 lg:text-c10 text-accent-2 dark:text-dark-accent-2 drop-shadow mt-[68px] "
+                id=""
+              >
+                Full Stack Developer
+              </h3>
+              <div
+                class="sm:grid sm:gap-x-8 lg:gap-x-16 sm:grid-cols-3 mt-4 space-y-4"
+              >
+                <div
+                  class="grid grid-flow-row auto-rows-max"
+                >
+                  <span>
+                    MAD Design Group
+                  </span>
+                  <span
+                    class="italic text-c2 lg:text-c3"
+                  >
+                    Sydney, New South Wales, Australia
+                  </span>
+                  <span
+                    class="font-bold py-4"
+                  >
+                    Jul 2015 - Dec 2023
+                  </span>
+                  <div
+                    class="flex flex-wrap gap-2"
+                  >
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Front-End Development
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Software Architecture
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      React
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Next.js
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Node.js
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      TypeScript
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      JavaScript
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      TanStack Query
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Axios
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Test Automation
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Playwright
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Regex
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Data Modeling
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      PostgreSQL
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Prisma
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      SQL
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      HTML
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Tailwind CSS
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      CSS
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      NextUI
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      SEO
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Software Development
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Documentation
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Faker.js
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Git
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      npm
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="col-span-2 space-y-4"
+                >
+                  <div
+                    class="space-y-4"
+                  >
+                    <p
+                      style="opacity: 0;"
+                    >
+                      In 2023, I designed the transition to the JAMstack architecture, which will gradually replace the Magento platform by APIs. This migration will result in significant gains in application performance, and will provide greater independence for content managers. For this, I created a system using Vue, Vite, Pinia, Typescript, UNOCSS+Tailwind CSS, Storybook, urql for team collaborative development. I proposed improvements to data modeling in Hygraph (GraphQL Headless CMS), to improve performance and maintain the platform's flexibility.
+                       
+                    </p>
+                  </div>
+                  <ul
+                    class="list-disc list-inside pl-4"
+                  >
+                    <li
+                      class="h-12"
+                    >
+                      <a
+                        class="underline text-accent-1 dark:text-dark-accent-1 hover:text-secondary hover:dark:text-dark-secondary"
+                        href="https://ecosmartfire.com/"
+                        target="_blank"
+                        title="EcoSmart Fire (United States)"
+                      >
+                        EcoSmart Fire (United States)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside
+            class="flex gap-2 mt-[48px]"
+          >
+            <button
+              class="rounded-full font-medium flex gap-x-2 justify-center place-items-center focus:outline focus:outline-offset-2 focus:outline-2  bg-accent dark:bg-dark-accent hover:bg-accent-1 active:bg-accent-2 focus:outline-accent dark:hover:bg-dark-accent-1 dark:active:bg-dark-accent-2 dark:focus:outline-dark-accent text-inverse-accent dark:text-inverse-dark-accent h-[38px] lg:h-[48px] min-w-[38px] lg:min-w-[48px] px-[27px] lg:px-[36px] "
+            >
+              <svg
+                aria-hidden="true"
+                class="w-[16px] h-[16px] lg:w-[20px] lg:h-[20px] text-inverse-accent dark:text-inverse-dark-accent order-last"
+                data-slot="icon"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  ChevronDoubleDownIcon
+                </title>
+                <path
+                  d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>
+                LabelForMore
+              </span>
+            </button>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ArticleList should trigger setIsOpen 1`] = `
+<div>
+  <div
+    class="dark"
+  >
+    <div
+      class="className bg-dark-2 dark:bg-dark-dark-2 text-primary dark:text-dark-primary text-c3 lg:text-c4"
+    >
+      <div
+        data-testid="container"
+      >
+        <div>
+          <div>
+            <div
+              style="opacity: 0;"
+            >
+              <h3
+                class="leading-none text-c7 sm:text-c8 lg:text-c10 text-accent-2 dark:text-dark-accent-2 drop-shadow mt-[68px] "
+                id=""
+              >
+                Full Stack Developer
+              </h3>
+              <div
+                class="sm:grid sm:gap-x-8 lg:gap-x-16 sm:grid-cols-3 mt-4 space-y-4"
+              >
+                <div
+                  class="grid grid-flow-row auto-rows-max"
+                >
+                  <span>
+                    MAD Design Group
+                  </span>
+                  <span
+                    class="italic text-c2 lg:text-c3"
+                  >
+                    Sydney, New South Wales, Australia
+                  </span>
+                  <span
+                    class="font-bold py-4"
+                  >
+                    Jul 2015 - Dec 2023
+                  </span>
+                  <div
+                    class="flex flex-wrap gap-2"
+                  >
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Front-End Development
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Software Architecture
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      React
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Next.js
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Node.js
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      TypeScript
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      JavaScript
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      TanStack Query
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Axios
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Test Automation
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Playwright
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Regex
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Data Modeling
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      PostgreSQL
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Prisma
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      SQL
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      HTML
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Tailwind CSS
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      CSS
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      NextUI
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      SEO
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Software Development
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Documentation
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Faker.js
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      Git
+                    </span>
+                    <span
+                      class="rounded font-medium px-2 py-1 text-c2  bg-secondary dark:bg-dark-secondary text-inverse-secondary dark:text-inverse-dark-secondary "
+                    >
+                      npm
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="col-span-2 space-y-4"
+                >
+                  <div
+                    class="space-y-4"
+                  >
+                    <p
+                      style="opacity: 0;"
+                    >
+                      In 2023, I designed the transition to the JAMstack architecture, which will gradually replace the Magento platform by APIs. This migration will result in significant gains in application performance, and will provide greater independence for content managers. For this, I created a system using Vue, Vite, Pinia, Typescript, UNOCSS+Tailwind CSS, Storybook, urql for team collaborative development. I proposed improvements to data modeling in Hygraph (GraphQL Headless CMS), to improve performance and maintain the platform's flexibility.
+                       
+                    </p>
+                  </div>
+                  <ul
+                    class="list-disc list-inside pl-4"
+                  >
+                    <li
+                      class="h-12"
+                    >
+                      <a
+                        class="underline text-accent-1 dark:text-dark-accent-1 hover:text-secondary hover:dark:text-dark-secondary"
+                        href="https://ecosmartfire.com/"
+                        target="_blank"
+                        title="EcoSmart Fire (United States)"
+                      >
+                        EcoSmart Fire (United States)
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside
+            class="flex gap-2 mt-[48px]"
+          >
+            <button
+              class="rounded-full font-medium flex gap-x-2 justify-center place-items-center focus:outline focus:outline-offset-2 focus:outline-2  bg-accent dark:bg-dark-accent hover:bg-accent-1 active:bg-accent-2 focus:outline-accent dark:hover:bg-dark-accent-1 dark:active:bg-dark-accent-2 dark:focus:outline-dark-accent text-inverse-accent dark:text-inverse-dark-accent h-[38px] lg:h-[48px] min-w-[38px] lg:min-w-[48px] px-[27px] lg:px-[36px] "
+            >
+              <svg
+                aria-hidden="true"
+                class="w-[16px] h-[16px] lg:w-[20px] lg:h-[20px] text-inverse-accent dark:text-inverse-dark-accent order-last"
+                data-slot="icon"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  ChevronDoubleDownIcon
+                </title>
+                <path
+                  d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>
+                LabelForMore
+              </span>
+            </button>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

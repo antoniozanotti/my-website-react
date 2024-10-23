@@ -1,5 +1,10 @@
 import React, { ReactElement } from "react";
-import { render, RenderOptions, RenderResult, Screen } from "@testing-library/react";
+import {
+  render,
+  RenderOptions,
+  RenderResult,
+  Screen,
+} from "@testing-library/react";
 import { Theme } from "@/domain/theme/theme/theme";
 import { Providers } from "../app/providers";
 import messages from "@/messages/en.json";
@@ -21,24 +26,20 @@ function customRender(
   return render(ui, { wrapper: AllTheProviders, ...options });
 }
 
-function firstComponent(screen: Screen){
+function firstComponent(screen: Screen) {
   return screen.getByTestId("container").firstChild;
 }
 
 export * from "@testing-library/react";
+export * from "@testing-library/user-event";
 export { customRender as render, firstComponent };
 import "@testing-library/jest-dom";
 
-jest.mock("next/navigation", () => ({
-  useRouter() {
-    return {
-      prefetch: () => null
-    };
-  }
-}));
-jest.mock('next/navigation', () => {
+jest.mock("next/navigation", () => {
   return {
-    useRouter: () => ({}),
+    useRouter() {
+      return { push: () => {} };
+    },
     useParams: () => ({}),
-  }
-})
+  };
+});

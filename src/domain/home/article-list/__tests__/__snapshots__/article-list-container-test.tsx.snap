@@ -191,7 +191,20 @@ exports[`ArticleListContainer should render component 1`] = `
                   </div>
                   <ul
                     class="list-disc list-inside pl-4"
-                  />
+                  >
+                    <li
+                      class="h-12"
+                    >
+                      <a
+                        class="underline text-accent-1 dark:text-dark-accent-1 hover:text-secondary hover:dark:text-dark-secondary"
+                        href="https://ecosmartfire.com/"
+                        target="_blank"
+                        title="EcoSmart Fire (United States)"
+                      >
+                        EcoSmart Fire (United States)
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
