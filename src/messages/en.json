@@ -49,7 +49,7 @@
     "form": {
       "name": "Name",
       "message": "Message",
-      "success": "Hi {fromNameValue}, I will respond within 24 hours.<br />Thank you for the message sent.",
+      "success": "Hi {fromNameValue}, I will respond within 24 hours. Thank you for the message sent.",
       "error": "Hi {fromNameValue}, something went wrong. Please try later.",
       "submit": "Submit"
     }

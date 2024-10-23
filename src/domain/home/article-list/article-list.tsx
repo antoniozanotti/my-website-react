@@ -30,7 +30,7 @@ export function ArticleList({
           )
       )}
       {showButtonForMore && (
-        <aside className="flex gap-2 mt-[48px]">
+        <div className="flex gap-2 mt-[48px]">
           <TzButton
             iconName="ChevronDoubleDownIcon"
             isIconAfterLabel
@@ -38,7 +38,7 @@ export function ArticleList({
             label={labelForMore}
             onClick={() => setIsOpen(true)}
           />
-        </aside>
+        </div>
       )}
     </div>
   );
