@@ -25,7 +25,7 @@
     "react-redux": "^9.1.0"
   },
   "devDependencies": {
-    "topaz-react": "^0.1.14",
+    "topaz-react": "^0.1.15",
     "ts-node": "^10.9.2",
     "graphql": "^16.8.1",
     "graphql-tag": "^2.12.6",

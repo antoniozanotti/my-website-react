@@ -28,7 +28,6 @@ exports[`Form should render form 1`] = `
               name="fromName"
               required=""
               type="text"
-              variant="secondary"
             />
           </label>
           <label
@@ -44,7 +43,6 @@ exports[`Form should render form 1`] = `
               name="fromEmail"
               required=""
               type="email"
-              variant="secondary"
             />
           </label>
           <label
@@ -60,7 +58,6 @@ exports[`Form should render form 1`] = `
               name="message"
               required=""
               rows="7"
-              variant="secondary"
             />
           </label>
           <div />
