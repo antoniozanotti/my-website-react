@@ -57,9 +57,8 @@
   "Header": {
     "terminal": {
       "line1": "Olá, Eu sou um Desenvolvedor Frontend",
-      "line2": "Eu era um Desenvolvedor Full Stack",
-      "line3": "Ainda está aqui?",
-      "line4": "Role a página meu amigo!"
+      "line2": "Ainda está aqui?",
+      "line3": "Role a página meu amigo!"
     }
   }
 }

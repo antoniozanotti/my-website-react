@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 export function Terminal({ ...props }: React.ComponentProps<"p">) {
   const t = useTranslations("Header.terminal");
-  const lines = [t("line1"), t("line2"), t("line3"), t("line4")];
+  const lines = [t("line1"), t("line2"), t("line3")];
   let line = useRef(lines[0]);
   let lineIndex = useRef(0);
   let task = useRef("write");

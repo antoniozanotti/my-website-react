@@ -57,9 +57,8 @@
   "Header": {
     "terminal": {
       "line1": "Hello, I'm a Frontend Developer",
-      "line2": "I was a Full Stack Developer",
-      "line3": "Are you still here?",
-      "line4": "Scroll the page my friend!"
+      "line2": "Are you still here?",
+      "line3": "Scroll the page my friend!"
     }
   }
 }

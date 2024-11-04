@@ -12,7 +12,7 @@ exports[`ArticleList should not render article 1`] = `
         data-testid="container"
       >
         <div>
-          <aside
+          <div
             class="flex gap-2 mt-[48px]"
           >
             <button
@@ -41,7 +41,7 @@ exports[`ArticleList should not render article 1`] = `
                 LabelForMore
               </span>
             </button>
-          </aside>
+          </div>
         </div>
       </div>
     </div>
@@ -474,7 +474,7 @@ exports[`ArticleList should render article, button for more 1`] = `
               </div>
             </div>
           </div>
-          <aside
+          <div
             class="flex gap-2 mt-[48px]"
           >
             <button
@@ -503,7 +503,7 @@ exports[`ArticleList should render article, button for more 1`] = `
                 LabelForMore
               </span>
             </button>
-          </aside>
+          </div>
         </div>
       </div>
     </div>
@@ -720,7 +720,7 @@ exports[`ArticleList should trigger setIsOpen 1`] = `
               </div>
             </div>
           </div>
-          <aside
+          <div
             class="flex gap-2 mt-[48px]"
           >
             <button
@@ -749,7 +749,7 @@ exports[`ArticleList should trigger setIsOpen 1`] = `
                 LabelForMore
               </span>
             </button>
-          </aside>
+          </div>
         </div>
       </div>
     </div>
